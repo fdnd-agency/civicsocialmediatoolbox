@@ -49,5 +49,37 @@
         --border-radius-l: 1em; /* 1rem (16px) */
     } 
 
-   
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        max-width: 29em;
+        margin-left: auto;
+        padding-right: 2em;
+        
+    }
+
+    .cardlayout-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-bottom: .75px var(--primary-color-black) solid;
+        padding-bottom: 2em;    
+    }
+
+    .card-image {
+        border: solid .75px var(--primary-color-black);
+        border-radius: var(--border-radius-m);
+    }
+
+    .card-layout {
+        padding-left: 1em;
+    }
+
+    p {
+        padding-top: 1em;
+        font-size: var(--font-size-xxs);
+        text-align: justify;
+    }
 </style>
