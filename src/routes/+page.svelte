@@ -80,6 +80,9 @@
     p {
         padding-top: 1em;
         font-size: var(--font-size-xxs);
-        text-align: justify;
+        @media (min-width: 768px) {
+            text-align: justify; /*voor het uitlijnen van text bij een grotere scherm https://developer.mozilla.org/en-US/docs/Web/CSS/text-align#try_it*/
+
+        }
     }
 </style>
