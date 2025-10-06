@@ -61,11 +61,14 @@
 
     .cardlayout-section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         border-bottom: .75px var(--primary-color-black) solid;
         padding-bottom: 2em;    
+            @media (min-width: 375px) {
+                flex-direction: row;
+            }
     }
 
     .card-image {
@@ -77,6 +80,11 @@
         padding-left: 1em;
     }
 
+    img {
+        width: 50%;
+        height: 50%;
+    }
+
     p {
         padding-top: 1em;
         font-size: var(--font-size-xxs);
@@ -85,4 +93,7 @@
 
         }
     }
+
+
+
 </style>
