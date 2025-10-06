@@ -20,10 +20,11 @@
         doelstelling.
     </p>
 
-    <a href="/"          
-        class="inline-flex items-center gap-3 font-semibold text-[#0F4A5A] hover:underline focus:underline"
-        aria-label="Lees meer"> Lees meer
+    <a href="/"
+        class=""
+        > Lees meer
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+             <title>lees meer link</title>
             <path d="M5 12h14m0 0-5-5m5 5-5 5"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
@@ -38,10 +39,10 @@
         Civic Social Media Roadmap
     </h2>
 
-     <a href="/"          
-        class="inline-flex items-center gap-3 font-semibold text-[#0F4A5A] hover:underline focus:underline"
-        aria-label="Lees meer"> Ontdek
+     <a href="/"> 
+        Ontdek
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <title>link to road map</title>
             <path d="M5 12h14m0 0-5-5m5 5-5 5"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
@@ -63,8 +64,7 @@
     </h2>
 
      <a href="/"          
-        class="inline-flex items-center gap-3 font-semibold text-[#0F4A5A] hover:underline focus:underline"
-        aria-label="Lees meer"> Discover  
+        > Discover  
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M5 12h14m0 0-5-5m5 5-5 5"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

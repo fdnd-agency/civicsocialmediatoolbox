@@ -1,4 +1,6 @@
+
 <svg width="320" height="348" viewBox="0 0 320 348" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <title id="svgTitle">road map icon</title>
 <rect y="288.632" width="316.294" height="59.3684" rx="7" fill="#FFFBF3"/>
 <g clip-path="url(#clip0_319_95)">
 <rect x="3.24414" y="0.0351562" width="316.294" height="59.3684" rx="7" fill="#FEFAF4"/>
