@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Geomanist';
+  src: url('/fonts/Geomanist/geomanist-regular-webfont.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cabin';
+  src: url('/fonts/Cabin/Cabin-Regular.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root{
+    --primary-color-white:#FFFFFF;
+    --primary-color-black:#000000;
+    --primary-color-deep-blue: #0C3951 ;
+    --primary-color-beige: #EBDAC5;
+    --primary-color-gold: #DBBE01;
+
+
+ /* Roadmap */
+    --secondary-color-dark-purple:#462A50 ;
+    --secondary-color-purple:#603D82;
+    --secondary-color-light-purple:#8774C9 ;
+    --secondary-color-soft-blue:#B4B9FF;
+
+
+/* Community colors  */
+    --secondary-color-olive:#74A735 ;
+    --secondary-color-yellow:#D7CD02;
+    --secondary-color-blue: #2772F7;
+    --secondary-color-teal:#38C7AA;
+    --secondary-color-orange:#FA6128;
+    --secondary-color-pink:#FF8FD7;
+
+
+  /* Ontwerpprincipes */
+
+  --secondary-color-navy:#012D7D ;
+  --secondary-color-pale-blue:#A5C3FA ;
+  --secondary-color-dark-green:#243B39 ;
+  --secondary-color-deep-green:#2F6B6C ;
+  --secondary-color-mint:#AAE4D7 ;
+  --secondary-color-plum:#462652 ;
+  --secondary-color-magenta:#8B3277 ;
+  --secondary-color-soft-pink:#FBC8EA ;
+
+ 
+
+
+    font-family: 'Geomanist', 'Cabin', system-ui, ui-sans-serif, sans-serif;
+  --fs-small:   clamp(0.875rem, calc(16 / 60 * var(--grid-col)), 1rem);
+  --fs-medium:  clamp(1rem,     calc(24 / 60 * var(--grid-col)), 1.25rem);
+  --fs-large:   clamp(1.5rem,   calc(40 / 60 * var(--grid-col)), 2rem);
+  --fs-title:   clamp(2rem,     calc(52 / 60 * var(--grid-col)), 3rem);
+  --fs-display: clamp(2.5rem,   calc(64 / 60 * var(--grid-col)), 3.5rem);
+
+
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-14: 14px;
+  --radius-24: 24px;
+}
+
+
+*{ 
+    box-sizing:border-box;
+ }
+
+
+html,body { 
+    margin:0;
+    padding: 0;
+}
+
+a { 
+    text-decoration:none;
+}
+
+html {
+  background-color: var(--dark-blue);
+  scroll-behavior: smooth;
+}
+
+
+h1{ font-size: var(--fs-display); letter-spacing:-0.04em;  
+}
+h2{ font-size: var(--fs-title);   letter-spacing:-0.03em; 
+}
+h3{ font-size: var(--fs-large);   letter-spacing:-0.02em;  
+}
+h4{ font-size: var(--fs-small);   letter-spacing:-0.01em; 
+}
