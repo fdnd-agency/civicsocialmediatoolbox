@@ -79,7 +79,7 @@
   </article>
    <div class="card-wrapper">
         <section class="cardlayout-section">
-            <img class="card-image" src="{ontwerpprincipes}" alt="infographic met vijf ontwerpprincipes" width="400" height="300" />
+            <img class="card-image" src="{ontwerpprincipes}" alt="Vijf ontwerpprincipes: gemeenschapsgericht, veilig en vertrouwd, verantwoord, soeverein en divers systeem" width="400" height="300" />
                 
             <article class="card-layout">
                 <h2>Ontwerpprincipes</h2>
@@ -88,7 +88,7 @@
         </section>
 
         <section class="cardlayout-section">
-            <img class="card-image" src="{community}" alt="infographic met vijf ontwerpprincipes" width="400" height="300" />
+            <img class="card-image" src="{community}" alt="Vijf ontwerpprincipes: gemeenschapsgericht, veilig en vertrouwd, verantwoord, soeverein en divers systeem" width="400" height="300" />
                 
             <article class="card-layout">
                 <h2>Community archetypes</h2>
