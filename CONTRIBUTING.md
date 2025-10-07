@@ -3,7 +3,6 @@
 ### Teamcanvas
 Link: https://www.figma.com/design/UXiqG10cxHdC7UyC0y4ttG/Civic-social-media-toolbox?node-id=0-1&t=1aGN7w1aedGSfz08-1
 
-
 ### Samenwerkingsafspraken
 - Documentatie: Leg het proces van elke taak vast in de project board (issues), zodat iedereen het kan raadplegen.
 - Issue niet afsluiten totdat duidelijk is beschreven wat met de taak is gedaan
