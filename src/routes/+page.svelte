@@ -1,4 +1,5 @@
 <script>
+  import ButtonLink from "$lib/components/Button-link.svelte";
   import Header from '$lib/components/Header.svelte'; 
   import { RoadMap, ToolKit } from '$lib';
 </script>
@@ -18,14 +19,7 @@
         doelstelling.
     </p>
 
-    <a href="/" class="">
-        Lees meer
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-             <title>lees meer link</title>
-            <path d="M5 12h14m0 0-5-5m5 5-5 5"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    </a>
+    <ButtonLink href="/">Lees meer</ButtonLink>
   </section>
   
   <article class="roadmap-section">
@@ -33,15 +27,7 @@
           <RoadMap />
         </a>
     <h2>Civic Social Media Roadmap</h2>
-
-     <a href="/"> 
-        Ontdek
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <title>link to road map</title>
-            <path d="M5 12h14m0 0-5-5m5 5-5 5"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    </a>
+     <ButtonLink href="/">Lees meer</ButtonLink>
     <p>
         Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, 
         verantwoord en soeverein is.
@@ -56,13 +42,7 @@
         </a>
     <h2>Design principles for civic social media</h2>
 
-     <a href="/">          
-        Discover  
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M5 12h14m0 0-5-5m5 5-5 5"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    </a>
+    <ButtonLink href="/">Lees meer</ButtonLink>
      <p>
         Would you like to start designing responsible, safe, and sovereign social media yourself? 
         Download our toolkit below! The Designing for Civic Social Media toolkit contains 55 cards, 
