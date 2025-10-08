@@ -1,24 +1,14 @@
 <script>
-  export let title = "CIVIC INTERACTION DESIGN";
-  export let subtitle = "RESEARCH GROUP";
-  export let logoSrc = "/logo-of-amsterdam.png";
-  
+    import logoUrl from '$lib/assets/logo-text.svg?url';
+    export let title = "CIVIC INTERACTION DESIGN";
+    export let subtitle = "Research Group";
 </script>
+
 
 <header class="header">
     <div class="header-left">
-        <section class="header-text">
-            <h1>CIVIC INTERACTION DESIGN</h1>
-            <p>RESEARCH GROUP</p>
-        </section>
+        <img src={logoUrl} alt="Civic Interaction Design logo" class="logo-text" />
         <div class="vertical-line"></div>
-        <img
-            class="logo"
-            src="/logo-of-amsterdam.png"
-            alt="logo"
-            width="500"
-            height="100"
-        />
     </div>
     <button class="hamburger">
         <span></span>
@@ -42,48 +32,31 @@
     header {
         background-color: #ebdac5;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-        position: relative;
-        gap: 10px;
+        align-content: flex-start;
+        align-items: center;
+        padding: 10px 30px;
+        min-height: 80px;
     }
 
     .header-left {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
     }
 
-    header h1 {
-        font-size: 12px;
-        margin: 0;
-    }
-
-    header p {
-        font-size: 8px;
-        margin: 0;
-    }
-
-    .vertical-line {
-        width: 2px;
-        background-color: #000000;
-        height: 40px;
-    }
-
-    .logo {
-        width: 120px;
+    .logo-text {
+        width: 350px;
         height: auto;
     }
 
     .hamburger {
-        margin-top: 40px;
         position: absolute;
-        top: 40px;
-        right: 35px;
-        width: 40px;
-        height: 40px;
+        top: 60px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         background-color: #0c3951;
         border: none;
@@ -92,16 +65,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: translateY(-50%);
     }
 
     .hamburger span {
         display: block;
-        width: 18px;
         height: 2px;
         background-color: #fff;
-        margin: 3px 0;
-        border-radius: 2px;
+        margin: 4px ;
+    }
+
+    .hamburger span:nth-child(1),
+    .hamburger span:nth-child(3) {
+        width: 30px;
+    }
+
+    .hamburger span:nth-child(2) {
+        width: 40px;
     }
 
     /* Larger screens */
@@ -110,30 +89,18 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            padding: 40px 30px;
+            padding: 0 20px;
             text-align: left;
             gap: 20px;
         }
 
-        .header-text h1 {
-            font-size: 20px;
-        }
-
-        .header-text p {
-            font-size: 14px;
-        }
-
-        .logo {
-            width: 200px;
-        }
-
-        .vertical-line {
-            height: 60px; /* taller line on larger screens */
-            margin: 0 10px;
+        .logo-text {
+        width: 600px;
+        height: auto;
         }
 
         .hamburger {
-            top: 70%;
+            top: 13%;
             right: 70px;
             width: 60px;
             height: 60px;
@@ -144,6 +111,15 @@
             width: 26px;
             height: 3px;
             margin: 4px 0;
+        }
+
+        .hamburger span:nth-child(1),
+        .hamburger span:nth-child(3) {
+        width: 35px;
+        }
+
+        .hamburger span:nth-child(2) {
+        width: 45px;
         }
     }
 </style>
