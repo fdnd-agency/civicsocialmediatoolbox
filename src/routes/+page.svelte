@@ -30,35 +30,48 @@
     <ButtonLink/>
   </section>
   
-  <article class="">
-     <a href="/roadmap" class="card">
+   <article>
+    <ul  class="inline">
+      <li>
+        <a href="/roadmap" class="card">
           <RoadMap />
         </a>
-    <h2>Civic Social Media Roadmap</h2>
-  
-    <p>
-        Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, 
-        verantwoord en soeverein is.
-    </p>   
-       <ButtonLink href="/">Lees meer</ButtonLink>
+      </li>
+      <li>
+        <h2>Civic Social Media Roadmap</h2>
+        <p>
+          Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar,
+          verantwoord en soeverein is.
+        </p>
+        <ButtonLink href="/">Lees meer</ButtonLink>
+      </li>
+    </ul>
   </article>
+    
+  
 
   <hr>
-
-
-  <article class=" ">
-     <a href="/toolkit" class="card">
+   <article>
+    <ul  class="inline">
+      <li>
+        <a href="/toolKit" class="card">
           <ToolKit />
         </a>
-    <h2>Design principles for civic social media</h2>
-     <p>
-        Would you like to start designing responsible, safe, and sovereign social media yourself? 
-        Download our toolkit below! The Designing for Civic Social Media toolkit contains 55 cards, 
-        composed of community archetypes, design principles, and dimensions for civic social media, 
-        which can help you in the design of digital platforms based on public values.     
-    </p>  
+      </li>
+      <li>
+        <h2>Design principles for civic social media</h2>
+        <p>
+            Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en 
+            soevereine sociale media? Download dan onze toolkit hieronder! De Designing for 
+            Civic Social Media Toolkit bevat 55 kaarten, samengesteld uit gemeenschapsarchetypen, 
+            ontwerpprincipes en dimensies voor civic social media, die je kunnen helpen bij het 
+            ontwerpen van digitale platforms gebaseerd op publieke waarden.    
+        </p>  
         <ButtonLink href="/">Lees meer</ButtonLink>  
+      </li>
+    </ul>
   </article>
+
 
   
    <div class="card-wrapper">
@@ -140,6 +153,12 @@
             text-align: justify; /*voor het uitlijnen van text bij een grotere scherm https://developer.mozilla.org/en-US/docs/Web/CSS/text-align#try_it*/
 
         }
+    }
+    .inline{
+        display:flex; 
+        gap:1rem; 
+        list-style:none;
+        align-items:center;
     }
 
 
