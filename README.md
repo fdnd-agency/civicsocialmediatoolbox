@@ -1,22 +1,24 @@
-# sv
+# Civic social media
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## About
+Het Civic Social Media-project van het lectoraat Civic Interaction Design van de Hogeschool van Amsterdam richt zich op het onderzoeken, ontwerpen en promoten van digitale platforms die leden van de gemeenschap in staat stellen om veilig en betrouwbaar te communiceren, samen te werken en informatie uit te wisselen.
 
-## Creating a project
+## Over het project
+Bij dit project hebben zijn er verschillende producten ontwikkeld die ontwerpers en beleidsmakers helpen om Civic Social Media te ontwikkelen en ontwerpen. Deze zijn uitgewerkt in PDF's en te downloaden op onze website. Het doel van dit project is het transformeren van deze PDF-documenten naar een interactieve, toegankelijke online-ervaring die gebruikers inspireert en in staat stelt om Civic Social Mediaconcepten toe te passen in hun eigen context.
 
-If you're seeing this, you've probably already done this step. Congrats!
+[Live link](https://civicsocialmedia.netlify.app/)
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Images
 
-# create a new project in my-app
-npx sv create my-app
-```
+<img width="493" height="574" alt="Scherm­afbeelding 2025-10-07 om 22 03 13" src="https://github.com/user-attachments/assets/2ba99866-d9b4-4712-bf3e-c7429a310cc1" />
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+<img width="430" height="574" alt="Scherm­afbeelding 2025-10-07 om 22 04 35" src="https://github.com/user-attachments/assets/d8652b3b-6e25-49c4-81e1-506a29f185ca" />
+
+
+## Basic installation Sveltekit
+
+Om aan het project te werken kan je het project forken. Installeer de dependencies na het forken met `npm install` om een server op te starten:
 
 ```sh
 npm run dev
@@ -25,14 +27,3 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
