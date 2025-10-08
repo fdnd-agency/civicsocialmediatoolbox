@@ -27,7 +27,7 @@
         Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?
     </h4>
 
-    <ButtonLink href="/">Lees meer</ButtonLink>
+    <ButtonLink/>
   </section>
   
   <article class="">

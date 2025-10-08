@@ -5,6 +5,8 @@
   }
 </style>
 <svg width="313" height="349" viewBox="0 0 313 349" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>toolkit icon</title>
+
 <rect width="313" height="349" rx="7" fill="url(#pattern0_411_140)"/>
 <defs>
 <pattern id="pattern0_411_140" patternContentUnits="objectBoundingBox" width="1" height="1">

@@ -1,4 +1,5 @@
 <svg width="292" height="280" viewBox="0 0 292 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<title>roadmap icon</title>
 <g filter="url(#filter0_d_411_181)">
 <path d="M184.022 28L205.754 67.8406L184.022 75.0844V28Z" fill="#B4B9FF"/>
 <path d="M184.022 28L162.291 67.8406L184.022 75.0844V28Z" fill="#B4B9FF" fill-opacity="0.7"/>
