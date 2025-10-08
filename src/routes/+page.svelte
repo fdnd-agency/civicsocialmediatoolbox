@@ -85,12 +85,7 @@
         /* Colors */
         --primary-color-black: #000000;
         /* Font-sizes */
-        --font-size-xxs: .75em;
-        --font-size-xs: 1em;
-        --font-size-s: 1.25em;
-        --font-size-medium: 1.5em;
-        --font-size-large: 2em;
-        --font-size-xl: 3em;
+    
         /* Border radius */
         --border-radius-s: .5em; /* 0.5rem (8px) */
         --border-radius-m: .75em; /* 0.75rem (12px) */
@@ -135,7 +130,6 @@
 
     p {
         padding-top: 1em;
-        font-size: var(--font-size-xxs);
         @media (min-width: 768px) {
             text-align: justify; /*voor het uitlijnen van text bij een grotere scherm https://developer.mozilla.org/en-US/docs/Web/CSS/text-align#try_it*/
 
@@ -143,8 +137,4 @@
     }
 
 
-</style>
-
-<style>
-/* You can keep your layout or page-specific styles here */
 </style>

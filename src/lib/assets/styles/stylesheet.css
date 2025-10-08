@@ -86,12 +86,12 @@
 
 
 
-  --grid-col: 40px;
+  --grid-col: 20em;
   
-  --radius-10: 10px;
-  --radius-12: 12px;
-  --radius-14: 14px;
-  --radius-24: 24px;
+  --radius-1: 1em;
+  --radius-2: 2em;
+  --radius-4: 4em;
+  --radius-6: 6em;
 }
 
 
