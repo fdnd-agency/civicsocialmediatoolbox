@@ -30,33 +30,35 @@
     <ButtonLink href="/">Lees meer</ButtonLink>
   </section>
   
-  <article class="roadmap-section">
-     <a href="/roadmap">
+  <article class="">
+     <a href="/roadmap" class="card">
           <RoadMap />
         </a>
     <h2>Civic Social Media Roadmap</h2>
      <ButtonLink href="/">Lees meer</ButtonLink>
+  
     <p>
         Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, 
         verantwoord en soeverein is.
     </p>   
+       <ButtonLink href="/">Lees meer</ButtonLink>
   </article>
 
   <hr>
 
-  <article class="roadmap-section">
-     <a href="/toolkit">
+
+  <article class=" ">
+     <a href="/toolkit" class="card">
           <ToolKit />
         </a>
     <h2>Design principles for civic social media</h2>
-
-    <ButtonLink href="/">Lees meer</ButtonLink>
      <p>
         Would you like to start designing responsible, safe, and sovereign social media yourself? 
         Download our toolkit below! The Designing for Civic Social Media toolkit contains 55 cards, 
         composed of community archetypes, design principles, and dimensions for civic social media, 
         which can help you in the design of digital platforms based on public values.     
-    </p>    
+    </p>  
+        <ButtonLink href="/">Lees meer</ButtonLink>  
   </article>
 
   
@@ -125,6 +127,8 @@
     .card-layout {
         padding-left: 1em;
     }
+
+
 
     img {
         width: 50%;
