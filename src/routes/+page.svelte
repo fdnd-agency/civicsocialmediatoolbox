@@ -23,6 +23,9 @@
         manier ontwikkeld en beheerd door organisaties en initiatieven met een maatschappelijke 
         doelstelling.
     </p>
+    <h4>
+        Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?
+    </h4>
 
     <ButtonLink href="/">Lees meer</ButtonLink>
   </section>
