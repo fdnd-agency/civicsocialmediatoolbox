@@ -35,7 +35,6 @@
           <RoadMap />
         </a>
     <h2>Civic Social Media Roadmap</h2>
-     <ButtonLink href="/">Lees meer</ButtonLink>
   
     <p>
         Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, 
