@@ -8,12 +8,36 @@ Bij dit project hebben zijn er verschillende producten ontwikkeld die ontwerpers
 
 [Live link](https://civicsocialmedia.netlify.app/)
 
+## Componenten
+De homepagina bevat een aantal linkjes naar verdere informatie om een social media platform te ontwerpen en ontwikkelen. We hebben de website gebouwd met herbruikbare componenten zoals de buttons:
+
+```Sveltekit
+<script>
+  export let href = "/";
+</script>
+
+<a href={href} class="btn">
+  <slot>Lees meer</slot>
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M5 12h14m0 0-5-5m5 5-5 5"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+</a>
+
+<style>
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+</style>
+```
+
 ## Images
 
 <img width="493" height="574" alt="Scherm­afbeelding 2025-10-07 om 22 03 13" src="https://github.com/user-attachments/assets/2ba99866-d9b4-4712-bf3e-c7429a310cc1" />
 
 
-<img width="430" height="574" alt="Scherm­afbeelding 2025-10-07 om 22 04 35" src="https://github.com/user-attachments/assets/d8652b3b-6e25-49c4-81e1-506a29f185ca" />
+
 
 
 ## Basic installation Sveltekit
