@@ -28,16 +28,7 @@
 </header>
 
 <style>
-    :global(*) {
-        box-sizing: border-box;
-    }
 
-    :global(html),
-    :global(body) {
-        margin: 0;
-        padding: 0;
-        font-family: "Cabin", sans-serif;
-    }
 
     header {
         background-color: #ebdac5;
