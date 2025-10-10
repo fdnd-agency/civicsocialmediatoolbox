@@ -14,6 +14,11 @@ Link: https://www.figma.com/design/UXiqG10cxHdC7UyC0y4ttG/Civic-social-media-too
 - Gebruik per pull request 1 feature. Als er meerdere feauters/pull request naar de dev-branch zijn gestuurd kunnen die naar de main. 
 - Communicatie verloopt via teams
 
+### Afspraken aan de hand van de retrospect
+- Afspraken eens in de zoveel tijd lezen en houden aan de afspraken
+- User story's schrijven als titel en daar een taak aan koppelen
+- Issues omschrijven: schrijf wat de issue inhoudt en wat je van plan bent te doen
+
 ### Code conventies
 #### SvelteKit
 * Maak nieuwe file aan voor components die hergebruikt
