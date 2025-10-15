@@ -83,4 +83,31 @@ Resolves issue #!!!
  
  
 Pullrequest templet
+
+## DoR en DoD
+DoR: dit zijn de criteria om te bepalen of een taak of userstory klaar is voor de team om aan te pakken
+ 
+DoD: dit is de benchmark om te evalueren wanneer een taak of userstory voltooid is.
+
+## DOR:
+De userstory heeft format ( Als gebruiker... )
+De userstory is gepokerd.
+Moscow gebruiken
+ 
+## DOD:
+Gemerged naar dev
+De userstory is getest
+De userstory heeft dev link
+Meet de wens van de opdrachtgever
+
+## Refinement:
+Refinement: is een doorloopende activiteit in scrum waarbij het product backlog wordt vervijnd om iets voor toekomstige sprints.
+
+## Verloop van een sprint
+## Week 1: 
+Sprint planning, DOR, DOD, epic, refinement, moscow, poker, standup.
+## Week 2:
+user story, standup.
+## Week 3:
+sprint review, retrospective, warp up, standup.
  
