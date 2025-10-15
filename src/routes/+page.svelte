@@ -177,14 +177,6 @@
         padding: 1em 0 0 0;
     }
 
-    .hero-section a {
-        color: white;
-        text-decoration: none;
-        background-color: #000000;
-        padding: 1em;
-        font-size: var(--font-size-xxs);
-    }
-
     .links-about {
         display: flex;
         flex-wrap: wrap;
@@ -194,13 +186,23 @@
         width: 100%;
     }
 
-    .link-project {
-      flex-grow: 1;
-      text-align: center;
-      height: 5em;
-      line-height: 2em;
-
+     .hero-section a {
+        flex-grow: 1;
+        text-align: center;
+        height: 5em;
+        line-height: 2em;
+        color: white;
+        text-decoration: none;
+        background-color: #000000;
+        padding: 1em;
+        font-size: var(--font-size-xxs);
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: .3em;
+            cursor: pointer;
+        }
     }
+
 
     .h2-hero-section {
         font-size: var(--font-size-s);
