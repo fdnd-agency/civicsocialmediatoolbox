@@ -78,6 +78,14 @@
         </section>
     </div>
 
+    <section class="hero-section">
+        <h2 class="h2-hero-section">Hoe zou het zijn als sociale media niet commercieel georiënteerd waren, maar publieke waarden centraal stelden?</h2>
+        <nav class="links-about">
+            <a class="link-project" href="">About this project</a>
+            <a class="link-project" href="">Partners</a>
+        </nav>
+    </section>
+
 
 </main>
 <style>
@@ -142,9 +150,46 @@
         }
     }
 
+    .hero-section {
+        background-color: #EBDAC5;
+        padding: 1em 0 0 0;
+    }
+
+    .links-about {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5em;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+
+     .hero-section a {
+        flex-grow: 1;
+        text-align: center;
+        height: 5em;
+        line-height: 2em;
+        color: white;
+        text-decoration: none;
+        background-color: #000000;
+        padding: 1em;
+        font-size: var(--font-size-xxs);
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: .3em;
+            cursor: pointer;
+        }
+    }
+
+
+    .h2-hero-section {
+        font-size: var(--font-size-s);
+        margin-bottom: 2em;
+        padding: 0 1em 0 1em;
+        text-align: center;
+    }
+
 
 </style>
 
-<style>
-/* You can keep your layout or page-specific styles here */
-</style>
+
