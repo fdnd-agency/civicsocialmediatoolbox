@@ -101,7 +101,7 @@ De userstory heeft dev link
 Meet de wens van de opdrachtgever
 
 ## Refinement:
-Refinement: is een doorloopende activiteit in scrum waarbij het product backlog wordt vervijnd om iets voor toekomstige sprints.
+Refinement: is een doorlopende activiteit in scrum waarbij het product backlog wordt verfijnd om het product backlog klaar te maken voor toekomstige sprints.
 
 ## Verloop van een sprint
 ## Week 1: 
