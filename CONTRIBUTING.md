@@ -90,7 +90,7 @@ DoR: dit zijn de criteria om te bepalen of een taak of userstory klaar is voor d
 DoD: dit is de benchmark om te evalueren wanneer een taak of userstory voltooid is.
 
 ## DOR:
-De userstory heeft format ( Als gebruiker... )
+De userstory heeft het format ( Als gebruiker... )
 De userstory is gepokerd.
 Moscow gebruiken
  
