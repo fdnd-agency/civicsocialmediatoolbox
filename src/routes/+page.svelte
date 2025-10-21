@@ -2,7 +2,7 @@
     import { RoadMap, ToolKit } from '$lib';
     import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
     import community from '$lib/assets/communityarchetypes.png';
-    import ButtonLink from "$lib/components/Button-link.svelte";
+    import ButtonLink from "$lib/components/Button-leesmeer.svelte";
     import Header from '$lib/components/Header.svelte'; 
 </script>
 
