@@ -99,6 +99,26 @@
         width: 40px;
     }
 
+    #my-popover {
+        background-color: #0c3951;
+    }
+
+    :popover-open {
+        display: flex;
+        margin-right: 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
     /* Larger screens */
     @media (min-width: 768px) {
         .header {
