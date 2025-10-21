@@ -10,11 +10,36 @@
         <img src={logoUrl} alt="Civic Interaction Design logo" class="logo-text" />
         <div class="vertical-line"></div>
     </div>
-    <button class="hamburger">
+
+    <button class="hamburger" popovertarget="my-popover">
         <span></span>
         <span></span>
         <span></span>
     </button>
+
+    <nav popover id="my-popover" >
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+
+            <li>
+                <a href="">Civic Social Media Roadmap</a>
+            </li>
+
+            <li>
+                <a href="">Design principles voor civic social media</a>
+            </li>
+
+            <li>
+                <a href="">Ontwerpprincipes</a>
+            </li>
+
+            <li>
+                <a href="">Community archetypes</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
 <style>
