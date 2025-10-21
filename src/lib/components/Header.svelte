@@ -121,17 +121,24 @@
     :popover-open {
         display: flex;
         margin-right: 0;
-        width: 50%;
         height: 100%;
-        
+        width: 100%;
+
+        @media (min-width: 375px) {
+            width: 60%;
+        }
     }
 
     ul li a {
         color: #fff;
         text-decoration: none;
-        font-size: var(--fs-large);
+        font-size: var(--fs-medium);
         &:hover {
             text-decoration: underline;
+        }
+        
+        @media (min-width: 768px) {
+            font-size: var(--fs-large);
         }
     }
 
@@ -151,8 +158,17 @@
         all: unset;
         cursor: pointer;
         position: absolute;
-        top: 3em;
-        right: -3em;
+        right: 1em;
+        top: 3em;        
+        @media (min-width: 375px) {
+            top: 3em;
+            right: .5em;
+        }
+        
+        @media (min-width: 768px) {
+            top: 3em;
+            right: -11em;
+        }
     }
 
     /* Larger screens */
