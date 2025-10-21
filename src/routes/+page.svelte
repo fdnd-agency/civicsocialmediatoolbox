@@ -30,10 +30,10 @@
     <ButtonLink/>
   </section>
   
-   <article>
+   <article class="card">
     <ul  class="inline">
       <li>
-        <a href="/roadmap" class="card">
+        <a href="/roadmap" class="link">
           <RoadMap />
         </a>
       </li>
@@ -48,13 +48,10 @@
     </ul>
   </article>
     
-  
-
-  <hr>
-   <article>
+     <article class="card">
     <ul  class="inline">
       <li>
-        <a href="/toolKit" class="card">
+        <a href="/toolKit" class="link">
           <ToolKit />
         </a>
       </li>
@@ -160,6 +157,19 @@
         list-style:none;
         align-items:center;
     }
+      .card{
+        padding-bottom: 1em;
+          border: none;
+          position: relative; 
+      }
+        .card::after {
+          content: "";
+          display: block;
+          width: 50%;
+          height: 1px;
+          background: var(--neutral-color-black);
+          margin: 0.75rem auto 0;
+      }
 
 
 </style>
