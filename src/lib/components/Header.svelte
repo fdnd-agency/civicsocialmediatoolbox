@@ -1,5 +1,6 @@
 <script>
     import logoUrl from '$lib/assets/logo-text.svg?url';
+    import closemenu from '$lib/assets/close.svg';
     export let title = "CIVIC INTERACTION DESIGN";
     export let subtitle = "Research Group";
 </script>
@@ -11,14 +12,18 @@
         <div class="vertical-line"></div>
     </div>
 
-    <button class="hamburger" popovertarget="my-popover">
+    <button class="hamburger" popovertarget="menu">
         <span></span>
         <span></span>
         <span></span>
     </button>
 
-    <nav popover id="my-popover" >
+    <nav popover id="menu" >
         <ul>
+            <button class="close-menu"  popovertarget="menu" popovertargetaction="hide">
+                <img src={closemenu} alt="sluitknop">
+            </button>
+
             <li>
                 <a href="">Home</a>
             </li>
@@ -38,8 +43,17 @@
             <li>
                 <a href="">Community archetypes</a>
             </li>
+
+            <li>
+                <a href="">Over dit project</a>
+            </li>
+
+            <li>
+                <a href="">Partners</a>
+            </li>
         </ul>
     </nav>
+
 </header>
 
 <style>
@@ -99,8 +113,9 @@
         width: 40px;
     }
 
-    #my-popover {
+    #menu {
         background-color: #0c3951;
+        
     }
 
     :popover-open {
@@ -108,15 +123,36 @@
         margin-right: 0;
         width: 50%;
         height: 100%;
+        
     }
 
     ul li a {
         color: #fff;
         text-decoration: none;
+        font-size: var(--fs-large);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
     }
 
     ul li {
         list-style: none;
+        padding: 1em;
+    }
+
+    .close-menu {
+        all: unset;
+        cursor: pointer;
+        position: absolute;
+        top: 3em;
+        right: -3em;
     }
 
     /* Larger screens */
