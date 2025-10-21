@@ -81,7 +81,7 @@
     <section class="hero-section">
         <h2 class="h2-hero-section">Hoe zou het zijn als sociale media niet commercieel georiënteerd waren, maar publieke waarden centraal stelden?</h2>
         <nav class="links-about">
-            <a class="link-project" href="">About this project</a>
+            <a class="link-project" href="">Over dit project</a>
             <a class="link-project" href="">Partners</a>
         </nav>
     </section>
