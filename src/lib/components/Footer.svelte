@@ -2,25 +2,22 @@
     import logoUrl from "$lib/assets/logo-text.svg?url";
 </script>
 
-<slot />
-<!-- This renders the page content -->
-
 <footer>
     <div class="left-content">
-    <ul class="contact-info">
-        <li class="project-title">CIVIC SOCIAL MEDIA</li>
-        <li>Jorgen Karskens | Project Manager</li>
-        <li>
-            <a href="mailto:j.r.karskens@hva.nl" class="email"
-                >j.r.karskens@hva.nl</a
-            >
-        </li>
-    </ul>
+        <ul class="contact-info">
+            <li class="project-title">CIVIC SOCIAL MEDIA</li>
+            <li>Jorgen Karskens | Project Manager</li>
+            <li>
+                <a href="mailto:j.r.karskens@hva.nl" class="email"
+                    >j.r.karskens@hva.nl</a
+                >
+            </li>
+        </ul>
 
-    <ul class="project-links">
-        <li><a href="/about" class="link">About this project</a></li>
-        <li><a href="/partners" class="link">Partners</a></li>
-    </ul>
+        <ul class="project-links">
+            <li><a href="/about" class="link">About this project</a></li>
+            <li><a href="/partners" class="link">Partners</a></li>
+        </ul>
     </div>
 
     <img src={logoUrl} alt="Civic Interaction Design logo" class="logo-text" />
@@ -88,13 +85,6 @@
         opacity: 0.85;
     }
 
-    .logos {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-top: 15px;
-    }
-
     .logo-text {
         margin-top: 30px;
         width: 270px;
@@ -116,7 +106,6 @@
             flex-direction: column;
             gap: 20px;
             margin-right: auto;
-
         }
 
         .contact-info {
