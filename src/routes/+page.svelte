@@ -9,8 +9,8 @@
 <Header />
 
 <main class="homepage-content">
-  <section class="homepage-titel">
-    <h2>CIVIC SOCIAL MEDIA</h2>
+  <section class="homepage-titel" id="about">
+    <h1 style="width: 1em;">CIVIC SOCIAL MEDIA</h1>
     <p>
       Het Civic Social Media-project richt zich op het onderzoeken, ontwerpen en bevorderen van digitale platforms
       die het voor gemeenschapsleden mogelijk maken om veilig en betrouwbaar te communiceren, samen te werken en
@@ -94,21 +94,22 @@
     </ul>
   </article>
 
-  <section class="hero-section">
-    <h2 class="h2-hero-section">
-      Hoe zou het zijn als sociale media niet commercieel georiënteerd waren, maar publieke waarden centraal stelden?
-    </h2>
-    <nav class="links-about">
-      <a class="link-project" href="">About this project</a>
-      <a class="link-project" href="">Partners</a>
-    </nav>
+  <!-- hero section -->
+  <section class="hero-section" id="partners">
+    <div class="hero-inner">
+      <h2 class="h2-hero-section">
+        Hoe zou het zijn als sociale media niet commercieel georiënteerd waren, maar publieke waarden centraal stelden?
+      </h2>
+      <nav class="links-about">
+        <a class="link-project" href="#about">About this project</a>
+        <a class="link-project" href="#partners">Partners</a>
+      </nav>
+    </div>
   </section>
 </main>
 
 <style>
-
   :global(body) {
-
     --border-radius-s: 0.5em;
     --border-radius-m: 0.75em;
     --border-radius-l: 1em;
@@ -116,35 +117,29 @@
   }
 
   .homepage-content {
-    display: block;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem 2rem;
 
     @media (min-width: 64em) {
       display: grid;
-      grid-template-columns: min(60ch, 35vw) 1fr;
+      grid-template-columns: min(50ch, 50vw) 1fr;
       column-gap: 2rem;
       align-items: start;
-
-      .homepage-titel {
-        position: sticky;
-        top: 1rem;
-        align-self: start;
-      }
-
-      .card,
-      .hero-section {
-        grid-column: 2;
-      }
     }
   }
 
-  .homepage-titel { margin-bottom: 1rem; }
+  .homepage-titel {
+    margin-bottom: 1rem;
+
+    @media (min-width: 64em) {
+      position: sticky;
+      top: 1rem;
+      align-self: start;
+    }
+  }
 
   .card {
-    margin: 0;
-    padding: 0;
     border: none;
     position: relative;
     margin-top: 5em;
@@ -155,12 +150,13 @@
       width: 50%;
       height: 1px;
       background: var(--neutral-color-black);
-      margin: 0.25rem auto 0;
-      margin-top: 5em;
+      margin: 5em auto 0;
+    }
 
+    @media (min-width: 64em) {
+      grid-column: 2;
     }
   }
-
 
   .inline {
     display: flex;
@@ -183,33 +179,6 @@
     max-width: 20rem;
     margin-inline: auto;
 
-    .link {
-      display: inline-block;
-      width: 20rem;
-      aspect-ratio: 4 / 3;
-      height: auto;
-      border: 0.75px solid var(--neutral-color-black);
-      border-radius: var(--radius-1);
-      margin-inline: auto;
-
-      :global(svg) {
-        width: 100%;
-        height: 100%;
-        display: block;
-      }
-    }
-
-    .media-img {
-      display: block;
-      width: 20rem;
-      aspect-ratio: 4 / 3;
-      height: auto;
-      object-fit: cover;
-      border: 0.75px solid var(--primary-color-black);
-      border-radius: var(--border-radius-m);
-      margin-inline: auto;
-    }
-
     @media (min-width: 48em) {
       flex: 0 0 20rem;
       max-width: 20rem;
@@ -219,64 +188,106 @@
     @media (min-width: 80em) {
       flex-basis: 22rem;
       max-width: 22rem;
+    }
+  }
 
-      .link { width: 22rem; }
-      .media-img { width: 22rem; }
+  .link {
+    display: inline-block;
+    width: 20rem;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    border: 1px solid var(--neutral-color-black);
+    border-radius: var(--radius-1);
+    margin-inline: auto;
+
+    :global(svg) {
+      width: 100%;
+      height: auto; 
+      display: block;
+    }
+
+    @media (min-width: 80em) {
+      width: 22rem;
+    }
+  }
+
+  /* this need to change to svg becous now we hacve almost deblle css for svg and img */
+  .media-img {
+    display: block;
+    width: 20rem;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid var(--primary-color-black);
+    border-radius: var(--border-radius-m);
+    margin-inline: auto;
+
+    @media (min-width: 80em) {
+      width: 22rem;
     }
   }
 
   .content-wrap {
     min-width: 0;
     width: 100%;
-    word-break: normal;
     max-width: none;
-  }
 
-  p {
-    line-height: 1.6;
-  }
-
-  @media (min-width: 48em) {
-    .content-wrap {
+    @media (min-width: 48em) {
       max-width: 68ch;
     }
-
   }
 
+  p { line-height: 1.6; }
+
+  /* hero */
   .hero-section {
     background: #EBDAC5;
-    padding: 1em 0 0;
+          margin-top: 5em;
 
-    .links-about {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5em;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+
+    @media (min-width: 64em) {
+      grid-column: 1 / -1;  /* under title + cards */
+      margin-top: 5em;
     }
+  }
 
-    a {
-      flex-grow: 1;
-      text-align: center;
-      height: 5em;
-      line-height: 2em;
-      color: #fff;
-      text-decoration: none;
-      background: #000;
-      padding: 1em;
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 1em;
+    text-align: center;
+  }
 
-      &:hover {
-        text-underline-offset: 0.3em;
-        cursor: pointer;
-      }
+  .links-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .link-project {
+    flex-grow: 1;
+    text-align: center;
+    min-height: 5em;
+    line-height: 2em;
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+    padding: 1em;
+    border-radius: var(--radius-1);
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.3em;
+      cursor: pointer;
     }
+  }
 
-    .h2-hero-section {
-      font-size: var(--font-size-s);
-      margin-bottom: 2em;
-      padding: 0 1em;
-      text-align: center;
-    }
+  .h2-hero-section {
+    font-size: var(--font-size-s);
+    margin-bottom: 2em;
+    padding: 0 1em;
   }
 </style>
