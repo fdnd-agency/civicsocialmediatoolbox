@@ -15,7 +15,7 @@
     <p>
         Deze toolkit bevat 55 kaarten, samengesteld uit community archetypes,
         ontwerpprincipes en -dimensies voor Civic Social Media, die kunnen
-        helpen bij het vormgeven van digitale platQorms op basis van publieke
+        helpen bij het vormgeven van digitale platforms op basis van publieke
         waarden. Bij de toolkit horen 3 activiteiten: begrijpen, ontwerpen en
         evalueren. De activiteiten kunnen los van elkaar gebruikt worden, maar
         bouwen ook op elkaar voort als ontwerpproces.
@@ -24,7 +24,7 @@
     <p>
         De activiteiten kunnen worden uitgevoerd door individuele ontwerpers,
         publieke organisaties of door de gemeenschap zelf. De bijbehorende
-        vragen kunnen dienen als reectievragen, discussieaanleidingen of als
+        vragen kunnen dienen als reflectievragen, discussieaanleidingen of als
         input voor brainstormsessies tijdens een workshop.<span>
             We moedigen ontwerpers en organisaties aan om deze toolkit te
             gebruiken op een participatieve manier, in een dialoog tussen
