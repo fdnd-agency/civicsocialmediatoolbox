@@ -117,7 +117,6 @@
             width: auto;
             min-width: 12em;
             padding: 1em 2em;
-            margin-bottom: 1.2em;
         }
     }
 </style>
