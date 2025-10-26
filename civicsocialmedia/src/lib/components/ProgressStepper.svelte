@@ -3,8 +3,8 @@
   import { goto } from '$app/navigation';
 
 
-  import StepLogo from '$lib/components/StepLogo.svelte';            
-  import StepLogoProgress from '$lib/components/StepLogoProgress.svelte'; 
+  import StepLogo from '$lib/assets/StepLogo.svelte';            
+  import StepLogoProgress from '$lib/assets/StepLogoProgress.svelte'; 
 
 
   // steps = array 
