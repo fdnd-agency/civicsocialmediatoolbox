@@ -125,6 +125,14 @@
         display: block;
       }
     }
+
+
+    @media (min-width: 48em) {
+      & { --width: 50px; --hight: 8px; }
+    }
+    @media (min-width: 64em) {
+      & { --width: 80px; --hight: 10px; gap: 10em; }
+    }
   }
 </style>
 
