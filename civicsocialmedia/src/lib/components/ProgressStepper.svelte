@@ -51,3 +51,80 @@
 </nav>
 
 
+<style>
+  .stepper {
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+  }
+
+  .list {
+    --width: 2rem;   
+    --hight: 0.5rem; 
+
+    /* --f comes from inline style (0..1) */
+
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+    /* grey rail: from center of first logo to center of last */
+    &::before {
+      content: "";
+      position: absolute;
+      left: calc(var(--width) / 2);
+      right: calc(var(--width) / 2);
+      top: calc(var(--width) / 2 - var(--hight) / 2);
+      height: var(--hight);
+      background: var(--neutral-color-grey-400);
+      border-radius: 999px;
+      z-index: 0;
+    }
+
+    /* green progress fill, width uses --f  */
+    &::after {
+      content: "";
+      position: absolute;
+      left: calc(var(--width) / 2);
+      top: calc(var(--width) / 2 - var(--hight) / 2);
+      height: var(--hight);
+      width: calc((100% - var(--width)) * var(--f));
+      background: var(--accents-color-teal);
+      border-radius: 999px;
+      z-index: 0;
+    }
+
+    
+    li { display: contents; }
+
+
+    .btn {
+      width: var(--width);
+      height: var(--width);
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border: 0;
+      -webkit-tap-highlight-color: transparent;
+
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;   
+      line-height: 0; 
+
+      :global(svg) {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+</style>
+
