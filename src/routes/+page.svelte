@@ -35,7 +35,7 @@
     </ul>
   </article>
 
-  <article class="card">
+  <article class="card adjusted-card">
     <ul class="inline">
       <li class="media-wrap">
         <a href="/toolKit" class="link"><ToolKit /></a>
@@ -148,7 +148,7 @@
     &:not(:last-of-type)::after {
       content: "";
       display: block;
-      width: 50%;
+      width: 100%;
       height: 1px;
       background: var(--neutral-color-black);
       margin: 5em auto 0;
@@ -291,4 +291,9 @@
     margin-bottom: 2em;
     padding: 0 1em;
   }
+    .adjusted-card {
+    @media (min-width: 80em) { 
+      margin-top: -15rem;
+    }}
+
 </style>
