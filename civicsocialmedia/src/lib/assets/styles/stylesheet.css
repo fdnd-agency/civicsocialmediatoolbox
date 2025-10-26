@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Geomanist';
+  src:
+    url('/fonts/Geomanist/Geomanist-Regular.woff') format('woff'),
+    url('/fonts/Geomanis/geomanist-regular-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cabin';
+  src: url('/fonts/Cabin/Cabin-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root{
+    --neutral-color-white:#FFFFFF;
+    --neutral-color-black:#000000;
+    --neutral-color-grey-700: #333333;
+    --neutral-color-grey-600: #666666;
+    --neutral-color-grey-500: #999999;
+    --neutral-color-grey-400: #CCCCCC;
+
+
+    --primary-color-deep-blue: #0C3951 ;
+    --secondary-color-deep-light-blue-700: #104B6B;
+    --secondary-color-deep-light-blue-600: #166A97;
+    --secondary-color-deep-light-blue-500: #1977A9;
+    --secondary-color-deep-light-blue-400: #1D8AC3;
+
+
+
+    --primary-color-beige: #EBDAC5;
+    --secondary-color-light-beige-700: #D8B98D;
+    --secondary-color-light-beige-600: #EBDBC4;
+    --secondary-color-light-beige-500: #DFDCD1;
+    --secondary-color-light-beige-400: #F9F3EC;
+
+
+    --primary-color-gold: #DBBE01;
+    --secondary-color-light-gold-700: #D7CD00;
+    --secondary-color-light-gold-600: #EDE75C;
+    --secondary-color-light-gold-500: #F7F3A5;
+    --secondary-color-light-gold-400: #FFF3A9;
+
+
+
+ /* Roadmap */
+    --accents-color-dark-purple:#462A50 ;
+    --accents-color-purple:#603D82;
+    --accents-color-light-purple:#8774C9 ;
+    --secondary-color-soft-blue:#B4B9FF;
+    --secondary-color-cream:#FAF4EC;
+
+
+
+/* Community colors  */
+    --accents-color-olive:#74A735 ;
+    --accents-color-yellow:#D7CD02;
+    --accents-color-blue: #2772F7;
+    --accents-color-teal:#38C7AA;
+    --accents-color-orange:#FA6128;
+    --accents-color-pink:#FF8FD7;
+
+
+  /* Ontwerpprincipes */
+
+  --accents-color-navy:#012D7D ;
+  --accents-color-pale-blue:#A5C3FA ;
+  --accents-color-dark-green:#243B39 ;
+  --accents-color-deep-green:#2F6B6C ;
+  --accents-color-mint:#AAE4D7 ;
+  --accents-color-plum:#462652 ;
+  --accents-color-magenta:#8B3277 ;
+  --accents-color-soft-pink:#FBC8EA ;
+
+ 
+
+
+  --fs-small:   clamp(0.875rem, calc(16 / 60 * var(--grid-col)), 1rem);
+  --fs-medium:  clamp(1rem,     calc(24 / 60 * var(--grid-col)), 1.25rem);
+  --fs-large:   clamp(1.5rem,   calc(40 / 60 * var(--grid-col)), 2rem);
+  --fs-title:   clamp(2rem,     calc(52 / 60 * var(--grid-col)), 3rem);
+  --fs-display: clamp(2.5rem,   calc(64 / 60 * var(--grid-col)), 3.5rem);
+
+
+
+  --grid-col: 20em;
+  
+  --radius-1: 1em;
+  --radius-2: 2em;
+  --radius-4: 4em;
+  --radius-6: 6em;
+}
+
+
+*{ 
+    box-sizing:border-box;
+ }
+
+
+html, body {
+  margin:0;
+  padding:0;
+  font-family: 'Geomanist', 'Cabin', system-ui, ui-sans-serif, sans-serif;
+  background-color: var(--neutral-color-white); 
+  scroll-behavior:smooth;
+}
+a { 
+    text-decoration:none;
+}
+
+
+h1{ font-size: var(--fs-display); letter-spacing:-0.04em;  
+}
+h2{ font-size: var(--fs-title);   letter-spacing:-0.03em; 
+}
+h3{ font-size: var(--fs-large);   letter-spacing:-0.02em;  
+}
+h4{ font-size: var(--fs-small);   letter-spacing:-0.01em; 
+}
