@@ -124,8 +124,8 @@
         height: 100%;
         width: 100%;
 
-        @media (min-width: 375px) {
-            width: 60%;
+        @media (min-width: 768px) {
+            max-width: 28em
         }
     }
 
@@ -138,7 +138,7 @@
         }
         
         @media (min-width: 768px) {
-            font-size: var(--fs-large);
+            font-size: var(--fs-medium);
         }
     }
 
@@ -160,14 +160,10 @@
         position: absolute;
         right: 1em;
         top: 3em;        
-        @media (min-width: 375px) {
-            top: 3em;
-            right: .5em;
-        }
         
         @media (min-width: 768px) {
-            top: 3em;
-            right: -11em;
+            top: 3.8em;
+            right: -1em;
         }
     }
 
