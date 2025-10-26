@@ -136,6 +136,7 @@
       position: sticky;
       top: 1rem;
       align-self: start;
+      margin-bottom: 20rem;
     }
   }
 
@@ -242,7 +243,7 @@
   /* hero */
   .hero-section {
     background: #EBDAC5;
-          margin-top: 5em;
+    margin-top: 5em;
 
 
     @media (min-width: 64em) {
