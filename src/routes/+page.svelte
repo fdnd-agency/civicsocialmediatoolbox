@@ -3,13 +3,7 @@
     import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
     import community from '$lib/assets/communityarchetypes.png';
     import ButtonLink from "$lib/components/Button-link.svelte";
-    import Header from '$lib/components/Header.svelte'; 
 </script>
-
-
-
-<Header />
-
 
 <main class="homepage-content">
   <section class="homepage-titel">
