@@ -8,15 +8,10 @@
             <li class="project-title">CIVIC SOCIAL MEDIA</li>
             <li>Jorgen Karskens | Project Manager</li>
             <li>
-                <a href="mailto:j.r.karskens@hva.nl" class="email"
-                    >j.r.karskens@hva.nl</a
-                >
+                <a href="mailto:j.r.karskens@hva.nl" class="email">
+                    j.r.karskens@hva.nl
+                </a>
             </li>
-        </ul>
-
-        <ul class="project-links">
-            <li><a href="/about" class="link">About this project</a></li>
-            <li><a href="/partners" class="link">Partners</a></li>
         </ul>
     </div>
 
@@ -24,110 +19,82 @@
 </footer>
 
 <style>
-    /* === MOBILE FIRST === */
+footer {
+    background-color: var(--neutral-color-black);
+    color: var(--neutral-color-white);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: var(--font-family, 'Geomanist', 'Cabin', sans-serif);
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: var(--fs-small);
+    line-height: 1.5em;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: var(--fs-medium);
+    margin-bottom: 0.5rem;
+}
+
+.email {
+    color: var(--neutral-color-white);
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.logo-text {
+    margin-top: 1rem;
+    width: 20rem;
+    height: auto;
+    filter: invert(100%);
+}
+
+/* === Tablet & Desktop === */
+@media (min-width: 768px) {
     footer {
-        background-color: #000;
-        color: #fff;
-        padding: 30px 25px;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 2rem 2.5rem;
+        gap: 0;
     }
 
     .left-content {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        gap: 1.25rem;
+        margin-right: auto;
     }
 
     .contact-info {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        font-size: 13px;
-        line-height: 1.5em;
-    }
-
-    .project-title {
-        font-weight: 700;
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .email {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .email:hover {
-        text-decoration: underline;
-    }
-
-    .project-links {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .link {
-        color: #fff;
-        font-size: 15px;
-        text-decoration: underline;
-    }
-
-    .link:hover {
-        opacity: 0.85;
+        font-size: var(--fs-medium);
     }
 
     .logo-text {
-        margin-top: 30px;
-        width: 270px;
-        height: auto;
-        filter: invert(100%);
+        width: 25rem;
+        margin-top: 0;
+        flex-shrink: 0;
+        margin-right: 6rem;
     }
-
-    /* === TABLET & DESKTOP === */
-    @media (min-width: 768px) {
-        footer {
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-end;
-            padding: 30px 40px;
-            gap: 0px;
-        }
-
-        .left-content {
-            flex-direction: column;
-            gap: 20px;
-            margin-right: auto;
-        }
-
-        .contact-info {
-            flex-grow: 0;
-            font-size: 14px;
-        }
-
-        .project-links {
-            flex-direction: row;
-            gap: 30px;
-        }
-
-        .link {
-            font-size: 18px;
-        }
-
-        .logo-text {
-            width: 400px;
-            margin-top: 0;
-            flex-shrink: 0;
-            margin-bottom: 25px;
-            margin-right: 100px;
-        }
-    }
+}
 </style>
