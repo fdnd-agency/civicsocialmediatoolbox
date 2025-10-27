@@ -2,7 +2,8 @@
     import { RoadMap, ToolKit } from '$lib';
     import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
     import community from '$lib/assets/communityarchetypes.png';
-    import ButtonLink from "$lib/components/Button-leesmeer.svelte";
+    import ButtonLink from "$lib/components/Button-link.svelte";
+    import ButtonLeesMeer from "$lib/components/ButtonLeesMeer.svelte";
     import Header from '$lib/components/Header.svelte'; 
 </script>
 
@@ -24,7 +25,7 @@
         doelstelling.
     </p>
 
-    <ButtonLink href="/">Lees meer</ButtonLink>
+    <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
   </section>
   
   <article class="roadmap-section">
@@ -32,7 +33,7 @@
           <RoadMap />
         </a>
     <h2>Civic Social Media Roadmap</h2>
-     <ButtonLink href="/">Lees meer</ButtonLink>
+     <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
     <p>
         Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, 
         verantwoord en soeverein is.
@@ -47,7 +48,7 @@
         </a>
     <h2>Design principles for civic social media</h2>
 
-    <ButtonLink href="/">Lees meer</ButtonLink>
+    <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
      <p>
         Would you like to start designing responsible, safe, and sovereign social media yourself? 
         Download our toolkit below! The Designing for Civic Social Media toolkit contains 55 cards, 
