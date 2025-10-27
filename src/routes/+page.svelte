@@ -215,8 +215,8 @@
   /* this need to change to svg becous now we hacve almost deblle css for svg and img */
   .media-img {
     display: block;
-    width: 20rem;
-    aspect-ratio: 4 / 3;
+    width: 18rem;
+    aspect-ratio: 4 / 4;/* Here can change the card size the for img*/
     height: auto;
     object-fit: cover;
     border: 1px solid var(--primary-color-black);
@@ -224,7 +224,8 @@
     margin-inline: auto;
 
     @media (min-width: 80em) {
-      width: 22rem;
+      width: 20rem;
+      
     }
   }
 
