@@ -186,7 +186,7 @@
       margin-inline: 0;
     }
 
-    @media (min-width: 80em) {
+    @media (min-width: 64em) {
       flex-basis: 22rem;
       max-width: 22rem;
     }
@@ -207,7 +207,7 @@
       display: block;
     }
 
-    @media (min-width: 80em) {
+    @media (min-width: 64em) {
       width: 22rem;
     }
   }
@@ -223,7 +223,7 @@
     border-radius: var(--border-radius-m);
     margin-inline: auto;
 
-    @media (min-width: 80em) {
+    @media (min-width: 64em) {
       width: 20rem;
       
     }
@@ -293,7 +293,7 @@
     padding: 0 1em;
   }
     .adjusted-card {
-    @media (min-width: 80em) { 
+    @media (min-width: 64em) { 
       margin-top: -15rem;
     }}
 
