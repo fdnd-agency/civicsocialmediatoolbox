@@ -42,7 +42,7 @@ De homepagina bevat een aantal linkjes naar verdere informatie om een social med
 
 ## Basic installation Sveltekit
 
-Om aan het project te werken kan je het project forken. Installeer de dependencies na het forken met `npm install` om een server op te starten:
+Om aan het project te werken kan je het project clonen. Installeer de dependencies na het forken met `npm install` om een server op te starten:
 
 ```sh
 npm run dev
