@@ -15,7 +15,6 @@
   font-display: swap;
 }
 :root{
-
     --neutral-color-white:#FFFFFF;
     --neutral-color-black:#000000;
     --neutral-color-grey-700: #333333;
@@ -89,11 +88,10 @@
 
   --grid-col: 20em;
   
-  --radius-1: .4em;
-  --radius-2: 1em;
-  --radius-3: 2em;
+  --radius-1: 1em;
+  --radius-2: 2em;
   --radius-4: 4em;
-  --radius-5: 6em;
+  --radius-6: 6em;
 }
 
 
