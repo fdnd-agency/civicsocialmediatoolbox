@@ -1,5 +1,6 @@
 <script>
     import logoUrl from '$lib/assets/logo-text.svg?url';
+    import closemenu from '$lib/assets/close.svg';
     export let title = "CIVIC INTERACTION DESIGN";
     export let subtitle = "Research Group";
 </script>
@@ -10,11 +11,49 @@
         <img src={logoUrl} alt="Civic Interaction Design logo" class="logo-text" />
         <div class="vertical-line"></div>
     </div>
-    <button class="hamburger">
+
+    <button class="hamburger" popovertarget="menu">
         <span></span>
         <span></span>
         <span></span>
     </button>
+
+    <nav popover id="menu" >
+        <ul>
+            <button class="close-menu"  popovertarget="menu" popovertargetaction="hide">
+                <img src={closemenu} alt="sluitknop">
+            </button>
+
+            <li>
+                <a href="">Home</a>
+            </li>
+
+            <li>
+                <a href="">Civic Social Media Roadmap</a>
+            </li>
+
+            <li>
+                <a href="">Design principles voor civic social media</a>
+            </li>
+
+            <li>
+                <a href="">Ontwerpprincipes</a>
+            </li>
+
+            <li>
+                <a href="">Community archetypes</a>
+            </li>
+
+            <li>
+                <a href="">Over dit project</a>
+            </li>
+
+            <li>
+                <a href="">Partners</a>
+            </li>
+        </ul>
+    </nav>
+
 </header>
 
 <style>
@@ -72,6 +111,60 @@
 
     .hamburger span:nth-child(2) {
         width: 40px;
+    }
+
+    #menu {
+        background-color: #0c3951;
+        
+    }
+
+    :popover-open {
+        display: flex;
+        margin-right: 0;
+        height: 100%;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            max-width: 28em
+        }
+    }
+
+    ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: var(--fs-medium);
+        &:hover {
+            text-decoration: underline;
+        }
+        
+        @media (min-width: 768px) {
+            font-size: var(--fs-medium);
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    ul li {
+        list-style: none;
+        padding: 1em;
+    }
+
+    .close-menu {
+        all: unset;
+        cursor: pointer;
+        position: absolute;
+        right: 1em;
+        top: 3em;        
+        
+        @media (min-width: 768px) {
+            top: 3.8em;
+            right: -1em;
+        }
     }
 
     /* Larger screens */

@@ -2,7 +2,8 @@
     import { RoadMap, ToolKit } from '$lib';
     import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
     import community from '$lib/assets/communityarchetypes.png';
-    import ButtonLink from "$lib/components/Button-link.svelte";
+    import ButtonLeesMeer from "$lib/components/ButtonLeesMeer.svelte";
+    import Header from '$lib/components/Header.svelte'; 
 </script>
 
 <main class="homepage-content">
@@ -21,7 +22,7 @@
         Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?
     </h4>
 
-    <ButtonLink/>
+    <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
   </section>
   
    <article class="card">
@@ -30,16 +31,12 @@
         <a href="/roadmap" class="link">
           <RoadMap />
         </a>
-      </li>
-      <li>
-        <h2>Civic Social Media Roadmap</h2>
-        <p>
-          Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar,
-          verantwoord en soeverein is.
-        </p>
-        <ButtonLink href="/">Lees meer</ButtonLink>
-      </li>
-    </ul>
+    <h2>Civic Social Media Roadmap</h2>
+     <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
+    <p>
+        Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, 
+        verantwoord en soeverein is.
+    </p>   
   </article>
     
      <article class="card">
@@ -48,19 +45,15 @@
         <a href="/toolKit" class="link">
           <ToolKit />
         </a>
-      </li>
-      <li>
-        <h2>Design principles for civic social media</h2>
-        <p>
-            Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en 
-            soevereine sociale media? Download dan onze toolkit hieronder! De Designing for 
-            Civic Social Media Toolkit bevat 55 kaarten, samengesteld uit gemeenschapsarchetypen, 
-            ontwerpprincipes en dimensies voor civic social media, die je kunnen helpen bij het 
-            ontwerpen van digitale platforms gebaseerd op publieke waarden.    
-        </p>  
-        <ButtonLink href="/">Lees meer</ButtonLink>  
-      </li>
-    </ul>
+    <h2>Design principles for civic social media</h2>
+
+    <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
+     <p>
+        Would you like to start designing responsible, safe, and sovereign social media yourself? 
+        Download our toolkit below! The Designing for Civic Social Media toolkit contains 55 cards, 
+        composed of community archetypes, design principles, and dimensions for civic social media, 
+        which can help you in the design of digital platforms based on public values.     
+    </p>    
   </article>
 
 
@@ -89,7 +82,7 @@
     <section class="hero-section">
         <h2 class="h2-hero-section">Hoe zou het zijn als sociale media niet commercieel georiënteerd waren, maar publieke waarden centraal stelden?</h2>
         <nav class="links-about">
-            <a class="link-project" href="">About this project</a>
+            <a class="link-project" href="">Over dit project</a>
             <a class="link-project" href="">Partners</a>
         </nav>
     </section>
@@ -214,5 +207,3 @@
 
 
 </style>
-
-

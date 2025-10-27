@@ -18,8 +18,8 @@
     height: 2vh;
     padding: 1em;
     border-radius: 6em;
-    background: var(--primary-color-deep-blue);
-    color: var(--neutral-color-white);
+    background: #0f3f53;
+    color: #fff;
     text-decoration: none;
     transition: background .2s, transform .1s, box-shadow .2s;
     &:hover {
@@ -28,7 +28,7 @@
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .25);
   }
     &:focus-visible {
-    outline: 0.2rem solid var(--neutral-color-white);
+    outline: 0.2rem solid #fff;
     outline-offset: 0.15rem;
   }
 }
