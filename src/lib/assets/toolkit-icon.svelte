@@ -1,12 +1,5 @@
-<style>
-  :global(.link > svg) {
-    border: 0.75px solid var(--neutral-color-black);
-    border-radius: var(--radius-2);
-    width: 40vw;
-    height: 40vh; 
-  }
-</style>
 <svg width="473" height="527" viewBox="0 0 473 527" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Toolkit pagina foto</title>
 <rect width="473" height="527" fill="url(#pattern0_691_36)"/>
 <defs>
 <pattern id="pattern0_691_36" patternContentUnits="objectBoundingBox" width="1" height="1">
