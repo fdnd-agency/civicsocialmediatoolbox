@@ -97,7 +97,7 @@ Moscow gebruiken
 ## DOD:
 Gemerged naar dev
 De userstory is getest
-De userstory heeft dev link
+De userstory heeft een dev link
 Meet de wens van de opdrachtgever
 
 ## Refinement:
