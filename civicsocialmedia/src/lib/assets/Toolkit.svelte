@@ -1,6 +1,5 @@
 <style>
   :global(.link > svg) {
-    border: 0.75px solid var(--neutral-color-black);
     border-radius: var(--radius-2);
     width: 40vw;
     height: 40vh; 

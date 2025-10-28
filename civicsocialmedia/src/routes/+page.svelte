@@ -1,224 +1,300 @@
 <script>
-    import { RoadMap, ToolKit } from '$lib';
-    import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
-    import community from '$lib/assets/communityarchetypes.png';
-    import ButtonLink from "$lib/components/Button-link.svelte";
-    import Header from '$lib/components/Header.svelte'; 
+  import { RoadMap, ToolKit } from '$lib';
+  import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
+  import community from '$lib/assets/communityarchetypes.png';
+  import ButtonLeesMeer from '$lib/components/ButtonLeesMeer.svelte';
+  import Header from '$lib/components/Header.svelte';
 </script>
-
-
 
 <Header />
 
-
 <main class="homepage-content">
-  <section class="homepage-titel">
-    <h2>CIVIC SOCIAL MEDIA</h2>
+  <section class="homepage-titel" id="about">
+    <h1 style="width: 1em;">CIVIC SOCIAL MEDIA</h1>
     <p>
-        Het Civic Social Media-project richt zich op het onderzoeken, 
-        ontwerpen en bevorderen van digitale platforms die het voor 
-        gemeenschapsleden mogelijk maken om veilig en betrouwbaar te communiceren, 
-        samen te werken en informatie uit te wisselen. 
-        Deze platforms zijn gebaseerd op publieke waarden en worden op een transparante 
-        manier ontwikkeld en beheerd door organisaties en initiatieven met een maatschappelijke 
-        doelstelling.
+      Het Civic Social Media-project richt zich op het onderzoeken, ontwerpen en bevorderen van digitale platforms
+      die het voor gemeenschapsleden mogelijk maken om veilig en betrouwbaar te communiceren, samen te werken en
+      informatie uit te wisselen. Deze platforms zijn gebaseerd op publieke waarden en worden op een transparante
+      manier ontwikkeld en beheerd door organisaties en initiatieven met een maatschappelijke doelstelling.
     </p>
-    <h4>
-        Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?
-    </h4>
-
-    <ButtonLink/>
+    <h4>Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?</h4>
+    <ButtonLeesMeer />
   </section>
-  
-   <article class="card">
-    <ul  class="inline">
-      <li>
-        <a href="/roadmap" class="link">
-          <RoadMap />
-        </a>
+
+  <article class="card">
+    <ul class="inline">
+      <li class="media-wrap">
+        <a href="/roadmap" class="link"><RoadMap /></a>
       </li>
-      <li>
+      <li class="content-wrap">
         <h2>Civic Social Media Roadmap</h2>
-        <p>
-          Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar,
-          verantwoord en soeverein is.
-        </p>
-        <ButtonLink href="/">Lees meer</ButtonLink>
+        <p>Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, verantwoord en soeverein is.</p>
+        <p>Ontdek de stappen, keuzes en mijlpalen richting civic social media.</p>
+        <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
-    
-     <article class="card">
-    <ul  class="inline">
-      <li>
-        <a href="/toolKit" class="link">
-          <ToolKit />
-        </a>
+
+  <article class="card adjusted-card">
+    <ul class="inline">
+      <li class="media-wrap">
+        <a href="/toolKit" class="link"><ToolKit /></a>
       </li>
-      <li>
+      <li class="content-wrap">
         <h2>Design principles for civic social media</h2>
         <p>
-            Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en 
-            soevereine sociale media? Download dan onze toolkit hieronder! De Designing for 
-            Civic Social Media Toolkit bevat 55 kaarten, samengesteld uit gemeenschapsarchetypen, 
-            ontwerpprincipes en dimensies voor civic social media, die je kunnen helpen bij het 
-            ontwerpen van digitale platforms gebaseerd op publieke waarden.    
-        </p>  
-        <ButtonLink href="/">Lees meer</ButtonLink>  
+          De Designing for Civic Social Media Toolkit bevat 55 kaarten, samengesteld uit gemeenschapsarchetypen,
+          ontwerpprincipes en dimensies die helpen bij het ontwerpen van digitale platforms gebaseerd op publieke waarden.
+        </p>
+        <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
 
+  <article class="card">
+    <ul class="inline">
+      <li class="media-wrap">
+        <a href="/ontwerpprincipes" class="link">
+          <!-- this need to change to svg becous now we hacve almost deblle css for svg and img -->
+          <img
+            class="media-img"
+            src={ontwerpprincipes}
+            alt="Vijf ontwerpprincipes: gemeenschapsgericht, veilig en vertrouwd, verantwoord, soeverein en divers systeem"
+          />
+        </a>
+      </li>
+      <li class="content-wrap">
+        <h2>Ontwerpprincipes</h2>
+        <p>
+          Ontwerpprincipes ondersteunen keuzes over technologie, algoritmes, governance, functionaliteiten,
+          UX/UI, moderatie en redactie.
+        </p>
+        <ButtonLeesMeer href="/ontwerpprincipes">Lees meer</ButtonLeesMeer>
+      </li>
+    </ul>
+  </article>
 
-  
-   <div class="card-wrapper">
-        <section class="cardlayout-section">
-            <img class="card-image" src="{ontwerpprincipes}" alt="Vijf ontwerpprincipes: gemeenschapsgericht, veilig en vertrouwd, verantwoord, soeverein en divers systeem" width="400" height="300" />
-                
-            <article class="card-layout">
-                <h2>Ontwerpprincipes</h2>
-                <p>Tijdens de ontwikkeling van civic social media maken softwareontwikkelaars en ondersteunende organi- saties keuzes op het gebied van technologie, algo-ritmes, governance, benodigde functionaliteiten, de gebruikerservaring (UX design), visuele stijl (UI design), moderatie en redactie. Om tot weloverwogen keuzes te komen, kunnen ontwerpprincipes steun bieden bij de ontwikkeling van civic socialmedia-platforms.</p>
-            </article>
-        </section>
+  <article class="card">
+    <ul class="inline">
+      <li class="media-wrap">
+        <a href="/community-archetypes" class="link">
+          <!-- this need to change to svg becous now we hacve almost deblle css for svg and img -->
+          <img
+            class="media-img"
+            src={community}
+            alt="Zes community-archetypen als hulpmiddel voor het ontwerpen van civic social media"
+          />
+        </a>
+      </li>
+      <li class="content-wrap">
+        <h2>Community archetypes</h2>
+        <p>Zes archetypen geven houvast bij het bepalen van behoeften en passende functionaliteiten per gemeenschap.</p>
+        <ButtonLeesMeer href="/community-archetypes">Lees meer</ButtonLeesMeer>
+      </li>
+    </ul>
+  </article>
 
-        <section class="cardlayout-section">
-            <img class="card-image" src="{community}" alt="Vijf ontwerpprincipes: gemeenschapsgericht, veilig en vertrouwd, verantwoord, soeverein en divers systeem" width="400" height="300" />
-                
-            <article class="card-layout">
-                <h2>Community archetypes</h2>
-                <p>Bij civic social media staan de behoeften van gemeenschappen centraal. Wat die behoeften precies zijn en welke functionaliteiten daarvoor nodig zijn verschilt per gemeenschap. Om hier beter grip op te krijgen onderscheiden we zes archetypen.</p>
-                <p>Het doel van de archetypen is niet om te stellen dat er slechts zes soorten gemeenschappen of zes soorten civic social media bestaan, maar om handvatten te geven tijdens het ontwerpproces.</p>
-            </article>
-        </section>
+  <!-- hero section -->
+  <section class="hero-section" id="partners">
+    <div class="hero-inner">
+      <h2 class="h2-hero-section">
+        Hoe zou het zijn als sociale media niet commercieel georiënteerd waren, maar publieke waarden centraal stelden?
+      </h2>
+      <nav class="links-about">
+        <a class="link-project" href="#about">About this project</a>
+        <a class="link-project" href="#partners">Partners</a>
+      </nav>
     </div>
-
-    <section class="hero-section">
-        <h2 class="h2-hero-section">Hoe zou het zijn als sociale media niet commercieel georiënteerd waren, maar publieke waarden centraal stelden?</h2>
-        <nav class="links-about">
-            <a class="link-project" href="">About this project</a>
-            <a class="link-project" href="">Partners</a>
-        </nav>
-    </section>
-
-
+  </section>
 </main>
+
 <style>
-    :global(body) {
-        /* Colors */
-        --primary-color-black: #000000;
-        /* Font-sizes */
-    
-        /* Border radius */
-        --border-radius-s: .5em; /* 0.5rem (8px) */
-        --border-radius-m: .75em; /* 0.75rem (12px) */
-        --border-radius-l: 1em; /* 1rem (16px) */
-    } 
+  :global(body) {
+    --border-radius-s: 0.5em;
+    --border-radius-m: 0.75em;
+    --border-radius-l: 1em;
+    --radius-1: 0.5rem;
+  }
 
-    .card-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-        max-width: 29em;
-        margin-left: auto;
-        padding-right: 2em;
-        
+  .homepage-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+
+    @media (min-width: 64em) {
+      display: grid;
+      grid-template-columns: min(50ch, 50vw) 1fr;
+      column-gap: 2rem;
+      align-items: start;
+    }
+  }
+
+  .homepage-titel {
+    margin-bottom: 1rem;
+
+    @media (min-width: 64em) {
+      position: sticky;
+      top: 1rem;
+      align-self: start;
+      margin-bottom: 20rem;
+    }
+  }
+
+  .card {
+    border: none;
+    position: relative;
+    margin-top: 5em;
+
+    &:not(:last-of-type)::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: var(--neutral-color-black);
+      margin: 5em auto 0;
     }
 
-    .cardlayout-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-bottom: .75px var(--primary-color-black) solid;
-        padding-bottom: 2em;    
-            @media (min-width: 375px) {
-                flex-direction: row;
-            }
+    @media (min-width: 64em) {
+      grid-column: 2;
+    }
+  }
+
+  .inline {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 48em) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
+  }
+
+  .media-wrap {
+    width: 100%;
+    max-width: 20rem;
+    margin-inline: auto;
+
+    @media (min-width: 48em) {
+      flex: 0 0 20rem;
+      max-width: 20rem;
+      margin-inline: 0;
     }
 
-    .card-image {
-        border: solid .75px var(--primary-color-black);
-        border-radius: var(--border-radius-m);
+    @media (min-width: 64em) {
+      flex-basis: 22rem;
+      max-width: 22rem;
+    }
+  }
+
+  .link {
+    display: inline-block;
+    width: 20rem;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    border: 1px solid var(--neutral-color-black);
+    border-radius: var(--radius-1);
+    margin-inline: auto;
+
+    :global(svg) {
+      width: 100%;
+      height: auto; 
+      display: block;
     }
 
-    .card-layout {
-        padding-left: 1em;
+    @media (min-width: 64em) {
+      width: 22rem;
     }
+  }
 
+  /* this need to change to svg becous now we hacve almost deblle css for svg and img */
+  .media-img {
+    display: block;
+    width: 18rem;
+    aspect-ratio: 4 / 4;/* Here can change the card size the for img*/
+    height: auto;
+    object-fit: cover;
+    border: 1px solid var(--primary-color-black);
+    border-radius: var(--border-radius-m);
+    margin-inline: auto;
 
-
-    img {
-        width: 50%;
-        height: 50%;
+    @media (min-width: 64em) {
+      width: 20rem;
+      
     }
+  }
 
-    p {
-        padding-top: 1em;
-        @media (min-width: 768px) {
-            text-align: justify; /*voor het uitlijnen van text bij een grotere scherm https://developer.mozilla.org/en-US/docs/Web/CSS/text-align#try_it*/
+  .content-wrap {
+    min-width: 0;
+    width: 100%;
+    max-width: none;
 
-        }
+    @media (min-width: 48em) {
+      max-width: 68ch;
     }
-    .inline{
-        display:flex; 
-        gap:1rem; 
-        list-style:none;
-        align-items:center;
+  }
+
+  p { line-height: 1.6; }
+
+  /* hero */
+  .hero-section {
+    background: #EBDAC5;
+    margin-top: 5em;
+
+
+    @media (min-width: 64em) {
+      grid-column: 1 / -1;  /* under title + cards */
+      margin-top: 5em;
     }
-      .card{
-        padding-bottom: 1em;
-          border: none;
-          position: relative; 
-      }
-        .card::after {
-          content: "";
-          display: block;
-          width: 50%;
-          height: 1px;
-          background: var(--neutral-color-black);
-          margin: 0.75rem auto 0;
-      }
+  }
 
-    .hero-section {
-        background-color: #EBDAC5;
-        padding: 1em 0 0 0;
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 1em;
+    text-align: center;
+  }
+
+  .links-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .link-project {
+    flex-grow: 1;
+    text-align: center;
+    min-height: 5em;
+    line-height: 2em;
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+    padding: 1em;
+    border-radius: var(--radius-1);
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.3em;
+      cursor: pointer;
     }
+  }
 
-    .links-about {
-        display: flex;
-        flex-wrap: wrap;
-        gap: .5em;
-        justify-items: center;
-        align-items: center;
-        width: 100%;
-    }
-
-     .hero-section a {
-        flex-grow: 1;
-        text-align: center;
-        height: 5em;
-        line-height: 2em;
-        color: white;
-        text-decoration: none;
-        background-color: #000000;
-        padding: 1em;
-        font-size: var(--font-size-xxs);
-        &:hover {
-            text-decoration: underline;
-            text-underline-offset: .3em;
-            cursor: pointer;
-        }
-    }
-
-
-    .h2-hero-section {
-        font-size: var(--font-size-s);
-        margin-bottom: 2em;
-        padding: 0 1em 0 1em;
-        text-align: center;
-    }
-
+  .h2-hero-section {
+    font-size: var(--font-size-s);
+    margin-bottom: 2em;
+    padding: 0 1em;
+  }
+    .adjusted-card {
+    @media (min-width: 64em) { 
+      margin-top: -15rem;
+    }}
 
 </style>
-
-
