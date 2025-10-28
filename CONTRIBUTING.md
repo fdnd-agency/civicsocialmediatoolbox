@@ -3,6 +3,7 @@
 ### Teamcanvas
 Link: https://www.figma.com/design/UXiqG10cxHdC7UyC0y4ttG/Civic-social-media-toolbox?node-id=0-1&t=1aGN7w1aedGSfz08-1
 
+
 ### Samenwerkingsafspraken
 - Documentatie: Leg het proces van elke taak vast in de project board (issues), zodat iedereen het kan raadplegen.
 - Issue niet afsluiten totdat duidelijk is beschreven wat met de taak is gedaan
@@ -13,11 +14,6 @@ Link: https://www.figma.com/design/UXiqG10cxHdC7UyC0y4ttG/Civic-social-media-too
 - Dagelijks bereikbaar zijn + reageren op pull requests.
 - Gebruik per pull request 1 feature. Als er meerdere feauters/pull request naar de dev-branch zijn gestuurd kunnen die naar de main. 
 - Communicatie verloopt via teams
-
-### Afspraken aan de hand van de retrospect
-- Afspraken eens in de zoveel tijd lezen en houden aan de afspraken
-- User story's schrijven als titel en daar een taak aan koppelen
-- Issues omschrijven: schrijf wat de issue inhoudt en wat je van plan bent te doen
 
 ### Code conventies
 #### SvelteKit
@@ -87,4 +83,31 @@ Resolves issue #!!!
  
  
 Pullrequest templet
+
+## DoR en DoD
+DoR: dit zijn de criteria om te bepalen of een taak of userstory klaar is voor de team om aan te pakken
+ 
+DoD: dit is de benchmark om te evalueren wanneer een taak of userstory voltooid is.
+
+## DOR:
+De userstory heeft het format ( Als gebruiker... )
+De userstory is gepokerd.
+Moscow gebruiken
+ 
+## DOD:
+Gemerged naar dev
+De userstory is getest
+De userstory heeft dev link
+Meet de wens van de opdrachtgever
+
+## Refinement:
+Refinement: is een doorlopende activiteit in scrum waarbij het product backlog wordt verfijnd om het product backlog klaar te maken voor toekomstige sprints.
+
+## Verloop van een sprint
+## Week 1: 
+Sprint planning, DOR, DOD, epic, refinement, moscow, poker, standup.
+## Week 2:
+user story, standup.
+## Week 3:
+sprint review, retrospective, warp up, standup.
  
