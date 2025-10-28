@@ -109,5 +109,5 @@ Sprint planning, DOR, DOD, epic, refinement, moscow, poker, standup.
 ## Week 2:
 user story, standup.
 ## Week 3:
-sprint review, retrospective, warp up, standup.
+sprint review, retrospective, wrap up, standup.
  
