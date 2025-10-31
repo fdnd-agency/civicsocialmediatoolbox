@@ -3,10 +3,7 @@
   import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
   import community from '$lib/assets/communityarchetypes.png';
   import ButtonLeesMeer from '$lib/components/ButtonLeesMeer.svelte';
-  import Header from '$lib/components/Header.svelte';
 </script>
-
-<Header />
 
 <main class="homepage-content">
   <section class="homepage-titel" id="about">
