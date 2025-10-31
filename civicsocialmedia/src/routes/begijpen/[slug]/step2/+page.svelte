@@ -32,3 +32,50 @@
     selected = selected?.id === item.id ? null : item;
   }
 </script>
+
+<main>
+  <section>
+    <h2>1. Begrijpen</h2>
+    <ProgressStepper {steps} {current} />
+    <p style="margin-top: 10em;">
+      Verken de 6 community archetypes en de bijbehorende behoeften van communities en organisaties.
+    </p>
+  </section>
+
+  <!-- grid of button-cards -->
+  <section class="cards">
+    {#each items as item}
+      <button
+        type="button"
+        class="card"
+        on:click={() => pick(item)}
+        aria-expanded={selected?.id === item.id}
+      >
+        {#if item.posterimage}
+          <figure class="thumb">
+            <img
+              class="media"
+              src={img(item.posterimage)}
+              alt={item.subtitle || item.title || 'poster'}
+            />
+          </figure>
+        {/if}
+      </button>
+    {/each}
+  </section>
+</main>
+
+<!-- show details under the grid when one is selected -->
+{#if selected}
+  <article class="details">
+    {#if selected.subtitle || selected.title}
+      <h2 class="subtitle">{selected.subtitle || selected.title}</h2>
+    {/if}
+
+    {#if selected.body && String(selected.body).trim() !== ''}
+      <section class="body">{@html cleanBody(selected.body)}</section>
+    {:else}
+      <p class="empty">Geen inhoud voor deze kaart.</p>
+    {/if}
+  </article>
+{/if}
