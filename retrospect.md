@@ -1,4 +1,6 @@
-### Set the stage - Round of admiration (#76)
+# Sprint 14
+
+## Set the stage - Round of admiration (#76)
 
 #### Instructions
 Start a round of admiration by facing your neighbour and stating 'What I admire most about you is ...' Then your neighbour says what she admires about her neighbour and so on until the last participants admires you. 
@@ -55,4 +57,22 @@ Put up 2 columns on a white board: 'Thank you!' and 'My action'. Ask everybody t
 
 ![shared image (1)](https://github.com/user-attachments/assets/a8a9ee0b-e135-47e9-8e92-c1ee2d298bed)
 
+
+# Sprint 15
+
+### Divide the dollar
+Elke teamlid krijgt 100 dollar te spenderen op de importance van de taak. Hoe belangrijker de taak hoe hoger het bedrag.
+
+Actions - Homepagina  
+<img width="732" height="541" alt="Scherm­afbeelding 2025-10-31 om 14 36 43" src="https://github.com/user-attachments/assets/c5564542-4b36-4198-84fc-845e8dfa1895" />
+
+
+Actions - Toolkit pagina
+
+<img width="760" height="348" alt="Scherm­afbeelding 2025-10-31 om 14 37 19" src="https://github.com/user-attachments/assets/40415cc1-9ddf-4ed8-87bf-3a6939e19cc4" />
+
+
+### Original 4
+
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/76347c48-2dae-4be8-a180-6d93dadbd962" />
 
