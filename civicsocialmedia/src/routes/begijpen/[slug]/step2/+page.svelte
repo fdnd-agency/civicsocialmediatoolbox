@@ -79,3 +79,71 @@
     {/if}
   </article>
 {/if}
+
+<style>
+  /* cards grid + nested styles */
+  .cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media (min-width: 48em) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      display: block;
+      padding: 0;
+      text-align: left;
+      cursor: pointer;
+      background: var(--neutral-color-white);
+      border: 1px solid #e5e7eb;
+      border-radius: .75rem;
+      overflow: hidden;
+      transition: transform 120ms ease, box-shadow 120ms ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px var(-neutral-color-black);
+      }
+
+      .thumb {
+        margin: 0;
+
+        .media {
+          width: 100%;
+          aspect-ratio: 3 / 4;
+          object-fit: cover;
+          display: block;
+        }
+      }
+    }
+  }
+
+  /* selected card details area */
+  .details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem 3rem;
+
+    .subtitle {
+      margin: 0 0 .5rem 0;
+      font-size: 1.25rem;
+    }
+
+    .body {
+      :global(p) {
+        margin: .5rem 0 0;
+        line-height: 1.6;
+        color: var(-neutral-color-black);
+      }
+    }
+
+    .empty {
+      color: var(--neutral-color-grey-600);
+    }
+  }
+</style>
