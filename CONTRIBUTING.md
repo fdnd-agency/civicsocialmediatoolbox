@@ -5,7 +5,7 @@ Link: https://www.figma.com/design/UXiqG10cxHdC7UyC0y4ttG/Civic-social-media-too
 
 
 ### Samenwerkingsafspraken
-- Documentatie: Leg het proces van elke taak vast in de project board (issues), zodat iedereen het kan raadplegen.
+- Documentatie: Leg het proces van elke taak vast in de project board (issues), zodat iedereen het kan raadplegen. Volg hiervoor [deze voorgestelde aanpak](https://github.com/fdnd-task/lose-your-head-the-client-case/blob/main/docs/sprint-planning.md#voorgestelde-aanpak).
 - Issue niet afsluiten totdat duidelijk is beschreven wat met de taak is gedaan
 - Plaatsen van comments in code zodat anderen begrijpen wat er is gedaan
 - Eigen verantwoording dragen voor je eigen werk
