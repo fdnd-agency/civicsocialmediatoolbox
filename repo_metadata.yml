@@ -1,0 +1,5 @@
+title: "Civic Social Media Toolbox"
+status: "in progress"
+main_link: "https://civicsocialmediatoolbox.agency.fdnd.nl/"
+dev_link: "https://civicsocialmediatoolbox.dev.fdnd.nl/"
+tech_stack: ["SvelteKit", "Directus"]
