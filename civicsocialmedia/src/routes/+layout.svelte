@@ -140,6 +140,59 @@ header {
 	width: 2.5rem;
 }
 
+
+:popover-open { /* Styles applied to the popover when it is open */
+	display: flex;
+	margin-right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--primary-color-deep-blue);
+		@media (min-width: 768px) {
+			max-width: 28em
+		}
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 2em;
+}
+	
+ul li {
+	padding: 1em;
+}
+
+ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: var(--fs-medium);
+		
+		@media (min-width: 768px) {
+			font-size: var(--fs-medium);
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+}
+
+nav {
+	position: relative;
+}
+
+.close-menu { /* Close button styles */
+	all: unset;
+	cursor: pointer;
+	position: absolute;
+	right: 1em;
+	top: 3em;        
+        @media (min-width: 768px) {
+            top: 4.3em;
+			right: 4em;
+        }
+    }
+
 /* ===== Footer ===== */
 footer {
 	background-color: var(--neutral-color-black);
