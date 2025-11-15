@@ -2,6 +2,8 @@
 	import '$lib/assets/styles/stylesheet.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import logoUrl from '$lib/assets/logo-text.svg?url';
+	import closemenu from '$lib/assets/close.svg';
+
 
 	let { children } = $props();
 </script>
@@ -16,11 +18,50 @@
 		<img src={logoUrl} alt="Civic Interaction Design logo" class="logo-text header-logo" />
 		<div class="vertical-line"></div>
 	</div>
-	<button aria-label="Open menu" class="hamburger">
+
+	<button aria-label="Open menu" class="hamburger" popovertarget="menu"> <!-- Turns a <button> into a popover control button; takes the ID of the popover element to control its value-->
 		<span></span>
 		<span></span>
 		<span></span>
 	</button>
+
+	
+	<nav popover id="menu" >
+		<button class="close-menu"  popovertarget="menu" popovertargetaction="hide"> <!-- Closes the popover when clicked -->
+			<img src={closemenu} alt="sluitknop">
+        </button>
+
+		<ul>
+            
+            <li>
+                <a href="">Home</a>
+            </li>
+
+            <li>
+                <a href="">Civic Social Media Roadmap</a>
+            </li>
+
+            <li>
+                <a href="">Design principles voor civic social media</a>
+            </li>
+
+            <li>
+                <a href="">Ontwerpprincipes</a>
+            </li>
+
+            <li>
+                <a href="">Community archetypes</a>
+            </li>
+
+            <li>
+                <a href="">Over dit project</a>
+            </li>
+
+            <li>
+                <a href="">Partners</a>
+            </li>
+        </ul>
+	</nav>
 </header>
 
 <main>
@@ -118,7 +159,6 @@ footer {
 
 ul {
 	list-style: none;
-	padding: 0;
 	margin: 0;
 }
 
