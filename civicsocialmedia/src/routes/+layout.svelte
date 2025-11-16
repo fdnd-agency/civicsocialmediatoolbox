@@ -147,6 +147,7 @@ header {
 	height: 100%;
 	width: 100%;
 	background-color: var(--primary-color-deep-blue);
+	position: fixed;
 		@media (min-width: 768px) {
 			max-width: 28em
 		}
