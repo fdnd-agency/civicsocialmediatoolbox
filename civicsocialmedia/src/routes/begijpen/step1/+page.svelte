@@ -9,7 +9,6 @@
 </script>
 
 <ProgressStepper {steps} {current} />
-<!--- Karima code starts here
 <script>
     import Header from '$lib/components/Header.svelte';
     import StepOne from '$lib/assets/step-1.svelte';
@@ -36,6 +35,7 @@
         <button  id="submit-button">Submit</button>
     </form>
 </main>
+
 
 <style>
     main {
@@ -69,4 +69,4 @@
         }
     }
     
-</style>-->*/
+</style>
