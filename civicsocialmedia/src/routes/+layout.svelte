@@ -12,10 +12,10 @@
 </svelte:head>
 
 <header class="header">
-	<div class="header-left">
+	<a class="header-left" href="/">
 		<img src={logoUrl} alt="Civic Interaction Design logo" class="logo-text header-logo" />
 		<div class="vertical-line"></div>
-	</div>
+	</a>
 	<button aria-label="Open menu" class="hamburger">
 		<span></span>
 		<span></span>

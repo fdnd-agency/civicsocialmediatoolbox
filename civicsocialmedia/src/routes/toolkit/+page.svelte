@@ -7,7 +7,7 @@
     <h3>Ontwerpen voor Civic Social Media</h3>
 
     <div class="btn-group">
-        <a href="/begrijpen" class="btn">Begrijpen</a>
+        <a href="/begijpen" class="btn">Begrijpen</a>
         <a href="/ontwerpen" class="btn">Ontwerpen</a>
         <a href="/evalueren" class="btn">Evalueren</a>
     </div>
