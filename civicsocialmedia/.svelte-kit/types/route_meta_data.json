@@ -1,0 +1,21 @@
+{
+	"/": [],
+	"/archetypes": [],
+	"/begijpen/step1": [],
+	"/begijpen/step2": [],
+	"/begijpen/step3": [],
+	"/begijpen/[slug]": [
+		"src/routes/begijpen/[slug]/+page.server.js"
+	],
+	"/evalueren/[slug]": [
+		"src/routes/evalueren/[slug]/+page.server.js"
+	],
+	"/ontwerpprincpies/[slug]": [
+		"src/routes/ontwerpprincpies/[slug]/+page.server.js"
+	],
+	"/roadmap": [],
+	"/toolkit": [],
+	"/toolkit/[slug]": [
+		"src/routes/toolkit/[slug]/+page.server.js"
+	]
+}
