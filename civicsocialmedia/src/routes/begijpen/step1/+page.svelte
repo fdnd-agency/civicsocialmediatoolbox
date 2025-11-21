@@ -1,5 +1,7 @@
 <script>
     import ProgressStepper from '$lib/components/ProgressStepper.svelte';
+    import Header from '$lib/components/Header.svelte';
+
 
   const steps = [
     { href: '/begijpen/step1' },
@@ -10,6 +12,9 @@
 </script>
 
 <ProgressStepper {steps} {current} />
+
+<Header /> 
+
 
 <main>
     <h1>1. Begrijpen</h1>
@@ -27,6 +32,7 @@
         <button  id="submit-button">Submit</button>
     </form>
 </main>
+
 
 <style>
     main {
