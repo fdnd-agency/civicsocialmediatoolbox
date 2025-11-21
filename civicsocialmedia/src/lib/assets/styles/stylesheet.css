@@ -15,12 +15,13 @@
   font-display: swap;
 }
 :root{
-  --neutral-color-white:#FFFFFF;
+/* Neutral colors */
+  --neutral-color-white: hsl(0, 0%, 100%);
   --neutral-color-black: hsl(297, 11%, 10%);
   --neutral-color-grey: hsl(206, 10%, 87%);
-  --neutral-color-grey-600: #666666;
-  --neutral-color-grey-500: #999999;
-  --neutral-color-grey-400: #CCCCCC;
+  --neutral-color-grey-600: hsl(0, 0%, 40%);
+  --neutral-color-grey-500: hsl(0, 0%, 60%);
+  --neutral-color-grey-400: hsl(0, 0%, 80%);
 
 /* Primary color: blue */
   --primary-hue-blue: 201;
@@ -109,11 +110,21 @@ a {
 }
 
 
-h1{ font-size: var(--fs-display); letter-spacing:-0.04em;  
+h1 { 
+  font-size: var(--fs-display);
+   letter-spacing:-0.04em;  
 }
-h2{ font-size: var(--fs-title);   letter-spacing:-0.03em; 
+
+h2 { 
+  font-size: var(--fs-title);   
+  letter-spacing:-0.03em; 
 }
-h3{ font-size: var(--fs-large);   letter-spacing:-0.02em;  
+
+h3 { 
+  font-size: var(--fs-large);   
+  letter-spacing:-0.02em;  
 }
-h4{ font-size: var(--fs-small);   letter-spacing:-0.01em; 
+h4 { 
+  font-size: var(--fs-small);   
+  letter-spacing:-0.01em; 
 }
