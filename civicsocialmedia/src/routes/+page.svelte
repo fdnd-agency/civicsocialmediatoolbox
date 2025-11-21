@@ -35,7 +35,7 @@
   <article class="card adjusted-card">
     <ul class="inline">
       <li class="media-wrap">
-        <a href="/toolKit" class="link"><ToolKit /></a>
+        <a href="/toolkit" class="link"><ToolKit /></a>
       </li>
       <li class="content-wrap">
         <h2>Design principles for civic social media</h2>

@@ -1,5 +1,8 @@
 <script>
-  import ProgressStepper from '$lib/components/ProgressStepper.svelte';
+    import ProgressStepper from '$lib/components/ProgressStepper.svelte';
+    import Header from '$lib/components/Header.svelte';
+
+
   const steps = [
     { href: '/begijpen/step1' },
     { href: '/begijpen/step2' },
@@ -9,21 +12,15 @@
 </script>
 
 <ProgressStepper {steps} {current} />
-<script>
-    import Header from '$lib/components/Header.svelte';
-    import StepOne from '$lib/assets/step-1.svelte';
- 
-</script>
-
 
 <Header /> 
+
 
 <main>
     <h1>1. Begrijpen</h1>
 
     <p>Dit is de eerste activiteit van de toolkit: Volg de stappen om naar de tweede activiteit te gaan.</p>
 
-    <StepOne />
 
     <p>Begin met een onderzoeksvraag. Welke gemeenschap wil je beter begrijpen?</p>
 
