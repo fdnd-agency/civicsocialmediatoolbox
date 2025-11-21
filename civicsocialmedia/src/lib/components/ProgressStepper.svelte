@@ -79,7 +79,7 @@
       position: absolute;
       left: calc(var(--width) / 2);
       right: calc(var(--width) / 2);
-      top: calc(var(--width) / 2 - var(--hight) / 2);
+      top: calc(var(--width) / 2 - var(--height) / 2);
       height: var(--hight);
       background: var(--neutral-color-grey-400);
       border-radius: 999px;
@@ -91,7 +91,7 @@
       content: "";
       position: absolute;
       left: calc(var(--width) / 2);
-      top: calc(var(--width) / 2 - var(--hight) / 2);
+      top: calc(var(--width) / 2 - var(--height) / 2);
       height: var(--height);
       width: calc((100% - var(--width)) * var(--f));
       background: var(--accents-color-teal);
