@@ -16,35 +16,35 @@
 }
 :root{
   --neutral-color-white:#FFFFFF;
-  --neutral-color-black:#000000;
+  --neutral-color-black: hsl(297, 11%, 10%);
   --neutral-color-grey-700: #333333;
   --neutral-color-grey-600: #666666;
   --neutral-color-grey-500: #999999;
   --neutral-color-grey-400: #CCCCCC;
 
-/* Ligntness variations */
-  --darkest: 18%;
-  --dark: 28%;
-  --neutral: 38%; 
-  --light: 48%;
-  --lightest: 58%;
-
 /* Primary color: blue */
+/* Lightness variations */
+  --darkest-blue: 18%;
+  --dark-blue: 28%;
+  --neutral-blue: 38%; 
+  --light-blue: 48%;
+  --lightest-blue: 58%;
+
   --primary-hue-blue: 201;
   --primary-saturation-blue: 74%;
 
-  --primary-darkest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--darkest));
-  --primary-dark-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--dark));
-  --primary-neutral-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--neutral));
-  --primary-light-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--light));
-  --primary-lightest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--lightest));
+  --primary-darkest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--darkest-blue));
+  --primary-dark-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--dark-blue));
+  --primary-neutral-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--neutral-blue));
+  --primary-light-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--light-blue));
+  --primary-lightest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--lightest-blue));
 
-/* Primary color: beige */
-  --primary-color-beige: #EBDAC5;
-  --secondary-color-light-beige-700: #D8B98D;
-  --secondary-color-light-beige-600: #EBDBC4;
-  --secondary-color-light-beige-500: #DFDCD1;
-  --secondary-color-light-beige-400: #F9F3EC;
+  /* Secondary color: beige */
+  --secondary-darkest-beige: hsl(35, 49%, 70%);
+  --secondary-dark-beige: hsl(35, 49%, 85%);
+  --secondary-neutral-beige: hsl(47, 18%, 85%);
+  --secondary-light-beige: hsl(48, 16%, 94%);
+  --secondary-lightest-beige: hsl(32, 52%, 95%);
 
 /* Primary color: gold */
   --primary-color-gold: #DBBE01;
@@ -65,12 +65,12 @@
 
 
 /* Community colors  */
-    --accents-color-olive:#74A735 ;
-    --accents-color-yellow:#D7CD02;
-    --accents-color-blue: #2772F7;
-    --accents-color-teal:#41BFA6;
-    --accents-color-orange:#FA6128;
-    --accents-color-pink:#EB93BE;
+    --accent-color-olive:#74A735 ;
+    --accent-color-yellow:#D7CD02;
+    --accent-color-blue: #2772F7;
+    --accent-color-teal:#41BFA6;
+    --accent-color-orange:#FA6128;
+    --accent-color-pink:#EB93BE;
 
 
   /* Ontwerpprincipes */
