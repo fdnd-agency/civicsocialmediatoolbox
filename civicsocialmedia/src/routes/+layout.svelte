@@ -14,10 +14,10 @@
 </svelte:head>
 
 <header class="header">
-	<div class="header-left">
+	<a class="header-left" href="/">
 		<img src={logoUrl} alt="Civic Interaction Design logo" class="logo-text header-logo" />
 		<div class="vertical-line"></div>
-	</div>
+	</a>
 
 	<button aria-label="Open menu" class="hamburger" popovertarget="menu"> <!-- Turns a <button> into a popover control button; takes the ID of the popover element to control its value-->
 		<span></span>
