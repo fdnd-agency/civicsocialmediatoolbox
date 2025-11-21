@@ -23,21 +23,14 @@
   --neutral-color-grey-400: #CCCCCC;
 
 /* Primary color: blue */
-/* Lightness variations */
-  --darkest-blue: 18%;
-  --dark-blue: 28%;
-  --neutral-blue: 38%; 
-  --light-blue: 48%;
-  --lightest-blue: 58%;
-
   --primary-hue-blue: 201;
   --primary-saturation-blue: 74%;
 
-  --primary-darkest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--darkest-blue));
-  --primary-dark-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--dark-blue));
-  --primary-neutral-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--neutral-blue));
-  --primary-light-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--light-blue));
-  --primary-lightest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), var(--lightest-blue));
+  --primary-darkest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 18%);
+  --primary-dark-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 28%);
+  --primary-neutral-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 38%);
+  --primary-light-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 48%);
+  --primary-lightest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 58%);
 
   /* Secondary color: beige */
   --secondary-darkest-beige: hsl(35, 49%, 70%);
@@ -53,32 +46,31 @@
   --secondary-light-yellow: hsl(57, 83%, 81%);
 
 
- /* Roadmap */
-    --roadmap-darkest-purple: hsl(284, 31%, 24%);
-    --roadmap-dark-purple: hsl(271, 35%, 38%);
-    --roadmap-neutral-purple: hsl(254, 45%, 62%);
-    --roadmap-light-purple: hsl(234, 100%, 85%);
-
+/* Roadmap */
+  --accent-darkest-purple: hsl(284, 31%, 24%);
+  --accent-dark-purple: hsl(271, 35%, 38%);
+  --accent-neutral-purple: hsl(254, 45%, 62%);
+  --accent-light-purple: hsl(234, 100%, 85%);
 
 
 /* Community colors  */
-    --accent-color-olive:#74A735 ;
-    --accent-color-yellow:#D7CD02;
-    --accent-color-blue: #2772F7;
-    --accent-color-teal:#41BFA6;
-    --accent-color-orange:#FA6128;
-    --accent-color-pink:#EB93BE;
-
+  --accent-color-olive: hsl(87, 52%, 43%);
+  --accent-color-yellow:hsl(57, 100%, 42%);
+  --accent-color-blue:hsl(218, 93%, 56%);
+  --accent-color-teal: hsl(167, 56%, 51%);
+  --accent-color-orange:hsl(16, 95%, 57%);
+  --accent-color-pink: hsl(313, 92%, 75%);
 
   /* Ontwerpprincipes */
-  --accents-color-navy:#012D7D ;
-  --accents-color-pale-blue:#A5C3FA ;
-  --accents-color-dark-green:#243B39 ;
-  --accents-color-deep-green:#2F6B6C ;
-  --accents-color-mint:#AAE4D7 ;
-  --accents-color-plum:#462652 ;
-  --accents-color-magenta:#8B3277 ;
-  --accents-color-soft-pink:#FBC8EA ;
+
+  --accents-color-navy: hsl(219, 98%, 25%) ;
+  --accents-color-pale-blue: hsl(219, 89%, 81%);
+  --accents-color-dark-green: hsl(175, 24%, 19%) ;
+  --accents-color-deep-green: hsl(181, 39%, 30%);
+  --accents-color-mint: hsl(167, 52%, 78%);
+  --accents-color-plum: hsl(284, 37%, 24%);
+  --accents-color-magenta: hsl(313, 47%, 37%);
+  --accents-color-soft-pink: hsl(320, 86%, 88%);
 
  
 
