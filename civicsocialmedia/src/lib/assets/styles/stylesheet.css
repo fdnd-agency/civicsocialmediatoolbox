@@ -17,7 +17,7 @@
 :root{
   --neutral-color-white:#FFFFFF;
   --neutral-color-black: hsl(297, 11%, 10%);
-  --neutral-color-grey-700: #333333;
+  --neutral-color-grey: hsl(206, 10%, 87%);
   --neutral-color-grey-600: #666666;
   --neutral-color-grey-500: #999999;
   --neutral-color-grey-400: #CCCCCC;
@@ -46,21 +46,18 @@
   --secondary-light-beige: hsl(48, 16%, 94%);
   --secondary-lightest-beige: hsl(32, 52%, 95%);
 
-/* Primary color: gold */
-  --primary-color-gold: #DBBE01;
-  --secondary-color-light-gold-700: #D7CD00;
-  --secondary-color-light-gold-600: #EDE75C;
-  --secondary-color-light-gold-500: #F7F3A5;
-  --secondary-color-light-gold-400: #FFF3A9;
-
+/* Secondary color: yellow */
+  --secondary-darkest-yellow: hsl(57, 100%, 30%);
+  --secondary-dark-yellow: hsl(57, 100%, 42%);
+  --secondary-neutral-yellow: hsl(57, 80%, 85%);
+  --secondary-light-yellow: hsl(57, 83%, 81%);
 
 
  /* Roadmap */
-    --accents-color-dark-purple:#462A50 ;
-    --accents-color-purple:#603D82;
-    --accents-color-light-purple:#8774C9 ;
-    --secondary-color-soft-blue:#B4B9FF;
-    --secondary-color-cream:#FAF4EC;
+    --roadmap-darkest-purple: hsl(284, 31%, 24%);
+    --roadmap-dark-purple: hsl(271, 35%, 38%);
+    --roadmap-neutral-purple: hsl(254, 45%, 62%);
+    --roadmap-light-purple: hsl(234, 100%, 85%);
 
 
 
@@ -74,7 +71,6 @@
 
 
   /* Ontwerpprincipes */
-
   --accents-color-navy:#012D7D ;
   --accents-color-pale-blue:#A5C3FA ;
   --accents-color-dark-green:#243B39 ;
