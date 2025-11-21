@@ -40,7 +40,7 @@
         font-size: var(--fs-title);
         letter-spacing: -0.03em;
         margin-bottom: 0.5em;
-        color: var(--primary-color-deep-blue);
+        color: var(--primary-dark-blue);
     }
 
     h3 {
@@ -48,7 +48,7 @@
         letter-spacing: -0.02em;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
-        color: var(--primary-color-deep-blue);
+        color: var(--primary-dark-blue);
     }
 
     /* --- Paragraphs --- */

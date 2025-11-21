@@ -22,9 +22,5 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    }   
-
-
-
-
+    }  
 </style>

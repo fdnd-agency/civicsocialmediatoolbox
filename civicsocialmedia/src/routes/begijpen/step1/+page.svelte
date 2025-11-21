@@ -52,7 +52,7 @@
 
     #submit-button {
         all: unset;
-        background-color: var(--primary-color-deep-blue);
+        background-color: var(--primary-dark-blue);
         color: var(--neutral-color-white);
         padding: .7em 2em .7em 2em;
         border-radius: var(--radius-1);
