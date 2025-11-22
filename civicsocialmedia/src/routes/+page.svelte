@@ -216,7 +216,6 @@
     aspect-ratio: 4 / 4;/* Here can change the card size the for img*/
     height: auto;
     object-fit: cover;
-    border: 1px solid var(--neutral-color-black);
     border-radius: var(--border-radius-m);
     margin-inline: auto;
 

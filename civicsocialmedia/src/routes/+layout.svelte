@@ -87,7 +87,7 @@
 <style>
 /* ===== Header ===== */
 header {
-	background-color: var(--primary-color-beige);
+	background-color: var( --secondary-dark-beige);
 	display: flex;
 	align-items: center;
 	padding: 0.625rem 1.875rem;

@@ -70,7 +70,7 @@
 
     .btn {
         display: block;
-        background-color: var(--accents-color-teal);
+        background-color: var(--accent-color-teal);
         color: var(--neutral-color-white);
         text-align: center;
         text-decoration: none;
@@ -85,7 +85,7 @@
     }
 
     .btn:hover {
-        background-color: var(--accents-color-dark-green);
+        background-color: var(--accent-color-dark-green);
         transform: translateY(-2px);
     }
 

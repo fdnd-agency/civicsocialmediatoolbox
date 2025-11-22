@@ -3,9 +3,9 @@
     const imgUrl = `https://fdnd-agency.directus.app/assets/${card.posterimage}`;
 
     const titleColors = {
-        "Care": "var(--accents-color-teal)",
-        "Intent": "var(--accents-color-orange)",
-        "Debate": "var(--accents-color-pink)"
+        "Care": "var(--accent-color-teal)",
+        "Intent": "var(--accent-color-orange)",
+        "Debate": "var(--accent-color-pink)"
     };
 
     const background = titleColors[card.title];
