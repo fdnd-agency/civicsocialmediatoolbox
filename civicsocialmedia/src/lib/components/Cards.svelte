@@ -29,8 +29,14 @@ ul {
     overflow-x: auto;
     scroll-snap-type: x mandatory; 
     overscroll-behavior-x: contain; 
-        @container (max-width: 447px) {
+    padding: 0;
+        @container (width < 46em) {
             flex-direction: column;
+        }
+
+        @container (width > 46em) and (width < 60em) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
 }   
 
