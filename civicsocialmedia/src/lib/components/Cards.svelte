@@ -17,14 +17,22 @@
 
 <style>
 
+.card-container {
+    container: cards / inline-size;
+}
 
 ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    }   
-
-
+    gap: 1em; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    overscroll-behavior-x: contain; 
+        @container (max-width: 447px) {
+            flex-direction: column;
+        }
+}   
 
 
 </style>
