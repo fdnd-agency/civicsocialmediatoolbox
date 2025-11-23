@@ -24,3 +24,129 @@
     {/each}
   </ul>
 </nav>
+
+<style>
+  .stepper {
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  .steps {
+    --size: 4rem;
+    --gap: 2rem;
+    --line-h: 0.5rem;
+
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: var(--gap);
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 0.75rem;
+    width: max-content;
+    position: relative;
+    justify-items: center;
+
+    &::before {
+      content: "";
+      background: var(--neutral-color-grey-500);
+      position: absolute;
+      top: calc(var(--size) / 2);
+      left: calc(var(--size) / 2);
+      right: calc(var(--size) / 2);
+      height: var(--line-h);
+      transform: translateY(-50%);
+      z-index: 0;
+    }
+
+    .step {
+      position: relative;
+      width: var(--size);
+
+      &.done::after {
+        content: "";
+        position: absolute;
+        top: calc(var(--size) / 2);
+        width: calc(var(--size) + var(--gap));
+        height: var(--line-h);
+        background: var(--accents-color-teal);
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .icon {
+        width: var(--size);
+        height: var(--size);
+        display: grid;
+        place-items: center;
+        position: relative;
+        z-index: 2;
+      }
+
+      &.done .icon,
+      &.current .icon {
+        background: var(--accents-color-teal)
+      }
+
+      &:not(.done):not(.current) .icon {
+        background: var(--accents-color-blue);
+
+        &::before {
+          content: "";
+          width: 2rem;
+          height: 2rem;
+          background: var(--neutral-color-white);
+        }
+      }
+
+      .label {
+        margin-top: 0.35rem;
+        font-size: 0.8rem;
+        color: var(--neutral-color-black);
+      }
+
+      &.done .icon::after,
+      &.current .icon::after {
+        content: "✓";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        color: var(--neutral-color-white);
+        z-index: 3;
+      }
+    }
+
+    @media (min-width: 64em) {
+      --size: 4rem;
+      --gap: 4rem;
+      --line-h: 0.5rem;
+      padding: 0 1rem;
+
+      .step {
+        width: auto;
+
+        .label {
+          margin-top: 0.5rem;
+          font-size: 0.9rem;
+        }
+
+        &.done .icon::after,
+        &.current .icon::after {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+</style>
