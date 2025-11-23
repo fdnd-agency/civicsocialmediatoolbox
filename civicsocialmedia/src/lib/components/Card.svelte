@@ -5,7 +5,10 @@
     const titleColors = {
         "Care": "var(--accents-color-teal)",
         "Intent": "var(--accents-color-orange)",
-        "Debate": "var(--accents-color-pink)"
+        "Debate": "var(--accents-color-pink)",
+        "Constituents": "var(--accents-color-olive)",
+        "Knowledge & Culture": "var(--accents-color-purple)",
+        "Place": "var(--accents-color-yellow)"
     };
 
     const background = titleColors[card.title];
@@ -23,9 +26,18 @@
     .card {
         border-radius: .5em;
         margin: 1em;
-        width: 22em;
+        width: 20em;
         height: 30em;
         padding: .5em;
         text-align: center;
+        color: white;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: .3s;
+            cursor: pointer;
+        }
     }
+
+   
 </style>
