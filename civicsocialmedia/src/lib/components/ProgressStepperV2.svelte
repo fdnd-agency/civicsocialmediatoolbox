@@ -155,4 +155,30 @@
       }
     }
   }
+  /* -------------------------------
+     prefers-reduced-motion
+     Small left-right animation only
+     when user did not turn on Reduce motion
+  -------------------------------- */
+
+ @keyframes stepper-tilt {
+  0%   { transform: rotate(2deg); }
+  50%  { transform: rotate(5deg); }
+  100% { transform: rotate(2deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .steps .step.current .icon {
+    animation: stepper-tilt 1.4s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .steps .step.current .icon {
+    animation: none;
+    transform: none;
+  }
+}
+
+ 
 </style>
