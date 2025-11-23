@@ -1,6 +1,6 @@
 <script>
   export let currentStep = 1;
-
+// list with all steps 
   const steps = [
     { id: 1, label: 'Step 1', href: '/begijpen/step1' },
     { id: 2, label: 'Step 2', href: '/begijpen/step2' },
@@ -11,6 +11,8 @@
 <nav class="stepper">
   <ul class="steps">
     {#each steps as step}
+      <!-- steps already finished -->
+      <!-- current step -->
       <li
         class="step"
         class:done={step.id < currentStep}
@@ -33,6 +35,8 @@
   }
 
   .steps {
+        /* base sizes */
+
     --size: 4rem;
     --gap: 2rem;
     --line-h: 0.5rem;
@@ -47,6 +51,8 @@
     position: relative;
     justify-items: center;
 
+    
+    /* grey line behind the steps */
     &::before {
       content: "";
       background: var(--neutral-color-grey-500);
@@ -62,7 +68,7 @@
     .step {
       position: relative;
       width: var(--size);
-
+/* colored progress line over the grey line */
       &.done::after {
         content: "";
         position: absolute;
@@ -73,7 +79,7 @@
         transform: translateY(-50%);
         z-index: 1;
       }
-
+/* last step has no line after it */
       &:last-child::after {
         display: none;
       }
