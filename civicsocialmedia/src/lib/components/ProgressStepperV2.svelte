@@ -249,6 +249,9 @@
       /* was teal, now blue */
       background: var(--accents-color-blue);
     }
+      .steps .step.done::after {
+    background: var(--accents-color-blue);
+  }
 
     .steps .step:not(.done):not(.current) .icon {
       /* was blue, now teal */
