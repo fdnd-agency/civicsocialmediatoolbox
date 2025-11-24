@@ -79,7 +79,7 @@
       position: absolute;
       left: calc(var(--width) / 2);
       right: calc(var(--width) / 2);
-      top: calc(var(--width) / 2 - var(--hight) / 2);
+      top: calc(var(--width) / 2 - var(--height) / 2);
       height: var(--hight);
       background: var(--neutral-color-grey-400);
       border-radius: 999px;
@@ -91,8 +91,8 @@
       content: "";
       position: absolute;
       left: calc(var(--width) / 2);
-      top: calc(var(--width) / 2 - var(--hight) / 2);
-      height: var(--hight);
+      top: calc(var(--width) / 2 - var(--height) / 2);
+      height: var(--height);
       width: calc((100% - var(--width)) * var(--f));
       background: var(--accents-color-teal);
       border-radius: 999px;
@@ -128,10 +128,10 @@
 
 
     @media (min-width: 48em) {
-      & { --width: 50px; --hight: 8px; }
+      & { --width: 50px; --height: 8px; }
     }
     @media (min-width: 64em) {
-      & { --width: 80px; --hight: 10px; gap: 10em; }
+      & { --width: 80px; --height: 10px; gap: 10em; }
     }
   }
 </style>

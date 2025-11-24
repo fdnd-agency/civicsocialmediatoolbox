@@ -4,9 +4,9 @@
 
 
   const steps = [
-    { href: '/begijpen/step1' },
-    { href: '/begijpen/step2' },
-    { href: '/begijpen/step3' },
+    { href: '/begrijpen/step1' },
+    { href: '/begrijpen/step2' },
+    { href: '/begrijpen/step3' },
   ];
   const current = 0; 
 </script>
