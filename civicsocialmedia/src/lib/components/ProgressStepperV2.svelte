@@ -32,6 +32,8 @@
     max-width: 40rem;
     margin: 0 auto;
     margin-top: 2rem;
+    container-type: inline-size;
+
   }
 
   .steps {
@@ -40,7 +42,6 @@
     --size: 4rem;
     --gap: 2rem;
     --line-h: 0.5rem;
-
     display: grid;
     grid-auto-flow: column;
     column-gap: var(--gap);
@@ -134,7 +135,7 @@
       }
     }
 
-    @media (min-width: 64em) {
+    @container ( width > 64em) {
       --size: 4rem;
       --gap: 4rem;
       --line-h: 0.5rem;
