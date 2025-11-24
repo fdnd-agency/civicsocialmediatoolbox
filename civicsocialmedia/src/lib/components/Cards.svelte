@@ -5,7 +5,6 @@
 </script>
 
 <section class="card-container">
-
     <ul>
         {#each cards as card}
             <li class="card">

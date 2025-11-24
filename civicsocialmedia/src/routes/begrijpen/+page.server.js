@@ -5,7 +5,7 @@ export async function load({ url }) {
     const filter = "&filter[id][_in]=9,10,11,12,13,14";
 
 
-    // Omzetten naar JSON
+    // Converting to JSON
     const cardResponse = await fetch(API + fields + filter);
     const cardData = await cardResponse.json();
 
