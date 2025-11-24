@@ -199,4 +199,41 @@
 }
 
 
+
+/* -------------------------------
+   prefers-contrast
+   more  = strong shadow on steps + inherit text style
+   less  = no shadow, softer text
+-------------------------------- */
+
+@media (prefers-contrast: more) {
+  .steps::before {
+    box-shadow: 6px 8px 14px var(--neutral-color-grey-500);
+  }
+
+  .steps .step.done::after {
+    box-shadow: 3px 2px 4px  var(--neutral-color-grey-500);
+  }
+
+  .steps .step .icon {
+    box-shadow:
+      6px 8px 14px var(--neutral-color-black);           
+  }
+
+  .steps .step .label {
+    font-style: inherit;
+  }
+}
+
+@media (prefers-contrast: less) {
+  .steps {
+    box-shadow: none;
+  }
+  .steps::before,
+  .steps .step.done::after,
+  .steps .step .icon {
+    box-shadow: none;
+  }
+}
+
 </style>
