@@ -19,3 +19,13 @@
   
 </main>
 
+<style>
+    main {
+        padding: 2em;
+    }
+
+    h2{
+        padding-left: .5em;
+    }
+    
+</style>
