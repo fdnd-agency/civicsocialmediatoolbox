@@ -37,6 +37,7 @@
           class="btn {i <= current ? 'on' : ''}"
           type="button"
           on:click={() => go(i)}
+          title="icon steps with a checkmark if done or current"
         >
           <!-- Show the checked logo for done/current steps; otherwise show the base logo. -->
           {#if i <= current}
