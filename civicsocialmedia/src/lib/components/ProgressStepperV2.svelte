@@ -179,6 +179,24 @@
     transform: none;
   }
 }
+ /* -------------------------------
+     prefers-color-scheme (dark mode)
+  -------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+  .steps::before {
+    background: var(--neutral-color-grey-500);
+  }
+
+  .steps .step .label {
+    color: var(--neutral-color-white);
+  }
 
  
+  .steps .step:not(.done):not(.current) .icon::before {
+    background: var(--neutral-color-grey-500);
+  }
+}
+
+
 </style>
