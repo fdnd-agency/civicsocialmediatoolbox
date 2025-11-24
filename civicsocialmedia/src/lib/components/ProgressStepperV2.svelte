@@ -236,4 +236,24 @@
   }
 }
 
+  /* -------------------------------
+     inverted-colors
+     Swap colors between done / not done
+     so progress stays clear when inverted
+  -------------------------------- */
+
+  @media (inverted-colors: inverted) {
+    .steps .step.done .icon,
+    .steps .step.current .icon {
+      /* was teal, now blue */
+      background: var(--accents-color-blue);
+    }
+
+    .steps .step:not(.done):not(.current) .icon {
+      /* was blue, now teal */
+      background: var(--accents-color-teal);
+    }
+  }
+
+
 </style>
