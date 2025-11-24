@@ -9,7 +9,6 @@
     };
 
     const background = titleColors[card.title];
-
 </script>
 
 
