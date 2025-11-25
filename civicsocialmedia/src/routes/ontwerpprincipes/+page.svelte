@@ -1,7 +1,7 @@
 <script>
     import voorkantCard from "$lib/assets/voorkant-card.svg";
 
-    export let data./[slug]/$types.js;
+    export let data;
     const cards = data.cards;
 
     function imageUrl(card) {
