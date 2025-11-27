@@ -1,6 +1,6 @@
 <script>
     import ProgressStepper from '$lib/components/ProgressStepper.svelte';
-    import Formulier from '$lib/components/Formulier.svelte';
+    import Formulier from '$lib/organisms/Formulier.svelte';
 
 
   const steps = [

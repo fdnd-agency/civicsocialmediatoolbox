@@ -1,6 +1,6 @@
 <script>
   import ProgressStepper from '$lib/components/ProgressStepper.svelte';
-  import Cards from '$lib/components/Cards.svelte';
+  import Cards from '$lib/organisms/Cards.svelte';
 
   const steps = [
     { href: '/begrijpen/step1' },
