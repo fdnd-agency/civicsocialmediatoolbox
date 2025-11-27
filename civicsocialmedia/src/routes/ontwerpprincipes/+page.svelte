@@ -35,29 +35,32 @@
         <ul>
             {#each cards as card}
                 <li class="card">
-                    <div class="flip-inner">
+                    <article class="flip-inner">
                         <!-- FRONT -->
-                        <div class="flip-front">
+                        <article class="flip-front">
                             <img
                                 src={voorkantCard}
                                 alt="front"
                                 class="voorkant-card"
                             />
-                        </div>
+                        </article>
 
                         <!-- BACK -->
-                        <div class="flip-back">
+                        <article class="flip-back">
                             <h2>{card.categorie}</h2>
+
                             <img src={imageUrl(card)} alt={card.subtitle} />
+
                             <h3>{card.subtitle}</h3>
+
                             <p>
                                 {card.body
                                     .replace(/<br\s*\/?>/gi, " ")
                                     .replace(/<\/?strong>/gi, "")
                                     .replace(/<\/?p>/gi, " ")}
                             </p>
-                        </div>
-                    </div>
+                        </article>
+                    </article>
                 </li>
             {/each}
         </ul>
@@ -66,164 +69,168 @@
 
 <style>
     main {
-        padding: 0 2em;
+        padding: 0 4em;
         max-width: 100%;
-        font-family: "Geomanist", "Cabin", system-ui, sans-serif;
-    }
 
-    h2 {
-        font-size: var(--fs-title);
-        letter-spacing: -0.03em;
-        margin-bottom: 1em;
-        color: var(--primary-color-deep-blue);
-        text-align: left;
-    }
+        h2 {
+            font-size: var(--fs-title);
+            margin-bottom: 0.50em;
+            color: var(--primary-color-deep-blue);
+            text-align: left;
+        }
 
-    h3 {
-        font-size: var(--fs-large);
-        text-align: left;
-        color: var(--primary-color-deep-blue);
-    }
+        h3 {
+            font-size: var(--fs-large);
+            text-align: left;
+            color: var(--primary-color-deep-blue);
+        }
 
-    p {
-        font-size: var(--fs-small);
-        line-height: 1.5;
-        margin-bottom: 1.5em;
-        color: var(--neutral-color-grey-700);
-        text-align: left;
-        max-width: 90ch;
+        p {
+            font-size: var(--fs-small);
+            line-height: 1.5;
+            color: var(--neutral-color-grey-700);
+            text-align: left;
+            max-width: 75ch;
+            line-height: 1.6;
+        }
     }
 
     .card-container {
         padding: 2rem;
-        container-type: inline-size; /* belangrijke voor container query om te werken */
+        container-type: inline-size;
+
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        @container (width >= 46rem) {
+            ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @container (width >= 60rem) {
+            ul {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @container (width >= 75rem) {
+  ul {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0 2rem 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .card {
+    flex: 0 0 auto;   
+    width: 380px;        
+    scroll-snap-align: center; /* stops the card perfectly in center */
+    scroll-snap-stop: always;  /* makes sure it always stops at the card */
+    margin-right: 2rem;
+    transition: transform 0.35s ease;
+  }
+
+  .card:last-child {
+    margin-right: 0; /* last card doesn’t need extra margin */
+  }
+}
     }
 
-    .card-container ul {
-        list-style: none;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 0;
-        margin: 0;
-    }
-
-    /* CARD BASE */
     .card {
-        perspective: 1000px; /* 3D perspective for flip */
-        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
         min-height: 620px;
-        position: relative;
-    }
-
-    /* FLIP INNER */
-    .flip-inner {
-        width: 100%;
-        height: 100%;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        position: relative;
-    }
-
-    .card:hover .flip-inner {
-        transform: rotateY(180deg);
-    }
-
-    /* FRONT AND BACK */
-    .flip-front,
-    .flip-back {
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* FRONT IMAGE */
-    .flip-front img.voorkant-card {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 0;
         display: block;
-        border: none;
-    }
+        position: relative;
+        cursor: pointer;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
 
-    /* BACK CARD */
-    .flip-back {
-        transform: rotateY(180deg);
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 1rem;
-        box-sizing: border-box;
-        border: 15px solid #472562;
+        &:hover {
+        transform: scale(1.05);
+        z-index: 10;
     }
-
-    .flip-back img {
-        width: 120px;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 19.2px;
-        margin: 1rem auto;
-    }
-
-    .card h2 {
-        font-size: 1.2rem;
-        text-align: center;
-        color: var(--neutral-color-black);
-    }
-
-    .card h3 {
-        font-size: var(--fs-medium);
-        color: var(--neutral-color-black);
-        font-weight: 600;
-        margin-bottom: 0.8rem;
-        text-align: center;
-    }
-
-    .card p {
-        font-size: var(--fs-small);
-        line-height: 1.5;
-        color: var(--neutral-color-grey-700);
-        text-align: center;
-        margin: 0.5rem 0 1rem;
-    }
-
-    /* RESPONSIVE GRID */
-    @container (width >= 37.5rem) {
-        .card-container ul {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    @container (width >= 56.25rem) {
-        .card-container ul {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    @container (width >= 75rem) {
-        .card-container ul {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 2rem;
-            padding: 1rem 4em 2rem 4em;
-            scroll-behavior: smooth;
+        h2 {
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--neutral-color-black);
         }
 
-        .card {
-            flex: 0 0 380px;
-            scroll-snap-align: start;
+        h3 {
+            font-size: var(--fs-medium);
+            color: var(--neutral-color-black);
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            text-align: center;
         }
 
-        .card-container ul::-webkit-scrollbar {
-            display: none;
+        p {
+            font-size: var(--fs-small);
+            line-height: 1.5;
+            color: var(--neutral-color-grey-700);
+            text-align: center;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .flip-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+
+            .flip-front,
+            .flip-back {
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: 0;
+            }
+
+            .flip-front {
+                img.voorkant-card {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .flip-back {
+                transform: rotateY(180deg);
+                flex-direction: column;
+                padding: 1rem;
+                border: 15px solid #472562;
+                box-sizing: border-box;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 19.2px;
+                    object-fit: cover;
+                    margin: 1rem auto;
+                }
+            }
+        }
+
+        &:hover .flip-inner {
+            transform: rotateY(180deg);
         }
     }
 </style>
+
