@@ -76,3 +76,24 @@ Actions - Toolkit pagina
 
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/76347c48-2dae-4be8-a180-6d93dadbd962" />
 
+# Sprint 16
+### Amazon review - Karima
+
+Amazon review
+ 
+Yamen
+Title: Difficulties? Not for Yamen
+Nothing seems to be too difficult for you. You’ve made progress on the component progress bar after receiving feedback from the teachers. I also saw improvements of the documentation in the issues, well done!
+ 
+Abeer
+Title: Solved many things
+I’ve also seen you develop in a good way during the projects. You ask good questions that are helpful for us. Despite the many times we needed to change the design, you always change the design in the way the client has explained to us. And you’ve made many pull requests this sprint, keep it up!
+
+### Amazon review - Abeer
+
+### Amazon review - Yamen
+
+
+### Ask Norman Kerth’s 4 key questions - Karima
+### Ask Norman Kerth’s 4 key questions - Abeer
+### Ask Norman Kerth’s 4 key questions - Yamen
