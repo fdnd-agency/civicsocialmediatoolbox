@@ -122,16 +122,16 @@ What still puzzles us?
 - What went not well: Writing everything in English (dutch sentence in the title of the issue)
 
 [Als gebruiker wil ik op stap 2 van Begrijpen verschillende cards zien over Care Archetype, zodat ik op een card kan klikken en meer informatie kan lezen. #106](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/106)
-- What went well:
-- What went not well:
+- What went well: Great documentation!
+- What went not well: Issue is still in backlog and unfinished comment.
 
 [Als gebruiker wil ik de 6 verschillende community archtypes verkennen zodat ik een archetype kies die het best past bij mijn organisatie #123](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/123)
-- What went well:
-- What went not well:
+- What went well: Devided the user story in smaller tasks. 
+- What went not well: Closing the issue when it's done
 
 [Als developer wil ik meer animatie toepassen op het menu toepassen zodat de gebruiker meer pleasurable UI heeft #167](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/167)
-- What went well:
-- What went not well:
+- What went well: Made a user story from a task.
+- What went not well: Write a discription of the user story so it will be clear for others what the story is about
 
 
 
