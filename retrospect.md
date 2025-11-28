@@ -93,5 +93,18 @@ Abeer
 
 
 ### Ask Norman Kerth’s 4 key questions - Karima
+
+What did we do well, that if we didn’t discuss we might forget?
+- We update each other daily on what we’ve completed for the project and what still needs to be done. For example, we distribute the code reviews and decide who will handle which one.
+
+What did we learn?
+- We’ve tried to implement all the workshops in the project: Component library, the new responsive, container queries, user preferences, rich color palette.
+
+What should we do differently next time?
+- Set deadlines for tasks and reviewing pull requests 
+
+What still puzzles us? 
+- Helping each other when someone is having a problem.
+
 ### Ask Norman Kerth’s 4 key questions - Abeer
 ### Ask Norman Kerth’s 4 key questions - Yamen
