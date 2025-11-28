@@ -89,6 +89,14 @@ Abeer
 
 ### Amazon review - Abeer
 
+Karima
+-Title: helper
+-You help us if we needed help as could as you can and you are a fast writer, so you take the lead to write the feedback that we receive every time from the client. You document your issues in a good way.
+ 
+Yamen
+Title: Expert
+-The animation that you did for the progress bar is amazing and you started to document what you have done better than before. You have always answers related to code, so when we need something we ask you for help.
+
 ### Amazon review - Yamen
 
 ---- 
@@ -108,6 +116,18 @@ What still puzzles us?
 - Helping each other when someone is having a problem.
 
 ### Ask Norman Kerth’s 4 key questions - Abeer
+What did we do well, that if we didn’t discuss we might forget?
+- We use teams to communicate and inform each other about what we did and what we will do. And we divided the user stories between us so everyone did his part.
+
+What did we learn?
+- We learn alot of things in this semester. we learned about the new responsive, component library, css nesting, container queries, prefres media, atomic design.
+
+What should we do differently next time?
+- make deadlines for reviewing the pull requests.
+
+What still puzzles us? 
+- Different speeds: Some work fast, some work carefully.
+
 ### Ask Norman Kerth’s 4 key questions - Yamen
 
 ---
@@ -137,24 +157,24 @@ What still puzzles us?
 
 ### Analyse Stories - Abeer
 [Als gebruiker wil ik beginnen met een onderzoeksvraag zodat ik de eerste stap van begrijpen doorloop #99](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/99)
-- What went well:
-- What went not well:
+- What went well: devided user stories between us.
+- What went not well: issue still in backlog.
 
 [Als gebruiker wil ik de ontwerpprincipes van de CSM leren kennen zodat ik de principes kan toepassen in een sociaal mediaproject en aan anderen kan tonen. #104](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/104)
-- What went well:
-- What went not well:
+- What went well: using sub isuues.
+- What went not well: Documentaion is in dutch and english.
 
 [Als gebruiker wil ik op stap 2 van Begrijpen verschillende cards zien over Care Archetype, zodat ik op een card kan klikken en meer informatie kan lezen. #106](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/106)
-- What went well:
-- What went not well:
+- What went well: Nice documentation!
+- What went not well: Make use of sub-issues.
 
 [Als gebruiker wil ik de 6 verschillende community archtypes verkennen zodat ik een archetype kies die het best past bij mijn organisatie #123](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/123)
-- What went well:
-- What went not well:
+- What went well: Great documentaion.
+- What went not well: Issue not closed.
 
 [Als developer wil ik meer animatie toepassen op het menu toepassen zodat de gebruiker meer pleasurable UI heeft #167](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/167)
-- What went well:
-- What went not well:
+- What went well: task become user story.
+- What went not well: There is no docuemtaion or labels for this issue.
 
 
 ### Analyse Stories - Yamen
