@@ -91,6 +91,7 @@ Abeer
 
 ### Amazon review - Yamen
 
+---- 
 
 ### Ask Norman Kerth’s 4 key questions - Karima
 
@@ -109,14 +110,16 @@ What still puzzles us?
 ### Ask Norman Kerth’s 4 key questions - Abeer
 ### Ask Norman Kerth’s 4 key questions - Yamen
 
+---
+
 ### Analyse Stories - Karima
 [Als gebruiker wil ik beginnen met een onderzoeksvraag zodat ik de eerste stap van begrijpen doorloop #99](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/99)
-- What went well:
-- What went not well:
+- What went well: Devided the user story in smaller tasks 
+- What went not well: We could write a discription of the user story so it will be clear for others what the story is about
 
 [Als gebruiker wil ik de ontwerpprincipes van de CSM leren kennen zodat ik de principes kan toepassen in een sociaal mediaproject en aan anderen kan tonen. #104](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/104)
-- What went well:
-- What went not well:
+- What went well: Devided the user story in smaller tasks and explained what you will do in the issue. Asked feedback from a teacher and documented the changes. 
+- What went not well: Writing everything in English (dutch sentence in the title of the issue)
 
 [Als gebruiker wil ik op stap 2 van Begrijpen verschillende cards zien over Care Archetype, zodat ik op een card kan klikken en meer informatie kan lezen. #106](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/106)
 - What went well:
