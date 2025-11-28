@@ -108,3 +108,70 @@ What still puzzles us?
 
 ### Ask Norman Kerth’s 4 key questions - Abeer
 ### Ask Norman Kerth’s 4 key questions - Yamen
+
+### Analyse Stories - Karima
+[Als gebruiker wil ik beginnen met een onderzoeksvraag zodat ik de eerste stap van begrijpen doorloop #99](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/99)
+- What went well:
+- What went not well:
+
+[Als gebruiker wil ik de ontwerpprincipes van de CSM leren kennen zodat ik de principes kan toepassen in een sociaal mediaproject en aan anderen kan tonen. #104](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/104)
+- What went well:
+- What went not well:
+
+[Als gebruiker wil ik op stap 2 van Begrijpen verschillende cards zien over Care Archetype, zodat ik op een card kan klikken en meer informatie kan lezen. #106](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/106)
+- What went well:
+- What went not well:
+
+[Als gebruiker wil ik de 6 verschillende community archtypes verkennen zodat ik een archetype kies die het best past bij mijn organisatie #123](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/123)
+- What went well:
+- What went not well:
+
+[Als developer wil ik meer animatie toepassen op het menu toepassen zodat de gebruiker meer pleasurable UI heeft #167](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/167)
+- What went well:
+- What went not well:
+
+
+
+### Analyse Stories - Abeer
+[Als gebruiker wil ik beginnen met een onderzoeksvraag zodat ik de eerste stap van begrijpen doorloop #99](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/99)
+- What went well:
+- What went not well:
+
+[Als gebruiker wil ik de ontwerpprincipes van de CSM leren kennen zodat ik de principes kan toepassen in een sociaal mediaproject en aan anderen kan tonen. #104](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/104)
+- What went well:
+- What went not well:
+
+[Als gebruiker wil ik op stap 2 van Begrijpen verschillende cards zien over Care Archetype, zodat ik op een card kan klikken en meer informatie kan lezen. #106](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/106)
+- What went well:
+- What went not well:
+
+[Als gebruiker wil ik de 6 verschillende community archtypes verkennen zodat ik een archetype kies die het best past bij mijn organisatie #123](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/123)
+- What went well:
+- What went not well:
+
+[Als developer wil ik meer animatie toepassen op het menu toepassen zodat de gebruiker meer pleasurable UI heeft #167](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/167)
+- What went well:
+- What went not well:
+
+
+### Analyse Stories - Yamen
+[Als gebruiker wil ik beginnen met een onderzoeksvraag zodat ik de eerste stap van begrijpen doorloop #99](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/99)
+- What went well:
+- What went not well:
+
+[Als gebruiker wil ik de ontwerpprincipes van de CSM leren kennen zodat ik de principes kan toepassen in een sociaal mediaproject en aan anderen kan tonen. #104](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/104)
+- What went well:
+- What went not well:
+
+[Als gebruiker wil ik op stap 2 van Begrijpen verschillende cards zien over Care Archetype, zodat ik op een card kan klikken en meer informatie kan lezen. #106](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/106)
+- What went well:
+- What went not well:
+
+[Als gebruiker wil ik de 6 verschillende community archtypes verkennen zodat ik een archetype kies die het best past bij mijn organisatie #123](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/123)
+- What went well:
+- What went not well:
+
+[Als developer wil ik meer animatie toepassen op het menu toepassen zodat de gebruiker meer pleasurable UI heeft #167](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/167)
+- What went well:
+- What went not well:
+
