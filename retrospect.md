@@ -91,6 +91,12 @@ Abeer
 
 ### Amazon review - Yamen
 
+Karima  Title: Challenger 
+- You follow what the client wants, document everything clearly, and try to learn new things so we can achieve the client’s goals. You also make an effort to explore new topics and tools.
+
+- Abeer Title: Working Under Pressure
+- You had many changes to handle in this sprint. You had to learn how to work with data, build pages, and fix the design according to the client’s requests.
+
 ---- 
 
 ### Ask Norman Kerth’s 4 key questions - Karima
@@ -109,6 +115,15 @@ What still puzzles us?
 
 ### Ask Norman Kerth’s 4 key questions - Abeer
 ### Ask Norman Kerth’s 4 key questions - Yamen
+
+- What did we do well, that if we didn’t discuss we might forget?
+  the set up we made. Without those, it would be difficult to know what each team member is working on. 
+- What did I learn?
+ I learned how to write better documentation and how to work more effectively with Svelte, especially when it comes to fetching and handling data.
+- What should we do differently next time?
+  We need to set clear deadlines for each task we want to complete. 
+- What still puzzles us?
+  It’s still quite challnging to work with the data the way we need for the project.
 
 ---
 
