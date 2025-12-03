@@ -24,7 +24,7 @@
         padding: 2em;
     }
 
-    h2{
+    h1{
         padding-left: .5em;
     }
     
