@@ -26,6 +26,39 @@ onMount(() => {
     })
 });
 
+// ScrollTrigger animation
+onMount(() => {
+    let sections = gsap.utils.toArray("section"), //select all sections
+    currentSection = sections[0];
+
+    gsap.defaults({overwrite: 'auto', duration: 0.3}) // animation duration: 0.3s
+    gsap.set("main", {height: (sections.length * 100) + "%"}); //set main height to number of sections * 100% (according to existing sections)
+
+    sections.forEach((section, i) => { // create scrolltrigger for each section, i is the indexnumber
+    ScrollTrigger.create({
+        start: () => (i - 0.5) * innerHeight, // when the top of the viewport reaches half the height of the section before
+        end: () => (i + 0.5) * innerHeight, // when the top of the viewport reaches half the height of the next section
+        onToggle: self => self.isActive && setSection(section)
+  });
+});
+
+function setSection(newSection) {
+  if (newSection !== currentSection) { // new section is the new section to be shown
+    gsap.to(currentSection, {scale: 0.8, autoAlpha: 0}) // current section is the section to be hidden
+    gsap.to(newSection, {scale: 1, autoAlpha: 1}); //scale up the new section and make it visible
+    currentSection = newSection; // update current section to new section
+  }
+}
+
+ScrollTrigger.create({
+  start: 1,
+  end: () => ScrollTrigger.maxScroll(window) - 1,
+  onLeaveBack: self => self.scroll(ScrollTrigger.maxScroll(window) - 2),
+  onLeave: self => self.scroll(2)
+}).scroll(2);
+
+});
+
 </script>
 
 
