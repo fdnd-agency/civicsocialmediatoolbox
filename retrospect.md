@@ -194,22 +194,22 @@ What still puzzles us?
 
 ### Analyse Stories - Yamen
 [Als gebruiker wil ik beginnen met een onderzoeksvraag zodat ik de eerste stap van begrijpen doorloop #99](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/99)
-- What went well:
-- What went not well:
+- What went well: We’re working on dynamic comments and splitting the user stories between us."
+- What went not well: The main issue should had more detail about how we splitting the user stories
 
 [Als gebruiker wil ik de ontwerpprincipes van de CSM leren kennen zodat ik de principes kan toepassen in een sociaal mediaproject en aan anderen kan tonen. #104](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/104)
-- What went well:
-- What went not well:
+- What went well: Designed a page as the client requested and created it step-by-step following the developer life cycle.
+- What went not well:Not enough tests have been done on it.
 
 [Als gebruiker wil ik op stap 2 van Begrijpen verschillende cards zien over Care Archetype, zodat ik op een card kan klikken en meer informatie kan lezen. #106](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/106)
-- What went well:
-- What went not well:
+- What went well: making a component as the client requested and documented the work.
+- What went not well: It take alot off time to learn how it need to be done.
 
 [Als gebruiker wil ik de 6 verschillende community archtypes verkennen zodat ik een archetype kies die het best past bij mijn organisatie #123](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/123)
-- What went well:
-- What went not well:
+- What went well: making what client ask and documeted each the steps that been doen 
+- What went not well: not enought tests have been doen for it
 
 [Als developer wil ik meer animatie toepassen op het menu toepassen zodat de gebruiker meer pleasurable UI heeft #167](https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/167)
-- What went well:
-- What went not well:
+- What went well: Started looking for ways to make the website more enjoyable.
+- What went not well: No alot off work have be done
 
