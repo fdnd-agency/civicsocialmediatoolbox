@@ -15,7 +15,19 @@
 
     gsap.registerPlugin(SplitText);
 
-   
+    // Split text animation
+    onMount(() => {
+        let split = new SplitText("h1", { type: "chars" });
+        const tl = gsap.timeline();
+        
+        tl.from(split.chars, {
+        duration: 1.2,
+        opacity: 0,
+        y: 50,
+        stagger: 0.05, //https://gsap.com/resources/getting-started/Staggers/
+        ease: "power2.out" 
+        })
+    });
 </script>
 
 <main>
