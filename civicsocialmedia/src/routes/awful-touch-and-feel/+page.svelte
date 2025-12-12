@@ -90,7 +90,13 @@
     font-style: normal;    
 }
 
-
+main {
+    color-scheme: light dark;
+    background: if(
+        style('color-scheme'): 'dark', #121212,
+        else: white
+    );
+}
    
 @media (prefers-color-scheme: dark) {
     main {
