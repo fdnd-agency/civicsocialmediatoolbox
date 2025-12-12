@@ -92,6 +92,7 @@ header {
 	align-items: center;
 	padding: 0.625rem 1.875rem;
 	min-height: 5rem;
+	display: none;
 }
 
 .header-left {
@@ -203,6 +204,7 @@ footer {
 	flex-direction: column;
 	gap: 1.5rem;
 	font-family: var(--font-family, 'Geomanist', 'Cabin', sans-serif);
+	display: none;
 }
 
 .left-content {
