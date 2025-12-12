@@ -25,12 +25,14 @@ footer {
 	flex-direction: column;
 	gap: 1.5rem;
 	font-family: var(--font-family, 'Geomanist', 'Cabin', sans-serif);
+	display: none;
 }
 
 .left-content {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	display: none;
 }
 
 ul {
