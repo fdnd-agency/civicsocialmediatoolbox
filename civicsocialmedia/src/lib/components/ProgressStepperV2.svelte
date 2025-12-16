@@ -2,12 +2,13 @@
   export let currentStep = 1;
 // list with all steps 
   const steps = [
-    { id: 1, label: 'Step 1', href: '/begijpen/step1' },
-    { id: 2, label: 'Step 2', href: '/begijpen/step2' },
-    { id: 3, label: 'Step 3', href: '/begijpen/step3' }
+    { id: 1, label: 'Step 1', href: '/begrijpen/step1' },
+    { id: 2, label: 'Step 2', href: '/begrijpen/step2' },
+    { id: 3, label: 'Step 3', href: '/begrijpen/step3' }
   ];
 </script>
 
+<main>
 <nav class="stepper">
   <ul class="steps">
     {#each steps as step}
@@ -26,6 +27,12 @@
     {/each}
   </ul>
 </nav>
+
+
+
+</main>
+
+
 
 <style>
   .stepper {
