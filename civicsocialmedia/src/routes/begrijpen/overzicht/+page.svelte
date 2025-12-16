@@ -1,8 +1,9 @@
 <main>
     <section>
         <h2>Overzicht van alle vragen</h2>
-        <button class="print">Printen</button>
     </section>
+    
+    <button class="print">Printen</button>
 
     <label>Stap 1
         <textarea readonly>Begin met een onderzoeksvraag. Welke gemeenschap wil je beter begrijpen? 
@@ -22,50 +23,80 @@
 
     <ul>
         <li>
-            <button>Bevestigen en verzenden</button>
+            <button class="send">Bevestigen en verzenden</button>
         </li>
 
         <li>
-            <button>Volgende activiteit: Ontwerpen</button>
+            <button class="send">Volgende activiteit: Ontwerpen</button>
         </li>
     </ul>
 </main>
 
 <style>
-    main {
-        padding: 1em;
-    }
+main {
+    padding: 2em;
+}
 
-    section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 2em;
-    }
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
 
-    .print {
+.print {
+    all: unset;
+    position: fixed;
+    right: 2rem;
+    bottom: 2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1.5em 1em 1.5em;
+    background-color: var(--primary-color-deep-blue);
+    color: var(--neutral-color-white);
+    height: 2vh;
+    width: 10em;
+    padding: 1em;
+    border-radius: 6em;
+    text-decoration: none;
+    transition: background .2s, transform .1s, box-shadow .2s;
+        &:hover {
+        background: #0d3749;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .25);
+        cursor: pointer;
+        }
         
+        &:focus-visible {
+        outline: 0.2rem solid var(--neutral-color-white);
+        outline-offset: 0.15rem;
+        }
+}
+
+h2 {
+    text-align: left;
+}
+    
+label {
+    font-weight: bold;
+    }
+
+textarea {
+    all: unset;
+    width: 80vw;      
+    max-width: 100vw; 
+    height: 6em;
+    border: 1px solid var(--neutral-color-black);
+    padding: 2em;
+    margin: 2em 0 2em 0;
+    @media (min-width: 768px) {
+        width: 90vw;
     }
     
-    h2 {
-        text-align: left;
-    }
-     
-    label {
-        margin-bottom: 1.5em;
-        font-weight: bold;
-     }
-    
-    textarea {
-        all: unset;
-        width: 100%;
-        height: 6em;
-        border: 1px solid var(--neutral-color-black);
-        padding: 2em;
-        
-    }
+}
 
-     ul {
-        list-style: none;
-    }
+ul {
+list-style: none;
+}
 </style>
