@@ -30,3 +30,42 @@
         </li>
     </ul>
 </main>
+
+<style>
+    main {
+        padding: 1em;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .print {
+        
+    }
+    
+    h2 {
+        text-align: left;
+    }
+     
+    label {
+        margin-bottom: 1.5em;
+        font-weight: bold;
+     }
+    
+    textarea {
+        all: unset;
+        width: 100%;
+        height: 6em;
+        border: 1px solid var(--neutral-color-black);
+        padding: 2em;
+        
+    }
+
+     ul {
+        list-style: none;
+    }
+</style>
