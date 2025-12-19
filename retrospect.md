@@ -213,3 +213,19 @@ What still puzzles us?
 - What went well: Started looking for ways to make the website more enjoyable.
 - What went not well: No alot off work have be done
 
+# Sprint 17
+
+### Take aways - Yamen
+- The most remarkeble thing i've learned during the retro: Ik heb scroll animaties met GSAP geleerd. Ook heb ik geleerd hoe ik een 3D model in mijn project kan plaatsen en laten werken met een de juiste css elment
+
+### Take aways - Abeer
+- The most remarkeble thing i've learned during the retro: I learned to work under pressure. We were busy with the creative coding spike and for that we had to make 3 versions in three weeks. We had to learn new things in a short time. Also, we had to work for the client website. 
+
+
+### Take aways - Karima
+- The most remarkeble thing i've learned during the retro: I learned to work with GSAP and learned how to create a small project based on a theme. 
+ 
+
+
+
+
