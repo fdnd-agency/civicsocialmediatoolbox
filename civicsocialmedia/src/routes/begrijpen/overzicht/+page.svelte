@@ -5,31 +5,28 @@
     
     <button class="print">Printen</button>
 
-    <label>Stap 1
-        <textarea readonly>Begin met een onderzoeksvraag. Welke gemeenschap wil je beter begrijpen? 
-        </textarea>
-    </label>
+    <h3>Stap 1</h3>
+    <p>Begin met een onderzoeksvraag. Welke gemeenschap wil je beter begrijpen?</p>
+    <textarea readonly>Antwoord gebruiker </textarea>
+   
 
-    <label>Stap 2
-        <textarea readonly>Verken de 6 community archetypes en de bijbehorende behoeften van communities en organisaties, daarna kies 1 of 2 archetypes die het beste passen bij jouw community en/ of organisatie.
-        </textarea>
-    </label>
+    <h3>Stap 2</h3>
+    <p>Verken de 6 community archetypes en de bijbehorende behoeften van communities en organisaties, daarna kies 1 of 2 archetypes die het beste passen bij jouw community en/ of organisatie.</p>
+    <textarea readonly>Antwoord gebruiker</textarea>
 
-    <label>Stap 3
-        <textarea readonly>Welke behoeften van communities en organisaties herken je? Op welke manieren is jouw community en/of organisatie anders?
-            Welke aannames maak je over jouw community? Zijn er blinde vlekken? Hoe zou je daar achter kunnen komen?
-        </textarea>
-    </label>
+    <h3>Stap 3</h3>
+    <p>Welke behoeften van communities en organisaties herken je?</p>
+    <textarea readonly>Antwoord gebruiker</textarea>
 
-    <ul>
-        <li>
-            <button class="send">Bevestigen en verzenden</button>
-        </li>
+    <p>Op welke manieren is jouw community en/of organisatie anders?</p>
+    <textarea readonly>Antwoord gebruiker</textarea>
 
-        <li>
-            <button class="send">Volgende activiteit: Ontwerpen</button>
-        </li>
-    </ul>
+    <p>Welke aannames maak je over jouw community? Zijn er blinde vlekken? Hoe zou je daar achter kunnen komen?</p>
+    <textarea readonly>Antwoord gebruiker</textarea>
+
+
+    <button class="send">Bevestigen en verzenden</button>
+
 </main>
 
 <style>
@@ -96,7 +93,24 @@ textarea {
     
 }
 
-ul {
-list-style: none;
+.send {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    height: 2.3em;
+    padding: .5em 2em .5em 2em;
+    border-radius: 6em;
+    background: var(--primary-color-deep-blue);
+    color: var(--neutral-color-white);
+    text-decoration: none;
+    transition: background-color .2s, transform .1s, box-shadow .2s;
+    
+    &:hover {
+        background-color: #0d3749;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .25);
+        cursor: pointer;
+  }
+   
 }
 </style>
