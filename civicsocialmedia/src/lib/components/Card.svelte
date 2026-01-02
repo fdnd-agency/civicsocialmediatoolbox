@@ -25,8 +25,8 @@
     .card {
         border-radius: .5em;
         margin: 1em;
-        width: 20em;
-        height: 30em;
+        width: 18.5em;
+        height: 26.25em;
         padding: .5em;
         text-align: center;
         color: white;
