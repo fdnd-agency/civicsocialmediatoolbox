@@ -1,3 +1,13 @@
+<script>
+    import {onMount} from 'svelte'
+
+    onMount(() => {
+        document.querySelector('.print').addEventListener('click', () => {
+            window.print();
+        });
+    });
+</script>
+
 <main>
     <section>
         <h2>Overzicht van alle vragen</h2>
