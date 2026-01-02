@@ -17,22 +17,21 @@
 
     <h3>Stap 1</h3>
     <p>Begin met een onderzoeksvraag. Welke gemeenschap wil je beter begrijpen?</p>
-    <textarea readonly>Antwoord gebruiker </textarea>
+    <textarea readonly aria-label="answer-user">Antwoord gebruiker </textarea>
    
 
     <h3>Stap 2</h3>
     <p>Verken de 6 community archetypes en de bijbehorende behoeften van communities en organisaties, daarna kies 1 of 2 archetypes die het beste passen bij jouw community en/of organisatie.</p>
-    <textarea readonly>Antwoord gebruiker</textarea>
+    <textarea readonly aria-label="answer-user">Antwoord gebruiker</textarea>
 
     <h3>Stap 3</h3>
     <p>Welke behoeften van communities en organisaties herken je?</p>
-    <textarea readonly>Antwoord gebruiker</textarea>
-
+    <textarea readonly aria-label="answer-user">Antwoord gebruiker</textarea>
     <p>Op welke manieren is jouw community en/of organisatie anders?</p>
-    <textarea readonly>Antwoord gebruiker</textarea>
+    <textarea readonly aria-label="answer-user">Antwoord gebruiker</textarea>
 
     <p>Welke aannames maak je over jouw community? Zijn er blinde vlekken? Hoe zou je daar achter kunnen komen?</p>
-    <textarea readonly>Antwoord gebruiker</textarea>
+    <textarea readonly aria-label="answer-user">Antwoord gebruiker</textarea>
 
 
     <button class="send">Bevestigen en verzenden</button>
@@ -97,7 +96,7 @@ textarea {
     padding: 2em;
     margin: 2em 0 2em 0;
     @media (min-width: 768px) {
-        width: 87vw;
+        width: 85vw;
     }
     
 }
