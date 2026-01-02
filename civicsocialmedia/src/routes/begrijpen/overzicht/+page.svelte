@@ -21,7 +21,7 @@
    
 
     <h3>Stap 2</h3>
-    <p>Verken de 6 community archetypes en de bijbehorende behoeften van communities en organisaties, daarna kies 1 of 2 archetypes die het beste passen bij jouw community en/ of organisatie.</p>
+    <p>Verken de 6 community archetypes en de bijbehorende behoeften van communities en organisaties, daarna kies 1 of 2 archetypes die het beste passen bij jouw community en/of organisatie.</p>
     <textarea readonly>Antwoord gebruiker</textarea>
 
     <h3>Stap 3</h3>
@@ -87,18 +87,17 @@ h2 {
     
 label {
     font-weight: bold;
-    }
+}
 
 textarea {
     all: unset;
-    width: 80vw;      
-    max-width: 100vw; 
+    width: 70vw;      
     height: 6em;
     border: 1px solid var(--neutral-color-black);
     padding: 2em;
     margin: 2em 0 2em 0;
     @media (min-width: 768px) {
-        width: 90vw;
+        width: 87vw;
     }
     
 }
