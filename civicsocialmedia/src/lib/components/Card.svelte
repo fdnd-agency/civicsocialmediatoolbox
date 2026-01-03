@@ -1,21 +1,10 @@
 <script>
     export let card;
     const imgUrl = `https://fdnd-agency.directus.app/assets/${card.posterimage}`;
-
-    const titleColors = {
-        "Care": "var(--accents-color-teal)",
-        "Intent": "var(--accents-color-orange)",
-        "Debate": "var(--accents-color-pink)",
-        "Constituents": "var(--accents-color-olive)",
-        "Knowledge & Culture": "var(--accents-color-purple)",
-        "Place": "var(--accents-color-yellow)"
-    };
-
-    const background = titleColors[card.title];
 </script>
 
 
-<article class="card" style="background-color: {background}">
+<article class="card {card.title}">
     <h2>{card.title}</h2>
     <img src="{imgUrl}" alt="{card.title}">
     <p>{card.categorie}</p>
@@ -38,5 +27,27 @@
         }
     }
 
-   
+    .card.Care {
+        background-color: var(--accents-color-teal);
+    }
+
+    .card.Intent {
+        background-color: var(--accents-color-orange);
+    }
+
+    .card.Debate {
+        background-color: var(--accents-color-pink);
+    }
+
+    .card.Constituents {
+        background-color: var(--accents-color-olive);
+    }
+
+    .card.Knowledge {
+        background-color: var(--accents-color-purple);
+    }
+
+    .card.Place {
+        background-color: var(--accents-color-yellow);
+    }
 </style>

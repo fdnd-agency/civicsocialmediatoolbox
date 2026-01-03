@@ -34,12 +34,12 @@
     p{
         padding-left: 1em;
     }
-
+/* 
     @media (prefers-color-scheme: dark) {
         main {
             background-color: var(--neutral-color-black);
         }
-    } 
+    }  */
     
 </style>
 
