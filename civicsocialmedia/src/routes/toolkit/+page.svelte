@@ -44,9 +44,8 @@
 
 <style>
 
-  /* --- Main content padding --- */
 main {
-    padding: 3em; /* overal 3em padding zoals je voorbeeld */
+    padding: 3em;
 }
 
 /* --- Headings --- */
@@ -56,7 +55,7 @@ h2 {
     margin-bottom: 0.5em;
     color: var(--primary-color-deep-blue);
     text-align: left;
-    padding-left: 0.5em; /* zoals in voorbeeld */
+    padding-left: 0.5em;
 }
 
 h3 {
@@ -73,7 +72,7 @@ p {
     line-height: 1.9;
     margin-bottom: 1.5em;
     text-align: left;
-    padding-left: 1em; /* zoals in voorbeeld */
+    padding-left: 1em;
 }
 
 /* --- Buttons --- */
@@ -131,13 +130,13 @@ p {
 @media (min-width: 768px) {
     main {
         max-width: 100ch;
-        padding: 3em 4em; /* desktop padding */
+        padding: 3em 4em;
     }
 
     h2 {
         font-size: var(--fs-display);
         margin-bottom: 0.7em;
-        padding-left: 0; /* padding-left alleen voor mobiel */
+        padding-left: 0;
     }
 
     h3 {
