@@ -6,12 +6,6 @@
     </p>
     <h3>Ontwerpen voor Civic Social Media</h3>
 
-    <div class="btn-group">
-        <a href="/begrijpen" class="btn">Begrijpen</a>
-        <a href="/ontwerpen" class="btn">Ontwerpen</a>
-        <a href="/evalueren" class="btn">Evalueren</a>
-    </div>
-
     <p>
         Deze toolkit bevat 55 kaarten, samengesteld uit community archetypes,
         ontwerpprincipes en -dimensies voor Civic Social Media, die kunnen
@@ -20,6 +14,12 @@
         evalueren. De activiteiten kunnen los van elkaar gebruikt worden, maar
         bouwen ook op elkaar voort als ontwerpproces.
     </p>
+
+     <div class="btn-group">
+        <a href="/begrijpen" class="btn">Begrijpen</a>
+        <a href="/ontwerpen" class="btn">Ontwerpen</a>
+        <a href="/evalueren" class="btn">Evalueren</a>
+    </div>
 
     <p>
         De activiteiten kunnen worden uitgevoerd door individuele ontwerpers,
@@ -45,7 +45,7 @@
 <style>
 
 main {
-    padding: 3em;
+    padding: 2em;
 }
 
 /* --- Headings --- */
@@ -55,7 +55,6 @@ h2 {
     margin-bottom: 0.5em;
     color: var(--primary-color-deep-blue);
     text-align: left;
-    padding-left: 0.5em;
 }
 
 h3 {
@@ -72,7 +71,7 @@ p {
     line-height: 1.9;
     margin-bottom: 1.5em;
     text-align: left;
-    padding-left: 1em;
+    padding-left: 0em;
 }
 
 /* --- Buttons --- */
@@ -143,6 +142,7 @@ p {
         font-size: var(--fs-large);
         margin-top: 1.5em;
         margin-bottom: 1.5em;
+        padding-left: 0;
     }
 
     .btn-group {
