@@ -44,11 +44,19 @@
 
 <style>
 
-    h2 {
+  /* --- Main content padding --- */
+main {
+    padding: 3em; /* overal 3em padding zoals je voorbeeld */
+}
+
+/* --- Headings --- */
+h2 {
     font-size: var(--fs-title);
     letter-spacing: -0.03em;
     margin-bottom: 0.5em;
     color: var(--primary-color-deep-blue);
+    text-align: left;
+    padding-left: 0.5em; /* zoals in voorbeeld */
 }
 
 h3 {
@@ -59,11 +67,13 @@ h3 {
     color: var(--primary-color-deep-blue);
 }
 
+/* --- Paragraphs --- */
 p {
     font-size: var(--fs-medium);
     line-height: 1.9;
     margin-bottom: 1.5em;
     text-align: left;
+    padding-left: 1em; /* zoals in voorbeeld */
 }
 
 /* --- Buttons --- */
@@ -121,12 +131,13 @@ p {
 @media (min-width: 768px) {
     main {
         max-width: 100ch;
-        padding: 3em 4em;
+        padding: 3em 4em; /* desktop padding */
     }
 
     h2 {
         font-size: var(--fs-display);
         margin-bottom: 0.7em;
+        padding-left: 0; /* padding-left alleen voor mobiel */
     }
 
     h3 {
@@ -153,6 +164,13 @@ p {
 
     .btn-text-mobile {
         display: none;
+    }
+}
+
+/* --- Dark mode --- */
+@media (prefers-color-scheme: dark) {
+    main {
+        background-color: var(--neutral-color-black);
     }
 }
 
