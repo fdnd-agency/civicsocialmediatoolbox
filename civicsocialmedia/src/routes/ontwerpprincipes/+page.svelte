@@ -153,7 +153,7 @@
 
 <style>
     main {
-        padding: 0 1rem;
+        padding: 2em;
         h2 {
             font-size: var(--fs-title);
             margin-bottom: 0.5em;
@@ -176,6 +176,7 @@
         container-type: inline-size;
         container-name: card-grid;
         width: 100%;
+        padding: 0 6rem;
         ul {
             list-style: none;
             padding: 1rem 0 2rem 0;
@@ -183,7 +184,7 @@
             scroll-behavior: smooth;
             display: grid;
             grid-template-columns: 1fr;
-            gap: 1.5rem;
+            gap: 2rem;
         }
     }
 
@@ -202,18 +203,24 @@
         .card-container ul {
             display: flex;
             overflow-x: auto;
+            gap: 8rem;
+            padding: 2rem;
+            flex-wrap: nowrap;
             scroll-snap-type: x mandatory;
-            gap: 1rem;
-            padding: 1rem 0 2rem 0;
+            scroll-padding-inline: 2rem;
+            
+
             &::-webkit-scrollbar {
                 display: none;
             }
+
             .card {
                 flex: 0 0 auto;
                 width: 20em;
                 height: 30em;
-                margin: 1em;
                 scroll-snap-align: start;
+                -webkit-scroll-snap-align: start;
+
                 scroll-snap-stop: always;
             }
         }
@@ -324,7 +331,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 10;
+        z-index: 100;
         background: #472562;
         color: white;
         width: 44px;
@@ -340,24 +347,21 @@
     }
 
     .scroll-button.left {
-        left: 0;
-        margin-left: -22px;
+        left: -10px;
+        margin-left: 0;
     }
     .scroll-button.right {
-        right: 0;
-        margin-right: -22px;
+        right: -10px;
+        margin-right: 0;
     }
 
-    @container card-grid (min-width: 1200px) {
+    @container card-grid (min-width: 1000px) {
         .scroll-button {
             display: block;
         }
     }
     html {
         scroll-behavior: smooth;
-    }
-    .card-container ul {
-        scroll-snap-type: x mandatory;
     }
 
     /* JS FALLBACK */
