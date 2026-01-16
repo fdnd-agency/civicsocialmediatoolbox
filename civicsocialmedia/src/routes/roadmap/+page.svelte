@@ -160,8 +160,8 @@
   }
 
   .theme-layer-4 {
-    width: 69%;
-    max-width: 400px;
+    width: 70%;
+    max-width: 410px;
   }
 
   .content {
