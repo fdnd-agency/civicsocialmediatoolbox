@@ -16,8 +16,8 @@
     </article>
 
     <article class="card-back {card.title}">
-        <p> {card.body} </p>
-        <a href="/step2/details">Lees meer</a>
+        <p> {@html card.body} </p>
+        <a href="/begrijpen/step2/details">Lees meer</a>
     </article>
 </section>
 
