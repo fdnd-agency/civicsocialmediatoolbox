@@ -1,53 +1,87 @@
 <script>
     export let card;
+    let flipped = false; // staat voor "is de kaart geflipt"
     const imgUrl = `https://fdnd-agency.directus.app/assets/${card.posterimage}`;
+
+    function toggleFlip() {
+        flipped = !flipped;
+    }
 </script>
 
+<section class="card" class:flipped={flipped} on:click={toggleFlip}> <!--Als flipped === true wordt de class flipped toegevoegd-->
+    <article class="card-front {card.title}">
+        <h2>{card.title}</h2>
+        <img src="{imgUrl}" alt="{card.title}">
+        <p>{card.categorie}</p>
+    </article>
 
-<article class="card {card.title}">
-    <h2>{card.title}</h2>
-    <img src="{imgUrl}" alt="{card.title}">
-    <p>{card.categorie}</p>
-</article>
+    <article class="card-back {card.title}">
+        <p>{card.body}</p>
+    </article>
+</section>
 
 <style>
     .card {
-        border-radius: .5em;
-        margin: 1em;
         width: 18.5em;
         height: 26.25em;
-        padding: .5em;
-        text-align: center;
-        color: white;
-
-        &:hover {
-            transform: scale(1.05);
-            transition: .3s;
-            cursor: pointer;
-        }
+        perspective: 1000px; /* belangrijk voor 3D flip */
+        cursor: pointer;
+        margin: 1em;
     }
 
-    .card.Care {
+    .card-front, .card-back {
+        width: 100%;
+        height: 100%;
+        border-radius: .5em;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.6s ease-in-out;
+    }
+
+    .card-front {
+        transform: rotateY(0deg);
+    }
+
+    .card-back {
+        transform: rotateY(180deg);
+    }
+
+    .card.flipped .card-front {
+        transform: rotateY(180deg);
+    }
+
+    .card.flipped .card-back {
+        transform: rotateY(0deg);
+    }
+
+    
+    .card-front.Care {
         background-color: var(--accents-color-teal);
     }
 
-    .card.Intent {
+    .card-front.Intent {
         background-color: var(--accents-color-orange);
     }
 
-    .card.Debate {
+    .card-front.Debate {
         background-color: var(--accents-color-pink);
     }
 
-    .card.Constituents {
+    .card-front.Constituents {
         background-color: var(--accents-color-olive);
     }
 
-    .card.Knowledge {
+    .card-front.Knowledge {
         background-color: var(--accents-color-purple);
     }
 
-    .card.Place {
+    .card-front.Place {
         background-color: var(--accents-color-yellow);
+    }
+
+    p {
+        line-height: 120%;
     }
 </style>
