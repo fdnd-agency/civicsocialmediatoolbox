@@ -16,7 +16,7 @@
     </article>
 
     <article class="card-back {card.title}">
-        <p>{card.body}</p>
+        <p> {card.body} </p>
         <a href="#">Lees meer</a>
     </article>
 </section>
@@ -112,6 +112,17 @@
     p {
         line-height: 120%;
         text-align: center;
+    }
 
+    a {
+        background-color: var(--primary-color-deep-blue);
+        color: var(--neutral-color-white);
+        padding: 0.5em 1.3em;
+        border-radius: 6em;
+        position: relative;
+        left: 4em;
+        &:hover {
+            cursor: pointer;
+        }
     }
 </style>
