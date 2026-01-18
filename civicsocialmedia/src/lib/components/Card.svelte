@@ -17,6 +17,7 @@
 
     <article class="card-back {card.title}">
         <p>{card.body}</p>
+        <a href="#">Lees meer</a>
     </article>
 </section>
 
@@ -40,6 +41,10 @@
         transition: transform 0.6s ease-in-out;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     .card-front {
         transform: rotateY(0deg);
     }
@@ -55,7 +60,6 @@
     .card.flipped .card-back {
         transform: rotateY(0deg);
     }
-
     
     .card-front.Care {
         background-color: var(--accents-color-teal);
@@ -81,7 +85,33 @@
         background-color: var(--accents-color-yellow);
     }
 
+    .card-back.Care {
+        border: 1em solid var(--accents-color-teal);
+    }
+
+    .card-back.Intent {
+        border: 1em solid var(--accents-color-orange);
+    }
+
+    .card-back.Debate {
+        border: 1em solid var(--accents-color-pink);
+    }
+    
+    .card-back.Constituents {
+        border: 1em solid var(--accents-color-olive);
+    }
+
+    .card-back.Knowledge {
+        border: 1em solid var(--accents-color-purple);
+    }
+
+    .card-back.Place {
+        border: 1em solid var(--accents-color-yellow);
+    }
+
     p {
         line-height: 120%;
+        text-align: center;
+
     }
 </style>
