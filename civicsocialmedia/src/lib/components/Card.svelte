@@ -6,17 +6,18 @@
     function toggleFlip() {
         flipped = !flipped;
     }
+
 </script>
 
 <section class="card" class:flipped={flipped} on:click={toggleFlip}> <!--Als flipped === true wordt de class flipped toegevoegd-->
     <article class="card-front {card.title}">
-        <h2>{card.title}</h2>
-        <img src="{imgUrl}" alt="{card.title}">
-        <p>{card.categorie}</p>
+        <h2 class:knowledge-text={card.id === 13}>{card.title}</h2> <!-- https://svelte.dev/docs/svelte/class#The-class:-directive -->
+        <img src="{imgUrl}" alt="{card.title}" width="240" height="192" > 
+        <p class="category">{card.categorie}</p>
     </article>
 
     <article class="card-back {card.title}">
-        <p> {@html card.body} </p>
+        <p class="body-text"> {@html card.body} </p>
         <a href="/begrijpen/step2/details">Lees meer</a>
     </article>
 </section>
@@ -25,7 +26,7 @@
     .card {
         width: 18.5em;
         height: 26.25em;
-        perspective: 1000px; /* belangrijk voor 3D flip */
+        perspective: 1000px;
         cursor: pointer;
         margin: 1em;
     }
@@ -43,6 +44,14 @@
 
     h2 {
         text-align: center;
+    }
+
+    img {
+        padding-left: 1.5em;
+    }
+
+    .knowledge-text {
+        font-size: 2.3rem;
     }
 
     .card-front {
@@ -109,15 +118,25 @@
         border: 1em solid var(--accents-color-yellow);
     }
 
-    p {
+    .category {
+        text-align: center;
+        font-family: var(--font-serif);
+        font-size: var(--fs-medium);
+    }
+
+    .body-text {
         line-height: 120%;
         text-align: center;
+        padding: 2em .5em 0 .5em;
+        line-height: 120%;
     }
 
     a {
         background-color: var(--primary-color-deep-blue);
         color: var(--neutral-color-white);
         padding: 0.5em 1.3em;
+        position: relative;
+        top: 4em;
         border-radius: 6em;
         position: relative;
         left: 4em;
