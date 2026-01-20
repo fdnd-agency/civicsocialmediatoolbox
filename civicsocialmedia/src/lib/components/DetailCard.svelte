@@ -8,7 +8,6 @@
 </section>
 
 <style>
-    
 .card {
     width: 18.5em;
     height: 26.25em;
@@ -23,5 +22,4 @@ p {
     max-width: 18.5em;
     padding-left: 2.2em;
 }
-
 </style>
