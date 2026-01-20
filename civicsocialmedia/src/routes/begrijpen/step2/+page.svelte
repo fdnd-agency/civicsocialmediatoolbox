@@ -17,22 +17,22 @@
 </main>
 
 <style>
-main {
-    padding: 3em;
-}
-
-h2 {
-    text-align: left;
-    padding-left: .5em;
-}
-
-p {
-    padding-left: 1em;
-}
-/* @media (prefers-color-scheme: dark) {
     main {
-        background-color: var(--neutral-color-black);
+        padding: 3em;
     }
-} */
+
+    h2 {
+        text-align: left;
+        padding-left: .5em;
+    }
+
+    p {
+        padding-left: 1em;
+    }
+    /* @media (prefers-color-scheme: dark) {
+        main {
+            background-color: var(--neutral-color-black);
+        }
+    } */
 </style>
 
