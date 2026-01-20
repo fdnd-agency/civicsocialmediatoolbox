@@ -1,34 +1,34 @@
 <script>
     import { onMount } from "svelte";
     import { gsap } from "gsap";
-
+ 
     export let data;
     const cards = data.cards;
-
+ 
     let listEl;
     let leftBtn;
     let rightBtn;
-
+ 
     function imageUrl(card) {
         return `https://fdnd-agency.directus.app/assets/${card.posterimage}`;
     }
-
+ 
     function scrollLeft(e) {
         e.preventDefault();
         if (listEl) {
-            listEl.scrollBy({ left: -420, behavior: "smooth" });
+            listEl.scrollBy({ left: -400, behavior: "smooth" });
             press(leftBtn, -6);
         }
     }
-
+ 
     function scrollRight(e) {
         e.preventDefault();
         if (listEl) {
-            listEl.scrollBy({ left: 420, behavior: "smooth" });
+            listEl.scrollBy({ left: 400, behavior: "smooth" });
             press(rightBtn, 6);
         }
     }
-
+ 
     function press(btn, x) {
         gsap.fromTo(
             btn,
@@ -43,7 +43,7 @@
             },
         );
     }
-
+ 
     onMount(() => {
         document.documentElement.classList.add("js");
         [leftBtn, rightBtn].forEach((btn, i) => {
@@ -67,7 +67,7 @@
         });
     });
 </script>
-
+ 
 <main>
     <h2>Ontwerpprincipes</h2>
     <p>
@@ -82,11 +82,11 @@
         De vijf ontwerpprincipes zijn voor alle civic social media van
         toepassing, ongeacht het type gemeenschap waarvoor wordt ontworpen.
     </p>
-
+ 
     <header class="title">
         <h3>Vijf ontwerpprincipes voor civic social media</h3>
     </header>
-
+ 
     <section class="card-container">
         <a href="#card-0" class="no-js-scroll">
             <button
@@ -98,7 +98,7 @@
                 ◀
             </button>
         </a>
-
+ 
         <a href="#card-{cards.length - 1}" class="no-js-scroll">
             <button
                 bind:this={rightBtn}
@@ -109,7 +109,7 @@
                 ▶
             </button>
         </a>
-
+ 
         <ul bind:this={listEl}>
             {#each cards as card, index}
                 <li id={"card-" + index}>
@@ -150,7 +150,7 @@
         </ul>
     </section>
 </main>
-
+ 
 <style>
     main {
         padding: 2em;
@@ -170,7 +170,7 @@
             max-width: 75ch;
         }
     }
-
+ 
     .card-container {
         position: relative;
         container-type: inline-size;
@@ -187,7 +187,7 @@
             gap: 2rem;
         }
     }
-
+ 
     @container card-grid (min-width: 600px) {
         .card-container ul {
             grid-template-columns: repeat(2, 1fr);
@@ -198,7 +198,7 @@
             grid-template-columns: repeat(3, 1fr);
         }
     }
-
+ 
     @container card-grid (min-width: 1200px) {
         .card-container ul {
             display: flex;
@@ -209,124 +209,110 @@
             scroll-snap-type: x mandatory;
             scroll-padding-inline: 2rem;
             
-
+ 
             &::-webkit-scrollbar {
                 display: none;
             }
-
+ 
             .card {
                 flex: 0 0 auto;
                 width: 20em;
                 height: 30em;
                 scroll-snap-align: start;
                 -webkit-scroll-snap-align: start;
-
+ 
                 scroll-snap-stop: always;
             }
         }
     }
-
-    .scroll-button {
-        display: block;
-    }
-
+ 
+    /* IMPROVED FLIP LOGIC */
     .card {
         display: block;
         width: 20em;
         height: 30em;
         cursor: pointer;
-        border-radius: 0.75rem;
-        overflow: hidden;
         position: relative;
+        perspective: 1000px;
         outline: none;
-        transition:
-            border 0.3s ease,
-            box-shadow 0.3s ease,
-            transform 0.3s ease,
-            opacity 0.3s ease;
-        &:hover,
-        &:focus {
-            border: 3px solid #8874ca;
-            box-shadow: 0 0 15px rgba(70, 42, 80, 0.7);
-            transform: scale(1.05);
-        }
-        h2 {
-            font-size: 1rem;
-            text-align: center;
-        }
-        h3 {
-            font-size: 0.9rem;
-            font-weight: 600;
-            text-align: center;
-        }
-        p {
-            font-size: 0.8rem;
-            line-height: 1.3;
-            text-align: center;
-        }
-
-        .flip-inner {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            .flip-front,
-            .flip-back {
-                width: 100%;
-                height: 100%;
-                backface-visibility: hidden;
-                position: absolute;
-                inset: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 2rem;
-                gap: 1rem;
-            }
-            .flip-front {
-                background-color: #472562;
-                img {
-                    width: 90px;
-                    height: 90px;
-                    border-radius: 14px;
-                    object-fit: cover;
-                }
-                h2,
-                h3 {
-                    color: white;
-                }
-            }
-            .flip-back {
-                transform: rotateY(180deg);
-                background: white;
-                border: 10px solid #472562;
-                box-sizing: border-box;
-                img {
-                    width: 90px;
-                    height: 90px;
-                    border-radius: 14px;
-                    object-fit: cover;
-                }
-                h2 {
-                    font-size: 1rem;
-                    margin: 0.2rem 0;
-                }
-                h3 {
-                    font-size: 0.9rem;
-                    margin: 0.2rem 0;
-                }
-                p {
-                    font-size: 0.8rem;
-                    line-height: 1.3;
-                    text-align: center;
-                    margin-top: 0.3rem;
-                }
-            }
-        }
+        /* Transition for hover effects */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
+ 
+    .card:hover, .card:focus {
+        transform: scale(1.02);
+    }
+ 
+    .flip-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        transform-style: preserve-3d;
+    }
+ 
+    .flip-checkbox:checked + .card .flip-inner {
+        transform: rotateY(180deg);
+    }
+ 
+    .flip-front,
+    .flip-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+ 
+    .flip-front {
+        background-color: #472562;
+        color: white;
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+ 
+    .flip-back {
+        background: white;
+        color: #472562;
+        border: 10px solid #472562;
+        box-sizing: border-box;
+        transform: rotateY(180deg);
+        z-index: 1;
+    }
+ 
+    /* Inner Element Styling */
+    .card h2 {
+        font-size: 1rem;
+        text-align: center;
+        color: white;
+    }
+    .card h3 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+    }
+    .card p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        text-align: center;
+    }
+    .card img {
+        width: 90px;
+        height: 90px;
+        border-radius: 14px;
+        object-fit: cover;
+    }
+ 
+    /* Scroll buttons */
     .scroll-button {
         position: absolute;
         top: 50%;
@@ -345,7 +331,7 @@
             background: #8874ca;
         }
     }
-
+ 
     .scroll-button.left {
         left: -10px;
         margin-left: 0;
@@ -354,22 +340,19 @@
         right: -10px;
         margin-right: 0;
     }
-
+ 
     @container card-grid (min-width: 1000px) {
         .scroll-button {
             display: block;
         }
     }
+    
     html {
         scroll-behavior: smooth;
     }
-
-    /* JS FALLBACK */
+ 
     .flip-checkbox {
         display: none;
-    }
-    .flip-checkbox:checked + .card .flip-inner {
-        transform: rotateY(180deg);
     }
     .no-js-scroll {
         text-decoration: none;
