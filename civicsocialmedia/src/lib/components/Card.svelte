@@ -1,5 +1,4 @@
 <script>
-    export let card;
     let flipped = false; // staat voor "is de kaart geflipt"
     const imgUrl = `https://fdnd-agency.directus.app/assets/${card.posterimage}`;
 
@@ -12,6 +11,8 @@
             toggleFlip();
         }
     }
+    
+    export let card;
 </script>
 
 <section class="card" class:flipped={flipped} on:click={toggleFlip} on:keydown={handleKeydown} role="button" tabindex="0"> <!--Als flipped === true wordt de class flipped toegevoegd-->
