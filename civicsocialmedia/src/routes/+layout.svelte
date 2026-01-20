@@ -1,11 +1,11 @@
-<script lang="ts">
+<script>
 	import '$lib/assets/styles/stylesheet.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.svg?url';
 	import logoUrl from '$lib/assets/logo-text.svg?url';
 	import closemenu from '$lib/assets/close.svg';
 
 
-	let { children } = $props();
+	export let children;
 </script>
 
 <svelte:head>
