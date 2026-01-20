@@ -244,7 +244,6 @@
             box-shadow 0.3s ease,
             transform 0.3s ease,
             opacity 0.3s ease;
-        
         &:hover,
         &:focus {
             border: 3px solid #8874ca;

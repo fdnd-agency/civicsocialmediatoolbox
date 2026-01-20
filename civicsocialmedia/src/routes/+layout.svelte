@@ -3,8 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg?url';
 	import logoUrl from '$lib/assets/logo-text.svg?url';
 	import closemenu from '$lib/assets/close.svg';
-
-
+	
 	export let children;
 </script>
 

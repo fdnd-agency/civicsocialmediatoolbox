@@ -289,9 +289,11 @@
     margin-bottom: 2em;
     padding: 0 1em;
   }
-    .adjusted-card {
+  
+  .adjusted-card {
     @media (min-width: 64em) { 
       margin-top: -15rem;
-    }}
+    }
+  }
 
 </style>
