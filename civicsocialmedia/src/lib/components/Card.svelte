@@ -7,9 +7,14 @@
         flipped = !flipped;
     }
 
+    function handleKeydown(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            toggleFlip();
+        }
+    }
 </script>
 
-<section class="card" class:flipped={flipped} on:click={toggleFlip}> <!--Als flipped === true wordt de class flipped toegevoegd-->
+<section class="card" class:flipped={flipped} on:click={toggleFlip} on:keydown={handleKeydown} role="button" tabindex="0"> <!--Als flipped === true wordt de class flipped toegevoegd-->
     <article class="card-front {card.title}">
         <h2 class:knowledge-text={card.id === 13}>{card.title}</h2> <!-- https://svelte.dev/docs/svelte/class#The-class:-directive -->
         <img src="{imgUrl}" alt="{card.title}" width="240" height="192" > 
