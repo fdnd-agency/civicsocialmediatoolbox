@@ -14,6 +14,13 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Serif text';
+  src: url('/fonts/Seriftext/DMSerifText-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
 :root{
     --neutral-color-white:#FFFFFF;
     --neutral-color-black:#000000;
@@ -85,7 +92,7 @@
   --fs-title:   clamp(2rem,     calc(52 / 60 * var(--grid-col)), 3rem);
   --fs-display: clamp(2.5rem,   calc(64 / 60 * var(--grid-col)), 3.5rem);
 
-
+  --font-serif: 'Serif text', serif;
 
   --grid-col: 20em;
   

@@ -1,6 +1,6 @@
 <script>
   import ProgressStepperV2 from '$lib/components/ProgressStepperV2.svelte';
-  import Cards from '$lib/components/Cards.svelte';
+  import DetailCards from '$lib/components/DetailCards.svelte';
 
   export let data;
 
@@ -17,7 +17,7 @@
   <ProgressStepperV2 {currentStep} />
     <h2>1. Begrijpen</h2>
     <p>Verken de 6 community archetypes en de bijbehorende behoeften van communities en organisaties, daarna  kies 1 of 2 archetypes die het beste passen bij jou community en/of organisatie.</p>
-  <Cards cards={data.cards} />
+  <DetailCards cards={data.cards} />
   
 </main>
 
