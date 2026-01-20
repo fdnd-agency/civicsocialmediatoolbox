@@ -8,18 +8,18 @@
 </section>
 
 <style>
-.card {
-    width: 18.5em;
-    height: 26.25em;
-    margin: 1em;
-    border: 1em solid var(--accents-color-teal);
-    border-radius: .75em;
-}
+    .card {
+        width: 18.5em;
+        height: 26.25em;
+        margin: 1em;
+        border: 1em solid var(--accents-color-teal);
+        border-radius: .75em;
+    }
 
-p {
-    font-size: 13px;
-    text-align: center;
-    max-width: 18.5em;
-    padding-left: 2.2em;
-}
+    p {
+        font-size: 13px;
+        text-align: center;
+        max-width: 18.5em;
+        padding-left: 2.2em;
+    }
 </style>
