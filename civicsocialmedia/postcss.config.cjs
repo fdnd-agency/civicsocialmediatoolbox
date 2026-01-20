@@ -5,9 +5,6 @@ const postcssGlobalData = require('@csstools/postcss-global-data');
 
 module.exports = {
   plugins: [
-    postcssGlobalData({
-      files: ['src/lib/styles/custom-media-queries.css']
-    }),
     postcssPresetEnv({
       stage: 3,
       features: {

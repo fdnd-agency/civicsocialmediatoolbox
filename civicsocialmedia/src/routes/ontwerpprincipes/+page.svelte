@@ -176,7 +176,7 @@
         container-type: inline-size;
         container-name: card-grid;
         width: 100%;
-        padding: 0 6rem;
+        padding: 0 3rem;
         ul {
             list-style: none;
             padding: 1rem 0 2rem 0;
@@ -203,7 +203,7 @@
         .card-container ul {
             display: flex;
             overflow-x: auto;
-            gap: 8rem;
+            gap: 5rem;
             padding: 2rem;
             flex-wrap: nowrap;
             scroll-snap-type: x mandatory;
