@@ -9,7 +9,7 @@
     </svg>
 </a>
 
-<style>x
+<style>
   .btn {
     display: inline-flex;
     align-items: center;
@@ -21,16 +21,14 @@
     color: var(--neutral-color-white);
     text-decoration: none;
     transition: background .2s, transform .1s, box-shadow .2s;
-    
-    &:hover {
-      background: #0d3749;
-      transform: translateY(-0.1rem);
-      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .25);
+      &:hover {
+        background: #0d3749;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .25);
     }
-
-    &:focus-visible {
-      outline: 0.2rem solid var(--neutral-color-white);
-      outline-offset: 0.15rem;
+      &:focus-visible {
+        outline: 0.2rem solid var(--neutral-color-white);
+        outline-offset: 0.15rem;
     }
 }
 </style>
