@@ -289,17 +289,32 @@
     }
  
     /* Inner Element Styling */
-    .card h2 {
+    .flip-front h2 {
         font-size: 1rem;
         text-align: center;
         color: white;
     }
-    .card h3 {
+
+    .flip-back h2 {
+        font-size: 1rem;
+        text-align: center;
+        color: black;
+    }
+
+    .flip-front h3 {
         font-size: 0.9rem;
         font-weight: 600;
         text-align: center;
         color: white;
     }
+
+    .flip-back h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-align: center;
+        color: black;
+    }
+    
     .card p {
         font-size: 0.8rem;
         line-height: 1.3;
@@ -308,6 +323,7 @@
     .card img {
         width: 90px;
         height: 90px;
+        margin-top: 1rem;
         border-radius: 14px;
         object-fit: cover;
     }
