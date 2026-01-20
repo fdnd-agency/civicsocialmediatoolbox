@@ -39,7 +39,7 @@
     .card-front, .card-back {
         width: 100%;
         height: 100%;
-        border-radius: .5em;
+        border-radius: .75em;
         backface-visibility: hidden;
         position: absolute;
         top: 0;

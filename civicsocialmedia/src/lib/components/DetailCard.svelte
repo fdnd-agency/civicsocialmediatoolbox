@@ -13,10 +13,15 @@
     width: 18.5em;
     height: 26.25em;
     margin: 1em;
-    border: var(--accent-color-teal) 1em solid;
+    border: 1em solid var(--accents-color-teal);
+    border-radius: .75em;
 }
 
-h2 {
+p {
+    font-size: 13px;
     text-align: center;
+    max-width: 18.5em;
+    padding-left: 2.2em;
 }
+
 </style>
