@@ -19,7 +19,6 @@
 </nav>
 
 <style>
-
 .card-container {
     container: cards / inline-size;
 }
@@ -63,6 +62,7 @@ li:focus {
     border-radius: 6em;
     text-decoration: none;
     transition: background .2s, transform .1s, box-shadow .2s;
+    
         &:hover {
         background: var(--primary-color-deep-blue);
         transform: translateY(-0.1rem);
