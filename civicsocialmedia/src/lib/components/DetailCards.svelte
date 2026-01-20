@@ -44,6 +44,10 @@ ul {
         }
 }  
 
+li:focus {
+    outline: 2px solid var(--primary-color-deep-blue);
+}
+
 .page {
     all: unset;
     position: fixed;
@@ -54,13 +58,13 @@ ul {
     background-color: var(--primary-color-deep-blue);
     color: var(--neutral-color-white);
     height: 2vh;
-    width: 10em;
+    width: 7em;
     padding: 1em;
     border-radius: 6em;
     text-decoration: none;
     transition: background .2s, transform .1s, box-shadow .2s;
         &:hover {
-        background: #0d3749;
+        background: var(--primary-color-deep-blue);
         transform: translateY(-0.1rem);
         box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .25);
         cursor: pointer;
@@ -69,6 +73,11 @@ ul {
         &:focus-visible {
         outline: 0.2rem solid var(--neutral-color-white);
         outline-offset: 0.15rem;
+        }
+
+        @media (min-width: 724px) {
+            height: 2vh;
+            width: 10em;
         }
 }
 
