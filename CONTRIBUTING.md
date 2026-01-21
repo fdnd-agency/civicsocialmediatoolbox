@@ -1,113 +1,123 @@
-## Contributing
+# Contributing
 
-### Teamcanvas
-Link: https://www.figma.com/design/UXiqG10cxHdC7UyC0y4ttG/Civic-social-media-toolbox?node-id=0-1&t=1aGN7w1aedGSfz08-1
+## Teamcanvas
+<img width="941" height="663" alt="Scherm­afbeelding 2026-01-21 om 15 39 23" src="https://github.com/user-attachments/assets/708bec15-30ab-470d-862f-332c9c533ee2" />
+
+## Designs
+Link to the Designs: 
+- [General Design](https://www.figma.com/design/UXiqG10cxHdC7UyC0y4ttG/Civic-social-media?node-id=119-2&t=LiMCCsbHmN49gzNP-1)
+- [Design of the toolkit](https://www.figma.com/design/mflwKnq2xf6zJ71hHJP87K/Civicsocialmedia---Toolbox?node-id=0-1&t=Nk3DzRacYY0QjaCt-1)
+- [Styleguide of Civic Social Media](https://www.figma.com/design/Ol8swbk5xbS5EWyOvNfVnV/Civic-Social-Media---style-guide-and-assets?node-id=1-7558&t=bPBh9ahW2Zcj2o4o-1)
 
 
-### Samenwerkingsafspraken
-- Documentatie: Leg het proces van elke taak vast in de project board (issues), zodat iedereen het kan raadplegen.
-- Issue niet afsluiten totdat duidelijk is beschreven wat met de taak is gedaan
-- Plaatsen van comments in code zodat anderen begrijpen wat er is gedaan
-- Eigen verantwoording dragen voor je eigen werk
-- Bronnen vermelden bij het vinden van nieuwe materiaal
-- MOSCOW methode/taak nummeren op moeilijkheidsgraad (nummers 1,2,3,5,8) gebruiken
-- Dagelijks bereikbaar zijn + reageren op pull requests.
-- Gebruik per pull request 1 feature. Als er meerdere feauters/pull request naar de dev-branch zijn gestuurd kunnen die naar de main. 
-- Communicatie verloopt via teams
+## Collaboration agreements
+- Documentation: Record the process for each task in the project board (issues) so that everyone can consult it.
+- Do not close an issue until it is clear what has been done with the task.
+- Place comments in the code so that others understand what has been done.
+- Take responsibility for your own work.
+- Cite sources when finding new material.
+- Use the MOSCOW method/task as a label.
+- Use in Estimate in the project board to fill in the difficulty based on numbers 1, 2, 3, 5, 8.
+- Be available daily and respond to pull requests.
+- Use 1 feature per pull request. If multiple features/pull requests have been sent to the dev branch, they can be sent to the main branch.
+- Communication takes place via teams.
+- Use clear commit descriptions in English. Link to the corresponding issue. Example: `#123 #202 Added buttons for next page and previous page`
 
-### Code conventies
+## Code conventions
+These code conventions are based on the [FDND Code conventions](https://docs.fdnd.nl/conventies.html#algemene-code-conventions)
+
 #### SvelteKit
-* Maak nieuwe file aan voor components die hergebruikt
-* Fetch data altijd via een +page.server.js bestand
+* Create a new file for reusable components
+* Always fetch data via a +page.server.js file
 
 
-#### Html/css
-* We gebruiken sematisch code
-* Maak gebruik van kebab-case
-* Gebruik dezelfde classes voor animaties die je wilt hergebruiken voor DRY code.
-* Naamgeving in het engels.
+#### HTML/CSS
+* We use semantic code
+* Use kebab-case
+* Use the same classes for animations that you want to reuse for DRY code.
+* Use English naming conventions.
 
 #### Javascript
-* Gebruik `const`/`let` en geen `var`
-* Maak gebruik van camelCase 
+* Use `const`/`let` and not `var`
+* Use camelCase 
 
-#### Animaties
-* Alle animatie classes beginnen met .animation
+#### Animations
+* All animation classes start with .animation
 
   
 #### Gitflow
-- We werken deze sprints volgens de Git Flow workflow strategie: 
+- We work these sprints according to the Git Flow workflow strategy: 
 <img width="559" height="648" alt="Scherm­afbeelding 2025-09-22 om 14 49 45" src="https://github.com/user-attachments/assets/0568b305-f1d8-4c78-962b-0f9d34342331" />
 
-<hr>
 
-### Hoe maak je een goede Pull Request?
+## How to create a good Pull Request?
 
-Verzin eerst een duidelijke titel die relevant is voor het onderdeel dat je hebt gemaakt, zoals "Menu" of "Footer".
-Schrijf vervolgens een korte beschrijving van wat je hebt gedaan en geef aan wat je wilt dat wij testen. Vermeld ook specifiek waar je feedback op wilt hebben, bijvoorbeeld of we de responsiveness moeten testen of juist diep in de code moeten kijken op onnodige of overbodige code.
-Voeg daarnaast altijd visuele ondersteuning toe, zoals afbeeldingen, GIFs of korte video’s. Zo kunnen we zien wat je hebt gedaan en hoe het getest kan worden, bijvoorbeeld een filmpje van de responsiveness, een animatie van characters, of een screenshot van het uiteindelijke resultaat.
-Do’s
+First, come up with a clear title that is relevant to the component you have created, such as “Menu” or “Footer.”
+Then write a short description of what you have done and indicate what you want us to test. Also specify what you want feedback on, for example, whether we should test the responsiveness or look deep into the code for unnecessary or redundant code.
+Always add visual support, such as images, GIFs, or short videos. This allows us to see what you have done and how it can be tested, for example, a video of the responsiveness, an animation of characters, or a screenshot of the final result.
 
-De pull request moet één specifiek onderdeel behandelen, zoals een menu, een footer of een animatie van de characters. Hoe kleiner en overzichtelijker de pull request, hoe beter.
-Geef je commits duidelijke en relevante namen, bijvoorbeeld "filter" of "animatie toegevoegd", zodat reviewers direct kunnen zien wat er in elke commit is gedaan en gemakkelijk kunnen controleren waar ze feedback op moeten geven.
-Don’ts
-Maak geen pull request van een hele pagina of meerdere onderdelen tegelijk. Te lange pull requests zijn minder overzichtelijk en maken het moeilijker om te reviewen en kunnen bugs veroorzaken.
+#### Do's
+- The pull request should cover one specific part, such as a menu, a footer, or an animation of the characters. The smaller and clearer the pull request, the better.
+- Give your commits clear and relevant names, such as “filter” or “animation added,” so reviewers can immediately see what has been done in each commit and easily check what they need to provide feedback on.
 
-<hr>
+#### Don'ts
+- Do not make a pull request for an entire page or multiple components at once. Pull requests that are too long are less clear, make it more difficult to review, and can cause bugs.
 
-### Pullrequest templet
+
+## Pullrequest template
  
-Resolves issue #!!!
+Resolves issue #
  
 <!-- A PR should have enough detail to be understandable far in the future. e.g what is the problem/why is the change needed, how does it solve it and any questions or points of discussion. Prefer copying information from a GitHub issue over linking to it; the card may not always exist and reviewers may not have access to the board. -->
  
 [livesite](https://livesite.com)
  
-## How Has This Been Tested?
- 
+#### How Has This Been Tested?
 - [ ] User test
-
 - [ ] Accessibility test
-
 - [ ] Performance test
-
 - [ ] Responsive Design test
-
 - [ ] Device test
-
 - [ ] Browser test
  
-## Images
+#### Images
  
 <!-- Usually only applicable to UI changes, what did it look like before and what will it look like after? -->
- 
- 
-Pullrequest templet
 
-## DoR en DoD
-DoR: dit zijn de criteria om te bepalen of een taak of userstory klaar is voor de team om aan te pakken
+## Create a new branch
+1. Create an issue.
+2. Under development, click on ‘Create a branch for this issue or link a pull request.’
+3. Leave the same name as the name of the issue.
+4. Under ‘Branch source’, select the dev branch.
+5. Under ‘What's next’, select Open branch with GitHub Desktop.
+
+
+## DoR and DoD
+DoR: these are the criteria for determining whether a task or user story is ready for the team to tackle
  
-DoD: dit is de benchmark om te evalueren wanneer een taak of userstory voltooid is.
+DoD: this is the benchmark for evaluating when a task or user story is complete.
 
-## DOR:
-De userstory heeft het format ( Als gebruiker... )
-De userstory is gepokerd.
-Moscow gebruiken
+### DOR:
+- The user story has the format (As a user...)
+- The user story has been pokerized.
+- Use Moscow
  
-## DOD:
-Gemerged naar dev
-De userstory is getest
-De userstory heeft dev link
-Meet de wens van de opdrachtgever
+### DOD:
+- Merged to dev
+- The user story has been tested
+- The user story has a dev link
+- Meets the client's requirements
 
-## Refinement:
-Refinement: is een doorlopende activiteit in scrum waarbij het product backlog wordt verfijnd om het product backlog klaar te maken voor toekomstige sprints.
 
-## Verloop van een sprint
-## Week 1: 
-Sprint planning, DOR, DOD, epic, refinement, moscow, poker, standup.
-## Week 2:
-user story, standup.
-## Week 3:
-sprint review, retrospective, warp up, standup.
+## Sprint process
+Refinement: is an ongoing activity in Scrum in which the product backlog is refined to prepare it for future sprints.
+
+#### Week 1: 
+- Sprint planning, DOR, DOD, epic, refinement, Moscow, poker, standup.
+  
+#### Week 2:
+- User story, standup.
+  
+#### Week 3:
+- Sprint review, retrospective, wrap up, standup.
  
