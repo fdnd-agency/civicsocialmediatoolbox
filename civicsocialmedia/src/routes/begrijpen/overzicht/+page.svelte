@@ -48,7 +48,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 1em 1.5em 1em 1.5em;
-    background-color: var(--primary-color-deep-blue);
+    background-color: var(--primary-dark-blue);
     color: var(--neutral-color-white);
     height: 2vh;
     width: 10em;
@@ -92,7 +92,7 @@ textarea {
     height: 2.3em;
     padding: .5em 2em .5em 2em;
     border-radius: 6em;
-    background: var(--primary-color-deep-blue);
+    background: var(--primary-dark-blue);
     color: var(--neutral-color-white);
     text-decoration: none;
     transition: background-color .2s, transform .1s, box-shadow .2s;
