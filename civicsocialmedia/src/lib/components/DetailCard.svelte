@@ -12,7 +12,7 @@
         width: 18.5em;
         height: 26.25em;
         margin: 1em;
-        border: 1em solid var(--accents-color-teal);
+        border: 1em solid var(--accent-color-teal);
         border-radius: .75em;
     }
 
