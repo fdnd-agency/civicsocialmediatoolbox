@@ -1,6 +1,8 @@
 <script>
   import { onMount } from "svelte";
   import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
   export let data;
   const cards = data.cards;
@@ -42,10 +44,52 @@
     );
   }
 
-  onMount(() => {
-    animateButton(leftBtn, -4);
-    animateButton(rightBtn, 4);
-  });
+onMount(() => {
+  // button hover/click animations
+  animateButton(leftBtn, -4);
+  animateButton(rightBtn, 4);
+
+  // Select all cards and hide them initially
+  const cards = document.querySelectorAll(".card-container ul li");
+  gsap.set(cards, { opacity: 0, scale: 0.8 });
+
+  // Animate visible cards with stagger
+  function animateVisibleCards() {
+    const containerRect = listEl.getBoundingClientRect();
+
+    // Only select cards that are in view and not yet animated
+    const visibleCards = Array.from(cards).filter((card) => {
+      const cardRect = card.getBoundingClientRect();
+      return (
+        cardRect.left < containerRect.right &&
+        cardRect.right > containerRect.left &&
+        !card.classList.contains("animated")
+      );
+    });
+
+    if (visibleCards.length > 0) {
+      gsap.to(visibleCards, {
+        opacity: 1,
+        scale: 1,
+        duration: 0.6,
+        ease: "power2.out",
+        stagger: 0.2, // staggered effect
+        onComplete: () => {
+          visibleCards.forEach((card) => card.classList.add("animated"));
+        },
+      });
+    }
+  }
+
+  // 4️⃣ Listen for horizontal scroll
+  listEl.addEventListener("scroll", animateVisibleCards);
+
+  // 5️⃣ Animate any cards visible on initial load
+  animateVisibleCards();
+});
+
+
+
 </script>
 
 <main>
@@ -183,8 +227,8 @@
     .card-container ul {
       display: flex;
       overflow-x: auto;
-      gap: 2rem;
-      padding: 0 2rem;
+      gap: 4rem;
+      padding: 0 4rem;
       scrollbar-width: none;
       justify-content: flex-start;
     }
