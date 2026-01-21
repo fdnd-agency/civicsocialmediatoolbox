@@ -1,8 +1,6 @@
 <script>
   import { onMount } from "svelte";
   import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
   export let data;
   const cards = data.cards;
