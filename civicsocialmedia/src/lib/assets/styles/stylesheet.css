@@ -22,69 +22,63 @@
 }
 
 :root{
-    --neutral-color-white:#FFFFFF;
-    --neutral-color-black:#000000;
-    --neutral-color-grey-700: #333333;
-    --neutral-color-grey-600: #666666;
-    --neutral-color-grey-500: #999999;
-    --neutral-color-grey-400: #CCCCCC;
+   /* Neutral colors */
+  --neutral-color-white: hsl(0, 0%, 100%);
+  --neutral-color-black: hsl(297, 11%, 10%);
+  --neutral-color-grey: hsl(206, 10%, 87%);
+  --neutral-color-grey-600: hsl(0, 0%, 40%);
+  --neutral-color-grey-500: hsl(0, 0%, 60%);
+  --neutral-color-grey-400: hsl(0, 0%, 80%);
+
+/* Primary color: blue */
+  --primary-hue-blue: 201;
+  --primary-saturation-blue: 74%;
+
+  --primary-darkest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 18%);
+  --primary-dark-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 28%);
+  --primary-neutral-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 38%);
+  --primary-light-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 48%);
+  --primary-lightest-blue: hsl(var(--primary-hue-blue), var(--primary-saturation-blue), 58%);
+
+  /* Secondary color: beige */
+  --secondary-darkest-beige: hsl(35, 49%, 70%);
+  --secondary-dark-beige: hsl(35, 49%, 85%);
+  --secondary-neutral-beige: hsl(47, 18%, 85%);
+  --secondary-light-beige: hsl(48, 16%, 94%);
+  --secondary-lightest-beige: hsl(32, 52%, 95%);
+
+/* Secondary color: yellow */
+  --secondary-darkest-yellow: hsl(57, 100%, 30%);
+  --secondary-dark-yellow: hsl(57, 100%, 42%);
+  --secondary-neutral-yellow: hsl(57, 80%, 85%);
+  --secondary-light-yellow: hsl(57, 83%, 81%);
 
 
-    --primary-color-deep-blue: #0C3951 ;
-    --secondary-color-deep-light-blue-700: #104B6B;
-    --secondary-color-deep-light-blue-600: #166A97;
-    --secondary-color-deep-light-blue-500: #1977A9;
-    --secondary-color-deep-light-blue-400: #1D8AC3;
-
-
-
-    --primary-color-beige: #EBDAC5;
-    --secondary-color-light-beige-700: #D8B98D;
-    --secondary-color-light-beige-600: #EBDBC4;
-    --secondary-color-light-beige-500: #DFDCD1;
-    --secondary-color-light-beige-400: #F9F3EC;
-
-
-    --primary-color-gold: #DBBE01;
-    --secondary-color-light-gold-700: #D7CD00;
-    --secondary-color-light-gold-600: #EDE75C;
-    --secondary-color-light-gold-500: #F7F3A5;
-    --secondary-color-light-gold-400: #FFF3A9;
-
-
-
- /* Roadmap */
-    --accents-color-dark-purple:#462A50 ;
-    --accents-color-purple:#603D82;
-    --accents-color-light-purple:#8774C9 ;
-    --secondary-color-soft-blue:#B4B9FF;
-    --secondary-color-cream:#FAF4EC;
-
+/* Roadmap */
+  --accent-darkest-purple: hsl(284, 31%, 24%);
+  --accent-dark-purple: hsl(271, 35%, 38%);
+  --accent-neutral-purple: hsl(254, 45%, 62%);
+  --accent-light-purple: hsl(234, 100%, 85%);
 
 
 /* Community colors  */
-    --accents-color-olive:#74A735 ;
-    --accents-color-yellow:#D7CD02;
-    --accents-color-blue: #2772F7;
-    --accents-color-teal:#41BFA6;
-    --accents-color-orange:#FA6128;
-    --accents-color-pink:#EB93BE;
-    --accents-color-purple: hsl(219, 44%, 49%) ;
-
+  --accent-color-olive: hsl(87, 52%, 43%);
+  --accent-color-yellow:hsl(57, 100%, 42%);
+  --accent-color-blue:hsl(218, 93%, 56%);
+  --accent-color-teal: hsl(167, 56%, 51%);
+  --accent-color-orange:hsl(16, 95%, 57%);
+  --accent-color-pink: hsl(331, 69%, 75%);
 
   /* Ontwerpprincipes */
 
-  --accents-color-navy:#012D7D ;
-  --accents-color-pale-blue:#A5C3FA ;
-  --accents-color-dark-green:#243B39 ;
-  --accents-color-deep-green:#2F6B6C ;
-  --accents-color-mint:#AAE4D7 ;
-  --accents-color-plum:#462652 ;
-  --accents-color-magenta:#8B3277 ;
-  --accents-color-soft-pink:#FBC8EA ;
-
- 
-
+  --accent-color-navy: hsl(219, 98%, 25%) ;
+  --accent-color-pale-blue: hsl(219, 89%, 81%);
+  --accent-color-dark-green: hsl(175, 24%, 19%) ;
+  --accent-color-deep-green: hsl(181, 39%, 30%);
+  --accent-color-mint: hsl(167, 52%, 78%);
+  --accent-color-plum: hsl(284, 37%, 24%);
+  --accent-color-magenta: hsl(313, 47%, 37%);
+  --accent-color-soft-pink: hsl(320, 86%, 88%);
 
   --fs-small:   clamp(0.875rem, calc(16 / 60 * var(--grid-col)), 1rem);
   --fs-medium:  clamp(1rem,     calc(24 / 60 * var(--grid-col)), 1.25rem);
@@ -95,7 +89,8 @@
   --font-serif: 'Serif text', serif;
 
   --grid-col: 20em;
-  
+  --padding: 2em;
+
   --radius-1: 1em;
   --radius-2: 2em;
   --radius-4: 4em;
