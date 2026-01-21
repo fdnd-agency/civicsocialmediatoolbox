@@ -44,6 +44,60 @@ These code conventions are based on the [FDND Code conventions](https://docs.fdn
 #### Animations
 * All animation classes start with .animation
 
+### Spacings and tabs
+
+- Use a tab size of 4. In VS Code, go to Settings and search for “tab”, then set it to 4.
+- Use one line break between grouped HTML elements and CSS selectors
+- Add a line break after a CSS selector.
+- Nest media queries and container queries.
+
+
+#### ⛔️ Bad example
+```html
+<body>
+<nav>
+<ul><li>
+<a href="/">Home</a></li>
+<li><a href="/contact.html">Contact</a></li></ul>
+</nav>
+<h1>Eerste kop</h1>
+     <p>Welkom op deze
+     <strong>website</strong>.
+     </p>
+         <p><a
+        href="/pagina-2.html"
+        class="button">Lees verder
+        </a>
+        </p>
+    <footer>
+     <p>en routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar
+</p>
+  </footer>
+</body>
+```
+
+#### ✅ Good example
+
+```html
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Civic Social media</h1>
+    <p class="intro">Het Civic Social Media-project richt zich op het onderzoeken</p>
+    <p><a href="/pagina-2.html" class="button">Lees verder</a></p>
+
+    <footer>
+        <p>Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar</p>
+    </footer>
+</body>
+```
+
+I updated the contributing.md file. 
   
 #### Gitflow
 - We work these sprints according to the Git Flow workflow strategy: 
