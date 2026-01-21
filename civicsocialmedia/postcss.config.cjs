@@ -1,6 +1,6 @@
 const autoprefixer = require('autoprefixer');
 const postcssPresetEnv = require('postcss-preset-env');
-const csso = require('postcss-csso');
+// const csso = require('postcss-csso');
 const postcssGlobalData = require('@csstools/postcss-global-data');
 
 module.exports = {
@@ -14,6 +14,6 @@ module.exports = {
       }
     }),
     autoprefixer(),
-    csso()
+    // csso()
   ]
 };
