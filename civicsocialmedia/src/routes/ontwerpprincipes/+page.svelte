@@ -59,9 +59,11 @@
     </strong>
   </p>
   <p>
-    De vijf ontwerpprincipes zijn voor alle civic social media van
-    toepassing, ongeacht het type gemeenschap waarvoor wordt ontworpen.
+    De vijf ontwerpprincipes zijn voor alle civic social media van toepassing, ongeacht het type gemeenschap waarvoor wordt ontworpen.
   </p>
+  <p>
+  Daarnaast hebben verschillende gemeenschappen ook uiteenlopende behoeften, wat kan leiden tot spanningen tussen de ontwerpprincipes en de publieke waarden waarop ze zijn gebaseerd. Zo kan het voor de ene gemeenschap essentieel zijn dat gesprekken plaatsvinden in de openbare ruimte, terwijl een andere gemeenschap juist gebaat is bij een vertrouwde, besloten omgeving. Het is daarom belangrijk om deze afweging te maken, in de eerste plaats ten behoeve van het type gemeenschap.
+</p>
 
   <header class="title">
     <h3>Vijf ontwerpprincipes voor civic social media</h3>
