@@ -27,7 +27,7 @@ The “begrijpen” phase is fully completed, while the “ontwerpen” and “e
 
 - Archetype page: not yet started
 
-## 2. What is the key features that are already working?
+## 2. What are the key features that are already working?
 
 - Fetching data from Directus
 
@@ -37,6 +37,6 @@ The “begrijpen” phase is fully completed, while the “ontwerpen” and “e
 
 We still need to add data in Directus to make a few features work, such as the form.
 
-## 4. What is the recommended first steps for the next team?
+## 4. What is the recommended first step for the next team?
 
 To run the project, open the terminal, type cd civicsocialmedia, and then run it with npm run dev.
