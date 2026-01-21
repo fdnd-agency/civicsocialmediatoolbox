@@ -157,11 +157,11 @@
         h2 {
             font-size: var(--fs-title);
             margin-bottom: 0.5em;
-            color: var(--primary-dark-blue);
+            color: var(--primary-darkest-blue);
         }
         h3 {
             font-size: var(--fs-large);
-            color: var(--primary-dark-blue);
+            color: var(--primary-darkest-blue);
         }
         p {
             font-size: var(--fs-small);
