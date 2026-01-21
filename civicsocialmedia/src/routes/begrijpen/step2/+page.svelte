@@ -1,6 +1,6 @@
 <script>
   import ProgressStepperV2 from '$lib/components/molecules/ProgressStepperV2.svelte';
-  import Cards from '$lib/components/Cards.svelte';
+  import Cards from '$lib/components/organisms/Cards.svelte';
   export let data;
 
   const toolkitItems = data.toolkitItems ?? [];
