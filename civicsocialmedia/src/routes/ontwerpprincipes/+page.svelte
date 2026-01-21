@@ -22,7 +22,7 @@
     listEl.scrollBy({ left: 420, behavior: "smooth" });
   }
 
-  // Animation helper for hover + click
+  // Animation for hover + click
   function animateButton(btn, clickOffset = 0) {
     btn.addEventListener("mouseenter", () => {
       gsap.to(btn, { scale: 1.06, x: clickOffset, duration: 0.25, ease: "power2.out" });
@@ -79,14 +79,12 @@ onMount(() => {
     }
   }
 
-  // 4️⃣ Listen for horizontal scroll
+  // Listen for horizontal scroll
   listEl.addEventListener("scroll", animateVisibleCards);
 
-  // 5️⃣ Animate any cards visible on initial load
+  // Animate any cards visible on initial load
   animateVisibleCards();
 });
-
-
 
 </script>
 
