@@ -1,5 +1,5 @@
 <script>
-  import ProgressStepperV2 from '$lib/components/ProgressStepperV2.svelte';
+  import ProgressStepperV2 from '$lib/components/molecules/ProgressStepperV2.svelte';
   import Cards from '$lib/components/Cards.svelte';
   export let data;
 
