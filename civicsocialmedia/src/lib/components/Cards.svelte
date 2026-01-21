@@ -1,7 +1,6 @@
 <script>
     import Card from "./Card.svelte";
     export let cards;
-    
 </script>
 
 <section class="card-container">
@@ -15,7 +14,6 @@
 </section>
 
 <style>
-
 .card-container {
     container: cards / inline-size;
 }
@@ -38,6 +36,4 @@ ul {
             grid-template-columns: repeat(2, 1fr);
         }
 }   
-
-
 </style>

@@ -9,9 +9,7 @@
 </script>
 
 <main>
-    <section>
-        <h2>Overzicht van alle vragen</h2>
-    </section>
+    <h2>Overzicht van alle vragen</h2>
     
     <button class="print">Printen</button>
 
@@ -33,21 +31,12 @@
     <p>Welke aannames maak je over jouw community? Zijn er blinde vlekken? Hoe zou je daar achter kunnen komen?</p>
     <textarea readonly aria-label="answer-user">Antwoord gebruiker</textarea>
 
-
     <button class="send">Bevestigen en verzenden</button>
-
 </main>
 
 <style>
 main {
     padding: 2em;
-}
-
-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2em;
 }
 
 .print {
@@ -83,10 +72,6 @@ section {
 h2 {
     text-align: left;
 }
-    
-label {
-    font-weight: bold;
-}
 
 textarea {
     all: unset;
@@ -98,7 +83,6 @@ textarea {
     @media (min-width: 768px) {
         width: 85vw;
     }
-    
 }
 
 .send {
@@ -119,6 +103,5 @@ textarea {
         box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .25);
         cursor: pointer;
   }
-   
 }
 </style>
