@@ -46,6 +46,15 @@
 
 main {
     padding: 2em;
+
+    @media (min-width: 768px) {
+        max-width: 100ch;
+        padding: 3em 4em;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--neutral-color-black);
+    }
 }
 
 /* --- Headings --- */
@@ -55,6 +64,12 @@ h2 {
     margin-bottom: 0.5em;
     color: var(--primary-color-deep-blue);
     text-align: left;
+
+    @media (min-width: 768px) {
+        font-size: var(--fs-display);
+        margin-bottom: 0.7em;
+        padding-left: 0;
+    }
 }
 
 h3 {
@@ -63,6 +78,13 @@ h3 {
     margin-top: 1.5em;
     margin-bottom: 0.5em;
     color: var(--primary-color-deep-blue);
+
+    @media (min-width: 768px) {
+        font-size: var(--fs-large);
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding-left: 0;
+    }
 }
 
 /* --- Paragraphs --- */
@@ -81,6 +103,12 @@ p {
     align-items: stretch;
     gap: 1em;
     margin: 2em 0;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1.5em;
+    }
 }
 
 .btn {
@@ -102,6 +130,12 @@ p {
         background-color: var(--accents-color-dark-green);
         transform: translateY(-2px);
     }
+
+    @media (min-width: 768px) {
+        width: auto;
+        min-width: 12em;
+        padding: 1em 2em;
+    }
 }
 
 .text {
@@ -109,7 +143,6 @@ p {
     margin-bottom: 1em;
 }
 
-/* --- All cards button --- */
 .btn-all-cards {
     margin-top: 2.5em;
     font-weight: 700;
@@ -119,59 +152,17 @@ p {
 /* Mobile: korte tekst */
 .btn-text-desktop {
     display: none;
+
+    @media (min-width: 768px) {
+        display: inline;
+    }
 }
 
 .btn-text-mobile {
     display: inline;
-}
 
-/* --- Desktop layout --- */
-@media (min-width: 768px) {
-    main {
-        max-width: 100ch;
-        padding: 3em 4em;
-    }
-
-    h2 {
-        font-size: var(--fs-display);
-        margin-bottom: 0.7em;
-        padding-left: 0;
-    }
-
-    h3 {
-        font-size: var(--fs-large);
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-        padding-left: 0;
-    }
-
-    .btn-group {
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 1.5em;
-    }
-
-    .btn {
-        width: auto;
-        min-width: 12em;
-        padding: 1em 2em;
-    }
-
-    .btn-text-desktop {
-        display: inline;
-    }
-
-    .btn-text-mobile {
+    @media (min-width: 768px) {
         display: none;
     }
 }
-
-/* --- Dark mode --- */
-@media (prefers-color-scheme: dark) {
-    main {
-        background-color: var(--neutral-color-black);
-    }
-}
-
-
 </style>
