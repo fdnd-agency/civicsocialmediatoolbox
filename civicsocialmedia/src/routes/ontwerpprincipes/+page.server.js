@@ -1,4 +1,3 @@
-
 export async function load() {
     const API = "https://fdnd-agency.directus.app/items/Card";
     const fields = "?fields=id,title,categorie,posterimage,body,subtitle";
