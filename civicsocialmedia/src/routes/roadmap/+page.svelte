@@ -70,7 +70,18 @@
   .roadmap-main {
     max-width: 60rem;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 2em  1.5em;
+    h1{
+      color: var(--primary-darkest-blue);
+      font-size: var(--fs-large);
+      font-style: bold;
+    }
+    h2{
+      font-size: var(--fs-medium);
+    }
+    p{
+      font-size: var(--fs-small);
+    }
   }
 
 
