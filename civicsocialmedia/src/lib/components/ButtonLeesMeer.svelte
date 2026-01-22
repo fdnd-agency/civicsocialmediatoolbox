@@ -17,7 +17,7 @@
     height: 2vh;
     padding: 1em;
     border-radius: 6em;
-    background: var(--primary-color-deep-blue);
+    background: var(--primary-darkest-blue);
     color: var(--neutral-color-white);
     text-decoration: none;
     transition: background .2s, transform .1s, box-shadow .2s;

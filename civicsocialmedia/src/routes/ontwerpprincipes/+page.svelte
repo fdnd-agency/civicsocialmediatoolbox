@@ -157,16 +157,16 @@
         h2 {
             font-size: var(--fs-title);
             margin-bottom: 0.5em;
-            color: var(--primary-color-deep-blue);
+            color: var(--primary-darkest-blue);
         }
         h3 {
             font-size: var(--fs-large);
-            color: var(--primary-color-deep-blue);
+            color: var(--primary-darkest-blue);
         }
         p {
             font-size: var(--fs-small);
             line-height: 1.6;
-            color: var(--neutral-color-grey-700);
+            color: var(--neutral-color-grey-600);
             max-width: 75ch;
         }
     }

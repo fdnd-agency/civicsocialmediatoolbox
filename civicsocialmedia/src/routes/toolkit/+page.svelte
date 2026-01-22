@@ -40,7 +40,7 @@
         font-size: var(--fs-title);
         letter-spacing: -0.03em;
         margin-bottom: 0.5em;
-        color: var(--primary-color-deep-blue);
+        color: var(--primary-dark-blue);
     }
 
     h3 {
@@ -48,7 +48,7 @@
         letter-spacing: -0.02em;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
-        color: var(--primary-color-deep-blue);
+        color: var(--primary-dark-blue);
     }
 
     /* --- Paragraphs --- */
@@ -70,7 +70,7 @@
 
     .btn {
         display: block;
-        background-color: var(--accents-color-teal);
+        background-color: var(--accent-color-teal);
         color: var(--neutral-color-white);
         text-align: center;
         text-decoration: none;
@@ -85,7 +85,7 @@
     }
 
     .btn:hover {
-        background-color: var(--accents-color-dark-green);
+        background-color: var(--accent-color-dark-green);
         transform: translateY(-2px);
     }
 

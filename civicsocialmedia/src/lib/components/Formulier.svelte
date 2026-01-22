@@ -47,7 +47,7 @@
 
             input:focus {
                 outline: none;
-                border-color: var(--primary-color-beige);
+                border-color: var(--secondary-neutral-beige);
                 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             }
         }
@@ -58,7 +58,7 @@
         }
 
         #submit-button {
-            background-color: var(--primary-color-deep-blue);
+            background-color: var(--primary-darkest-blue);
             color: var(--neutral-color-white);
             padding: 0.7em 2em;
             border-radius: var(--radius-1);
@@ -72,7 +72,7 @@
         }
 
         #submit-button:hover {
-            background-color: var(--secondary-color-deep-light-blue-500);
+            background-color: var(--primary-dark-blue);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
@@ -89,7 +89,7 @@
         @media (prefers-contrast: more) {
             #submit-button {
                 border: 2px solid var(--neutral-color-black);
-                background-color: var(--neutral-color-grey-700);
+                background-color: var(--neutral-color-grey-600);
                 color: var(--neutral-color-white);
             }
 
