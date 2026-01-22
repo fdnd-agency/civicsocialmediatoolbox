@@ -103,7 +103,7 @@
     }
 
     .btn {
-        display: block;
+        display: inline-block;
         background-color: var(--accents-color-teal);
         color: var(--neutral-color-white);
         text-align: center;
