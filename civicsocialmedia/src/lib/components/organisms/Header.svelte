@@ -1,10 +1,8 @@
-<script lang="ts">
+<script>
 	import '$lib/assets/styles/stylesheet.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import logoUrl from '$lib/assets/logo-text.svg?url';
 	import closemenu from '$lib/assets/close.svg';
-
-	let { children } = $props();
 </script>
 
 <svelte:head>
@@ -32,31 +30,23 @@
 
 		<ul>  
             <li>
-                <a href="">Home</a>
+                <a href="/">Home</a>
             </li>
 
             <li>
-                <a href="">Civic Social Media Roadmap</a>
+                <a href="/roadmap">Civic Social Media Roadmap</a>
             </li>
 
             <li>
-                <a href="">Design principles voor civic social media</a>
+                <a href="/design-principles">Design principles voor civic social media</a>
             </li>
 
             <li>
-                <a href="">Ontwerpprincipes</a>
+                <a href="/ontwerpprincipes">Ontwerpprincipes</a>
             </li>
 
             <li>
-                <a href="">Community archetypes</a>
-            </li>
-
-            <li>
-                <a href="">Over dit project</a>
-            </li>
-
-            <li>
-                <a href="">Partners</a>
+                <a href="/community-archetypes">Community archetypes</a>
             </li>
         </ul>
 	</nav>
@@ -67,20 +57,17 @@ header {
 	background-color: var(--secondary-darkest-beige);
 	display: flex;
 	align-items: center;
-	padding: 0.625rem 1.875rem;
+	padding: 0;
 	min-height: 5rem;
 }
 
 .header-left {
 	display: flex;
 	align-items: center;
-	gap: 0.625rem;
-	margin-top: 0.625rem;
-	margin-left: 0.625rem;
 }
 
 .header-logo {
-	width: 21.875rem;
+	width: 22rem;
 	height: auto;
 	filter: brightness(0);
 }
@@ -117,7 +104,6 @@ header {
 	width: 2.5rem;
 }
 
-
 :popover-open { /* Styles applied to the popover when it is open */
 	display: flex;
 	margin-right: 0;
@@ -125,9 +111,6 @@ header {
 	width: 100%;
 	background-color: var(--primary-dark-blue);
 	position: fixed;
-		@media (min-width: 768px) {
-			max-width: 28em
-		}
 }
 
 ul {
@@ -145,14 +128,10 @@ ul li a {
 	color: #fff;
 	text-decoration: none;
 	font-size: var(--fs-medium);
-		
-		@media (min-width: 768px) {
-			font-size: var(--fs-medium);
-		}
+}
 
-		&:hover {
-			text-decoration: underline;
-		}
+ul li a:hover {
+	text-decoration: underline;
 }
 
 nav {
@@ -165,10 +144,27 @@ nav {
 	position: absolute;
 	right: 1em;
 	top: 3em;        
+}
+
+/* ===== MEDIA QUERIES  ===== */
+
+@media (min-width: 768px) {
+	header {
+		justify-content: flex-start;
+		padding: 0;
+	}
+
+	.header-logo {
+		width: 36rem;
+	}
 	
-        @media (min-width: 768px) {
-            top: 4.3em;
-			right: 4em;
-        }
-    }
+	:popover-open {
+		max-width: 28em;
+	}
+
+	.close-menu {
+		top: 4.3em;
+		right: 4em;
+	}
+}
 </style>
