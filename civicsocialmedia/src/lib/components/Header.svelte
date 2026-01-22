@@ -65,20 +65,17 @@ header {
 	background-color: var(--primary-color-beige);
 	display: flex;
 	align-items: center;
-	padding: 0.625rem 1.875rem;
+	padding: 0;
 	min-height: 5rem;
 }
 
 .header-left {
 	display: flex;
 	align-items: center;
-	gap: 0.625rem;
-	margin-top: 0.625rem;
-	margin-left: 0.625rem;
 }
 
 .header-logo {
-	width: 21.875rem;
+	width: 22rem;
 	height: auto;
 	filter: brightness(0);
 }
@@ -115,7 +112,6 @@ header {
 	width: 2.5rem;
 }
 
-
 :popover-open { /* Styles applied to the popover when it is open */
 	display: flex;
 	margin-right: 0;
@@ -150,17 +146,26 @@ nav {
 	position: relative;
 }
 
-.close-menu { /* Close button styles */
+.close-menu {
 	all: unset;
 	cursor: pointer;
 	position: absolute;
 	right: 1em;
 	top: 3em;        
-    }
+}
 
-	/* ===== MEDIA QUERIES (CORRECT) ===== */
+/* ===== MEDIA QUERIES  ===== */
 
 @media (min-width: 768px) {
+	header {
+		justify-content: flex-start;
+		padding: 0;
+	}
+
+	.header-logo {
+		width: 36rem;
+	}
+	
 	:popover-open {
 		max-width: 28em;
 	}
