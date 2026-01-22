@@ -54,7 +54,7 @@
 
 <style>
 header {
-	background-color: var(--secondary-darkest-beige);
+	background-color: var(--secondary-dark-beige);
 	display: flex;
 	align-items: center;
 	padding: 0;
