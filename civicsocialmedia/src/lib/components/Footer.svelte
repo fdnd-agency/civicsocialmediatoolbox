@@ -9,8 +9,10 @@
 		<li>
 			<a href="mailto:j.r.karskens@hva.nl" class="email">j.r.karskens@hva.nl</a>
 		</li>
-		<span class="footer-link">About this project</span>
-		<span class="footer-link">Partners</span>
+		<li class="footer-links">
+			<span class="footer-link">About this project</span>
+			<span class="footer-link">Partners</span>
+		</li>
 	</ul>
 
 	<img src={logoUrl} alt="Civic Interaction Design logo" class="footer-logo" />
@@ -55,7 +57,7 @@ footer {
 .footer-links {
 	display: flex;
 	flex-direction: column;
-	margin-top: 0.5rem;
+	margin-top: 0.8rem;
 }
 
 .footer-link {
@@ -67,6 +69,10 @@ footer {
 
 .footer-link:hover {
 	text-decoration: underline;
+}
+
+.footer-link:first-child {
+  margin-bottom: 3rem;
 }
 
 .footer-logo {
@@ -100,7 +106,6 @@ footer {
 
 	.footer-logo {
 		width: 27rem;
-		margin-bottom: 0rem;
 		flex-shrink: 0;
 		margin-right: 6rem;
 		margin-bottom: 3rem;
