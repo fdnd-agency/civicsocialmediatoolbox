@@ -5,7 +5,7 @@
   const imgUrl = `https://fdnd-agency.directus.app/assets/${card.posterimage}`;
 </script>
 
-<div class="flip-card">
+<section class="flip-card">
   <input type="checkbox" id={"flip-" + index} class="flip-checkbox" />
   <label for={"flip-" + index} class="card" tabindex="0">
     <div class="flip-inner">
@@ -22,7 +22,7 @@
       </div>
     </div>
   </label>
-</div>
+</section>
 
 <style>
 
