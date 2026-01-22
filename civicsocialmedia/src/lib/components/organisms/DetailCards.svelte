@@ -44,7 +44,7 @@ ul {
 }  
 
 li:focus {
-    outline: 2px solid var(--primary-color-deep-blue);
+    outline: 2px solid var(--primary-darkest-blue);
 }
 
 .page {
@@ -54,7 +54,7 @@ li:focus {
     align-items: center;
     justify-content: center;
     padding: 1em 1.5em 1em 1.5em;
-    background-color: var(--primary-color-deep-blue);
+    background-color: var(--primary-darkest-blue);
     color: var(--neutral-color-white);
     height: 2vh;
     width: 7em;
@@ -64,7 +64,7 @@ li:focus {
     transition: background .2s, transform .1s, box-shadow .2s;
     
         &:hover {
-        background: var(--primary-color-deep-blue);
+        background: var(--primary-darkest-blue);
         transform: translateY(-0.1rem);
         box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .25);
         cursor: pointer;

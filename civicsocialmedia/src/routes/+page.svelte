@@ -14,7 +14,7 @@
       informatie uit te wisselen. Deze platforms zijn gebaseerd op publieke waarden en worden op een transparante
       manier ontwikkeld en beheerd door organisaties en initiatieven met een maatschappelijke doelstelling.
     </p>
-    <h4>Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?</h4>
+    <p>Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?</p>
     <ButtonLeesMeer />
   </section>
 

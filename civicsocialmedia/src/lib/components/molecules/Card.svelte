@@ -1,4 +1,6 @@
 <script>
+    export let card;
+
     let flipped = false; // staat voor "is de kaart geflipt"
     const imgUrl = `https://fdnd-agency.directus.app/assets/${card.posterimage}`;
 
@@ -12,7 +14,6 @@
         }
     }
     
-    export let card;
 </script>
 
 <section class="card" class:flipped={flipped} on:click={toggleFlip} on:keydown={handleKeydown} role="button" tabindex="0"> <!--Als flipped === true wordt de class flipped toegevoegd-->
@@ -77,51 +78,51 @@
     }
     
     .card-front.Care {
-        background-color: var(--accents-color-teal);
+        background-color: var(--accent-color-teal);
     }
 
     .card-front.Intent {
-        background-color: var(--accents-color-orange);
+        background-color: var(--accent-color-orange);
     }
 
     .card-front.Debate {
-        background-color: var(--accents-color-pink);
+        background-color: var(--accent-color-pink);
     }
 
     .card-front.Constituents {
-        background-color: var(--accents-color-olive);
+        background-color: var(--accent-color-olive);
     }
 
     .card-front.Knowledge {
-        background-color: var(--accents-color-purple);
+        background-color: var(--accent-color-purple);
     }
 
     .card-front.Place {
-        background-color: var(--accents-color-yellow);
+        background-color: var(--accent-color-yellow);
     }
 
     .card-back.Care {
-        border: 1em solid var(--accents-color-teal);
+        border: 1em solid var(--accent-color-teal);
     }
 
     .card-back.Intent {
-        border: 1em solid var(--accents-color-orange);
+        border: 1em solid var(--accent-color-orange);
     }
 
     .card-back.Debate {
-        border: 1em solid var(--accents-color-pink);
+        border: 1em solid var(--accent-color-pink);
     }
     
     .card-back.Constituents {
-        border: 1em solid var(--accents-color-olive);
+        border: 1em solid var(--accent-color-olive);
     }
 
     .card-back.Knowledge {
-        border: 1em solid var(--accents-color-purple);
+        border: 1em solid var(--accent-color-purple);
     }
 
     .card-back.Place {
-        border: 1em solid var(--accents-color-yellow);
+        border: 1em solid var(--accent-color-yellow);
     }
 
     .category {
@@ -138,7 +139,7 @@
     }
 
     a {
-        background-color: var(--primary-color-deep-blue);
+        background-color: var(--primary-darkest-blue);
         color: var(--neutral-color-white);
         padding: 0.5em 1.3em;
         position: relative;

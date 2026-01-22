@@ -1,34 +1,42 @@
-## Introduceren van het project Civicsocialmedia:
+### Introducing the Civic Social Media Project:
 
-We hebben een interactieve online toolbox gemaakt, die gebaseerd op het Civic Social Media-project (HvA) om ontwerpers en beleidsmakers te helpen veilige, betrouwbare digitale gemeenschapsplatforms te creëren.
+We have created an interactive online toolbox based on the Civic Social Media project (HvA) to help designers and policymakers create safe and reliable digital community platforms.
 
-**1. Wat is de huidige status van het project?**
-We zijn bijna klaar met het project. De homepagina en de overzichtpagina zijn afgerond, en er is voortgang geboekt op de roadmap-pagina.
-De ontwerpprincipes-pagina is voltooid, en de toolkit-pagina is gedeeltelijk uitgewerkt.
-De “begrijpen”-fase is volledig afgerond, terwijl de fasen “ontwerpen” en “evalueren” nog moeten worden afgerond. De all cards-pagina is nog in ontwikkeling, en de archetype-pagina is nog niet begonnen.
+## 1. What is the current status of the project?
+We are almost finished with the project. The home page and overview page are completed, and progress has been made on the roadmap page.
+The design principles page is completed, and the toolkit page is partially developed.
+The “begrijpen” phase is fully completed, while the “ontwerpen” and “evalueren” phases still need to be finished. The all cards page is still in development, and the archetype page has not yet been started.
 
-### Korte samenvatting:
+### Short summary:
 
-- Homepagina: afgerond
-- Roadmap-pagina: in ontwikkeling, voortgang geboekt
-- Ontwerpprincipes-pagina: afgerond
-- Toolkit-pagina: gedeeltelijk klaar.
-    Begrijpen-fase: volledig afgerond
-    Ontwerpen- en evalueren-fase: nog uit te werken
-    Overzichtpagina: afgerond.
-- All cards pagina: in ontwikkeling
--Archetype-pagina: nog niet begonnen
+- Home page: completed
 
-**2. Wat zijn de belangrijkste features die al werken?**
+- Roadmap page: in progress, some progress made
 
-- Data ophalen uit directus
-- Responsive met container queries
+- Design principles page: completed
 
-**3. Wat zijn de grootste aandachtspunten of uitdagingen?**
+= Toolkit page: partially completed
 
-We moeten nog data toevoegen in directus om nog een paar dingen werkend maken zoals de formulier.
+- Begrijpen phase: fully completed
 
-**4. Wat wordt aangeraden als eerste stap voor het volgende team?**
+- Ontwerpen en Evalueren phases: still to be developed
 
-Om het laden van het project, moet je in terminal cd civicsocialmedia typen en daarna draaien met npm run dev
+- Overview page: completed
 
+- All cards page: in progress
+
+- Archetype page: not yet started
+
+## 2. What are the key features that are already working?
+
+- Fetching data from Directus
+
+- Responsive layout with container queries
+
+## 3. What is the Main focus points or challenges?
+
+We still need to add data in Directus to make a few features work, such as the form.
+
+## 4. What is the recommended first step for the next team?
+
+To run the project, open the terminal, type cd civicsocialmedia, and then run it with npm run dev.
