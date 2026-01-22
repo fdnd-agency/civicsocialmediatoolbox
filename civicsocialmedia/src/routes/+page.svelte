@@ -2,7 +2,7 @@
   import { RoadMap, ToolKit } from '$lib';
   import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
   import community from '$lib/assets/communityarchetypes.png';
-  import ButtonLeesMeer from '$lib/components/ButtonLeesMeer.svelte';
+  import ButtonLeesMeer from '$lib/components/atoms/ButtonLeesMeer.svelte';
 </script>
 
 <main class="homepage-content">
