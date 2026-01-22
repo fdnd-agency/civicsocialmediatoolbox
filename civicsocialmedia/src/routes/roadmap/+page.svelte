@@ -10,8 +10,8 @@
 
 <main class="roadmap-main">
   <h1>Civic Social Media Roadmap</h1>
-  <h3>Voor de ontwikkeling van civic social media moet er in uiteenlopende domeinen actie
-    worden ondernomen.</h3>
+  <h2>Voor de ontwikkeling van civic social media moet er in uiteenlopende domeinen actie
+    worden ondernomen.</h2>
   <p>Hoe creëren we een omgeving waarin civic social media kunnen floreren?</p>
 
   <section class="pyramid">
@@ -19,20 +19,20 @@
 
 
       <button class="btn theme-layer-4" onclick={() => selectItem(items[3]?.id)}>
-        <span class="sr-only">Systemen layer: </span>{items[3]?.subtitle}<span class="sr-only">, klik voor meer informatie</span>
+        <span class="sr-only">Systemen layer: </span>{items[3]?.subtitle}<span class="sr-only">, klik voor meer information</span>
       </button>
 
       <button class="btn theme-layer-3" onclick={() => selectItem(items[2]?.id)}>
-        <span class="sr-only">Systemen layer: </span>{items[2]?.subtitle}<span class="sr-only">, klik voor meer informatie</span>
+        <span class="sr-only">Systemen layer: </span>{items[2]?.subtitle}<span class="sr-only">, klik voor meer information</span>
       </button>
     <h2 class="label label-cultuur">{items[1]?.title}</h2>
 
       <button class="btn theme-layer-2" onclick={() => selectItem(items[1]?.id)}>
-        <span class="sr-only">Cultuur layer: </span>{items[1]?.subtitle}<span class="sr-only">, klik voor meer informatie</span>
+        <span class="sr-only">Cultuur layer: </span>{items[1]?.subtitle}<span class="sr-only">, klik voor meer information</span>
       </button>
 
       <button class="btn theme-layer-1" onclick={() => selectItem(items[0]?.id)}>
-        <span class="sr-only">Cultuur layer: </span>{items[0]?.subtitle}<span class="sr-only">, klik voor meer informatie</span>
+        <span class="sr-only">Cultuur layer: </span>{items[0]?.subtitle}<span class="sr-only">, klik voor meer information</span>
       </button>
   </section>
 
