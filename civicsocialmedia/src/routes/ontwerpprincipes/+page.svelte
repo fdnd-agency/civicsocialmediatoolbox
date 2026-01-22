@@ -391,7 +391,7 @@ onMount(() => {
 
 
  <script>
-  import Cards from '$lib/components/OntCards.svelte';
+  import Cards from '$lib/components/OntwerpprincipesCards.svelte';
 
   export let data;
 
