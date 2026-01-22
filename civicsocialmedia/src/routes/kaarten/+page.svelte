@@ -1,21 +1,19 @@
 <script>
-  import OntwerpprincipesCard from "$lib/components/OntwerpprincipesCard.svelte";
-  import Card from "$lib/components/molecules/Card.svelte";
+    import OntwerpprincipesCard from "$lib/components/OntwerpprincipesCard.svelte";
+    import Card from "$lib/components/molecules/Card.svelte";
 
-  export let data;
+    export let data;
 
-  const ontwerpprincipesCards = data.ontwerpprincipesCards ?? [];
-  const archetypeCards = data.archetypeCards ?? [];
+    const ontwerpprincipesCards = data.ontwerpprincipesCards ?? [];
+    const archetypeCards = data.archetypeCards ?? [];
 </script>
 
 <main>
-    <h2>Kaarten overzicht</h2>
+    <h1>Kaarten overzicht</h1>
 
-    <p>
-       Ontdek het overzicht van alle kaarten die in de toolkit worden gebruikt.
-    </p>
+    <p>Ontdek het overzicht van alle kaarten die in de toolkit worden gebruikt.</p>
 
-    <h3>Ontwerpprincipes cards</h3>
+    <h2>Ontwerpprincipes cards</h2>
 
     <section class="custom-page-cards">
         {#each ontwerpprincipesCards as card, index}
@@ -25,13 +23,13 @@
         {/each}
     </section>
 
-    <h3 class="sub-catogery" >Archetype cards</h3>
+    <h2>Archetype cards</h2>
 
     <section class="custom-page-cards">
-    {#each archetypeCards as card}
-      <Card {card} />
-    {/each}
-  </section>
+        {#each archetypeCards as card}
+            <Card {card} />
+        {/each}
+    </section>
 </main>
 
 <style>
@@ -39,13 +37,13 @@
         padding: 2em;
     }
 
-    main h2 {
+    main h1 {
         font-size: var(--fs-title);
         margin-bottom: 0.5em;
         color: var(--primary-color-deep-blue);
     }
 
-    main h3 {
+    main h2 {
         font-size: var(--fs-large);
         color: var(--primary-color-deep-blue);
         margin-top: 3rem;
@@ -57,7 +55,7 @@
         color: var(--neutral-color-grey-700);
         max-width: 75ch;
     }
-    
+
     .custom-page-cards {
         display: grid;
         grid-template-columns: 1fr; /* default: mobile: 1 per row */
