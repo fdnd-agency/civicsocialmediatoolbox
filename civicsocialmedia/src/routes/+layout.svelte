@@ -237,6 +237,26 @@ nav {
         }
 }
 
+
+@media (prefers-reduced-motion: no-preference) {
+	.intro {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	color: var(--primary-color-deep-blue);
+	background-color: #EBDAC5;
+	}
+}
+
 /* ===== Footer ===== */
 footer {
 	background-color: var(--neutral-color-black);
