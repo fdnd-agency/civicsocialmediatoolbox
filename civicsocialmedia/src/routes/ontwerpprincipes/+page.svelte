@@ -1,5 +1,5 @@
 <script>
-  import Cards from "$lib/components/OntwerpprincipesCards.svelte";
+  import Cards from "$lib/components/organisms/OntwerpprincipesCards.svelte";
 
   export let data;
 
