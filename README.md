@@ -22,7 +22,7 @@ Install
 Clone respository
 ```
 git clone https://github.com/fdnd-agency/civicsocialmediatoolbox.git
-cd adconnect
+cd civicsocialmedia
 ```
 Install independencies
 ```
