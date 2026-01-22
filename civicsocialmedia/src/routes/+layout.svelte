@@ -215,10 +215,6 @@ ul li a {
 		@media (min-width: 768px) {
 			font-size: var(--fs-medium);
 		}
-
-		&:hover {
-			background-color: var(--secondary-color-deep-light-blue-700);
-		}
 }
 
 nav {
