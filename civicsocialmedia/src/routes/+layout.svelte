@@ -139,7 +139,6 @@ header {
 	width: 2.5rem;
 }
 
-
 :popover-open { /* Styles applied to the popover when it is open */
 	display: flex;
 	margin-right: 0;
@@ -147,9 +146,24 @@ header {
 	width: 100%;
 	background-color: var(--primary-color-deep-blue);
 	position: fixed;
-		@media (min-width: 768px) {
-			max-width: 28em
-		}
+
+	ul li {
+		animation: slide-in 1s forwards;
+		transition-delay: calc((sibling-index() - 1) * 100ms);	
+	}
+
+	@media (min-width: 768px) {
+		max-width: 28em
+	}
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(calc(sibling-index() * 3em));
+	}
+	to {
+		transform: translateX(0);
+	}
 }
 
 ul {
@@ -163,6 +177,10 @@ ul li {
 	padding: 1em;
 }
 
+ul li:hover {
+    transform: translateY(-0.5em);
+}
+
 ul li a {
 	color: #fff;
 	text-decoration: none;
@@ -173,7 +191,7 @@ ul li a {
 		}
 
 		&:hover {
-			text-decoration: underline;
+			background-color: var(--secondary-color-deep-light-blue-700);
 		}
 }
 
