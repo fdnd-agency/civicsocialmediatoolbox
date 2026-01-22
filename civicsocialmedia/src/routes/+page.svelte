@@ -2,7 +2,7 @@
   import { RoadMap, ToolKit } from '$lib';
   import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
   import community from '$lib/assets/communityarchetypes.png';
-  import ButtonLeesMeer from '$lib/components/ButtonLeesMeer.svelte';
+  import ButtonLeesMeer from '$lib/components/atoms/ButtonLeesMeer.svelte';
 </script>
 
 <main class="homepage-content">
@@ -14,7 +14,7 @@
       informatie uit te wisselen. Deze platforms zijn gebaseerd op publieke waarden en worden op een transparante
       manier ontwikkeld en beheerd door organisaties en initiatieven met een maatschappelijke doelstelling.
     </p>
-    <h4>Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?</h4>
+    <p>Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?</p>
     <ButtonLeesMeer />
   </section>
 
@@ -289,9 +289,11 @@
     margin-bottom: 2em;
     padding: 0 1em;
   }
-    .adjusted-card {
+  
+  .adjusted-card {
     @media (min-width: 64em) { 
       margin-top: -15rem;
-    }}
+    }
+  }
 
 </style>

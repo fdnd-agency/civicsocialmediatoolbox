@@ -4,7 +4,6 @@
 	import logoUrl from '$lib/assets/logo-text.svg?url';
 	import closemenu from '$lib/assets/close.svg';
 
-
 	let { children } = $props();
 </script>
 
@@ -31,8 +30,7 @@
 			<img src={closemenu} alt="sluitknop">
         </button>
 
-		<ul>
-            
+		<ul>  
             <li>
                 <a href="">Home</a>
             </li>
@@ -64,14 +62,9 @@
 	</nav>
 </header>
 
-<main>
-	{@render children?.()}
-</main>
-
 <style>
-/* ===== Header ===== */
 header {
-	background-color: var(--primary-color-beige);
+	background-color: var(--secondary-darkest-beige);
 	display: flex;
 	align-items: center;
 	padding: 0.625rem 1.875rem;
@@ -99,7 +92,7 @@ header {
 	width: 3.125rem;
 	height: 3.125rem;
 	border-radius: 50%;
-	background-color: var(--primary-color-deep-blue);
+	background-color: var(--primary-dark-blue);
 	border: none;
 	cursor: pointer;
 	display: flex;
@@ -130,7 +123,7 @@ header {
 	margin-right: 0;
 	height: 100%;
 	width: 100%;
-	background-color: var(--primary-color-deep-blue);
+	background-color: var(--primary-dark-blue);
 	position: fixed;
 		@media (min-width: 768px) {
 			max-width: 28em
@@ -166,12 +159,13 @@ nav {
 	position: relative;
 }
 
-.close-menu { /* Close button styles */
+.close-menu {
 	all: unset;
 	cursor: pointer;
 	position: absolute;
 	right: 1em;
 	top: 3em;        
+	
         @media (min-width: 768px) {
             top: 4.3em;
 			right: 4em;

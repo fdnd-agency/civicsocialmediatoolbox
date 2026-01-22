@@ -3,9 +3,31 @@
 	import favicon from '$lib/assets/favicon.svg?url';
 	import logoUrl from '$lib/assets/logo-text.svg?url';
 	import closemenu from '$lib/assets/close.svg';
-
-
+	import { onMount } from "svelte";
+  	import { gsap } from "gsap";
+  	import SplitText from "gsap/SplitText";
 	export let children;
+
+
+	onMount(() => {
+		let split = new SplitText(".intro-text", { type: "chars" });
+		const tl = gsap.timeline();
+		
+		tl.from(split.chars, {
+		duration: 1,
+		opacity: 0,
+		y: 50,
+		stagger: 0.05, //https://gsap.com/resources/getting-started/Staggers/
+		ease: "power2.out" 
+		})
+
+		.to('.intro', {
+			autoAlpha: 0, 
+			duration: 1,
+			ease: 'power4.out'
+		})
+
+	});
 </script>
 
 <svelte:head>
@@ -66,6 +88,9 @@
 
 <main>
 	{@render children?.()}
+	<section class="intro">
+		<h1 class="intro-text">Civic Social Media</h1>
+	</section>
 </main>
 
 <footer>
@@ -87,7 +112,7 @@
 <style>
 /* ===== Header ===== */
 header {
-	background-color: var(--primary-color-beige);
+	background-color: var(--secondary-dark-beige);
 	display: flex;
 	align-items: center;
 	padding: 0.625rem 1.875rem;
@@ -115,7 +140,7 @@ header {
 	width: 3.125rem;
 	height: 3.125rem;
 	border-radius: 50%;
-	background-color: var(--primary-color-deep-blue);
+	background-color: var(--primary-dark-blue);
 	border: none;
 	cursor: pointer;
 	display: flex;
@@ -140,17 +165,31 @@ header {
 	width: 2.5rem;
 }
 
-
 :popover-open { /* Styles applied to the popover when it is open */
 	display: flex;
 	margin-right: 0;
 	height: 100%;
 	width: 100%;
-	background-color: var(--primary-color-deep-blue);
+	background-color: var(--primary-dark-blue);
 	position: fixed;
-		@media (min-width: 768px) {
-			max-width: 28em
-		}
+
+	ul li {
+		animation: slide-in 1s forwards;
+		transition-delay: calc((sibling-index() - 1) * 100ms);	
+	}
+
+	@media (min-width: 768px) {
+		max-width: 28em
+	}
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(calc(sibling-index() * 3em));
+	}
+	to {
+		transform: translateX(0);
+	}
 }
 
 ul {
@@ -164,6 +203,10 @@ ul li {
 	padding: 1em;
 }
 
+ul li:hover {
+    transform: translateY(-0.5em);
+}
+
 ul li a {
 	color: #fff;
 	text-decoration: none;
@@ -171,10 +214,6 @@ ul li a {
 		
 		@media (min-width: 768px) {
 			font-size: var(--fs-medium);
-		}
-
-		&:hover {
-			text-decoration: underline;
 		}
 }
 
@@ -192,7 +231,33 @@ nav {
             top: 4.3em;
 			right: 4em;
         }
-    }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+	.intro {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	color: var(--primary-color-deep-blue);
+	background-color: #EBDAC5;
+	font-size: var(--fs-medium);
+	}
+}
+
+.intro-text {
+	font-size: var(--fs-title);
+	@media (min-width: 48rem) {
+		font-size: var(--fs-display);
+	}
+}
 
 /* ===== Footer ===== */
 footer {
