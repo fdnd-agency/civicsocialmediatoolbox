@@ -1,7 +1,7 @@
 <script>
 	import '$lib/assets/styles/stylesheet.css';
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/organisms/Header.svelte';
+	import Footer from '$lib/components/organisms/Footer.svelte';
 	import { onMount } from "svelte";
   	import { gsap } from "gsap";
   	import SplitText from "gsap/SplitText";

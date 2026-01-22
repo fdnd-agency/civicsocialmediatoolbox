@@ -1,4 +1,4 @@
-<script>
+c<script>
 	import logoUrl from '$lib/assets/logo-text.svg?url';
 </script>
 
