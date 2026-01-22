@@ -8,7 +8,7 @@
 </script>
 
 <main>
-  <h2>Ontwerpprincipes</h2>
+  <h1>Ontwerpprincipes</h1>
   <p>
     <strong>
       Hier presenteren we vijf ontwerpprincipes en zeven ontwerpdimensies voor
@@ -32,7 +32,7 @@
   </p>
 
   <header class="title">
-    <h3>Vijf ontwerpprincipes voor civic social media</h3>
+    <h2>Vijf ontwerpprincipes voor civic social media</h2>
   </header>
 
   <!-- Cards component -->
@@ -44,13 +44,13 @@
     padding: 2em;
   }
 
-  main h2 {
+  main h1 {
     font-size: var(--fs-title);
     margin-bottom: 0.5em;
     color: var(--primary-color-deep-blue);
   }
 
-  main h3 {
+  main h2 {
     font-size: var(--fs-large);
     color: var(--primary-color-deep-blue);
   }
