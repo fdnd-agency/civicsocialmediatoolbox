@@ -1,53 +1,48 @@
-# Civic social media
+# Civic Social Media
 
 ## About
-Het Civic Social Media-project van het lectoraat Civic Interaction Design van de Hogeschool van Amsterdam richt zich op het onderzoeken, ontwerpen en promoten van digitale platforms die leden van de gemeenschap in staat stellen om veilig en betrouwbaar te communiceren, samen te werken en informatie uit te wisselen.
+The Civic Social Media project of the Civic Interaction Design research group at Amsterdam University of Applied Sciences focuses on researching, designing, and promoting digital platforms that enable community members to communicate, collaborate, and exchange information safely and reliably.
 
-## Over het project
-Bij dit project hebben zijn er verschillende producten ontwikkeld die ontwerpers en beleidsmakers helpen om Civic Social Media te ontwikkelen en ontwerpen. Deze zijn uitgewerkt in PDF's en te downloaden op onze website. Het doel van dit project is het transformeren van deze PDF-documenten naar een interactieve, toegankelijke online-ervaring die gebruikers inspireert en in staat stelt om Civic Social Mediaconcepten toe te passen in hun eigen context.
 
-[Live link](https://civicsocialmedia.netlify.app/)
+## About the project
+This project has developed various products that help designers and policymakers develop and design Civic Social Media. These have been compiled in PDFs and can be downloaded from our website. The aim of this project is to transform these PDF documents into an interactive, accessible online experience that inspires users and enables them to apply Civic Social Media concepts in their own context.
 
-## Componenten
-De homepagina bevat een aantal linkjes naar verdere informatie om een social media platform te ontwerpen en ontwikkelen. We hebben de website gebouwd met herbruikbare componenten zoals de buttons:
+## Techniques used
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Svelte](https://img.shields.io/badge/sveltekit-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
+![PostCSS](https://img.shields.io/badge/PostCSS-%23DD3A0A.svg?style=for-the-badge&logo=postcss&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-%2388CE02.svg?style=for-the-badge&logo=greensock&logoColor=black)
 
-```Sveltekit
-<script>
-  export let href = "/";
-</script>
+## Installation
+To build this project, the following steps must be completed. Node.js and npm (or alternatives such as pnpm or yarn) are required as a package manager to get started.
 
-<a href={href} class="btn">
-  <slot>Lees meer</slot>
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-    <path d="M5 12h14m0 0-5-5m5 5-5 5"
-      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-  </svg>
-</a>
-
-<style>
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-</style>
+Install
+Clone respository
 ```
-
-## Images
-
-<img width="493" height="574" alt="Scherm­afbeelding 2025-10-07 om 22 03 13" src="https://github.com/user-attachments/assets/2ba99866-d9b4-4712-bf3e-c7429a310cc1" />
-
-
-
-
-
-## Basic installation Sveltekit
-
-Om aan het project te werken kan je het project clonen. Installeer de dependencies na het forken met `npm install` om een server op te starten:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
+git clone https://github.com/fdnd-agency/civicsocialmediatoolbox.git
+cd adconnect
+```
+Install independencies
+```
+npm install
+```
+Run the project
+```
 npm run dev -- --open
 ```
 
+## Related documents
+- Link to our [Contributing.md](https://github.com/fdnd-agency/civicsocialmediatoolbox/blob/main/CONTRIBUTING.md#contributing)
+- Link to our [Handover.md]()
+- Link to our [Technical documentation]()
+
+
+## Teammembers
+
+| Name        | Github                          |
+|------------------|----------------------------------------|
+| Abeer      | [Github of Abeer](https://github.com/Abeeryu)           |
+| Karima           | [Github of Karima](https://github.com/Karima002)                                 |
+| Yamen           | [Github of Abeer](https://github.com/yamenAl)                            |

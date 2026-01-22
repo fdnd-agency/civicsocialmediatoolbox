@@ -54,28 +54,14 @@
     h2 {
         font-size: var(--fs-title);
         margin-bottom: 0.5em;
-        color: var(--primary-color-deep-blue);
-        text-align: left;
-
-        @media (min-width: 768px) {
-            font-size: var(--fs-display);
-            margin-bottom: 0.5em;
-            padding-left: 0;
-        }
+        color: var(--primary-dark-blue);
     }
 
     h3 {
         font-size: var(--fs-large);
         margin-top: 1.5em;
         margin-bottom: 0.5em;
-        color: var(--primary-color-deep-blue);
-
-        @media (min-width: 768px) {
-            font-size: var(--fs-large);
-            margin-top: 1.5em;
-            margin-bottom: 1.5em;
-            padding-left: 0;
-        }
+        color: var(--primary-dark-blue);
     }
 
     /* --- Paragraphs --- */
@@ -104,7 +90,7 @@
 
     .btn {
         display: inline-block;
-        background-color: var(--accents-color-teal);
+        background-color: var(--accent-color-teal);
         color: var(--neutral-color-white);
         text-align: center;
         text-decoration: none;
@@ -129,9 +115,9 @@
         }
     }
 
-    .text {
-        font-weight: 700;
-        margin-bottom: 1em;
+    .btn:hover {
+        background-color: var(--accent-color-dark-green);
+        transform: translateY(-2px);
     }
 
     .btn-all-cards {
