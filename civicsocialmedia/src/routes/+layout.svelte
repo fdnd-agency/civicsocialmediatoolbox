@@ -3,8 +3,11 @@
 	import favicon from '$lib/assets/favicon.svg?url';
 	import logoUrl from '$lib/assets/logo-text.svg?url';
 	import closemenu from '$lib/assets/close.svg';
-	
+	import { onMount } from "svelte";
+  	import { gsap } from "gsap";
+  	import SplitText from "gsap/SplitText";
 	export let children;
+
 </script>
 
 <svelte:head>
@@ -65,6 +68,9 @@
 
 <main>
 	{@render children?.()}
+	<section class="intro">
+		<h1 class="intro-text">Civic Social Media</h1>
+	</section>
 </main>
 
 <footer>
@@ -209,7 +215,7 @@ nav {
             top: 4.3em;
 			right: 4em;
         }
-    }
+}
 
 /* ===== Footer ===== */
 footer {
