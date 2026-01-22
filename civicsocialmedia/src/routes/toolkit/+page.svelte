@@ -1,16 +1,10 @@
 <main>
-    <h2>Ontwerp principes voor Civic Social Media</h2>
+    <h2>Ontwerpprincipes voor Civic Social Media</h2>
     <p>
         Principes en keuzes voor het ontwerpen, lanceren en onderhouden van
         Civic Social Media.
     </p>
     <h3>Ontwerpen voor Civic Social Media</h3>
-
-    <div class="btn-group">
-        <a href="/begrijpen" class="btn">Begrijpen</a>
-        <a href="/ontwerpen" class="btn">Ontwerpen</a>
-        <a href="/evalueren" class="btn">Evalueren</a>
-    </div>
 
     <p>
         Deze toolkit bevat 55 kaarten, samengesteld uit community archetypes,
@@ -20,6 +14,12 @@
         evalueren. De activiteiten kunnen los van elkaar gebruikt worden, maar
         bouwen ook op elkaar voort als ontwerpproces.
     </p>
+
+    <div class="btn-group">
+        <a href="/begrijpen" class="btn">Begrijpen</a>
+        <a href="/ontwerpen" class="btn">Ontwerpen</a>
+        <a href="/evalueren" class="btn">Evalueren</a>
+    </div>
 
     <p>
         De activiteiten kunnen worden uitgevoerd door individuele ontwerpers,
@@ -32,20 +32,33 @@
             ondersteunen.</span
         >
     </p>
+
+    <p class="text">Wilt u direct de 55 kaarten verkennen? Klik dan hier.</p>
+
+    <a href="/kaarten" class="btn btn-all-cards">
+        <span class="btn-text-desktop">Bekijk alle kaarten</span>
+        <span class="btn-text-mobile">Alle kaarten</span>
+    </a>
 </main>
 
 <style>
+    main {
+        padding: 2em;
 
+        @media (min-width: 768px) {
+            padding: 0 4em;
+        }
+    }
+
+    /* --- Headings --- */
     h2 {
         font-size: var(--fs-title);
-        letter-spacing: -0.03em;
         margin-bottom: 0.5em;
         color: var(--primary-dark-blue);
     }
 
     h3 {
         font-size: var(--fs-large);
-        letter-spacing: -0.02em;
         margin-top: 1.5em;
         margin-bottom: 0.5em;
         color: var(--primary-dark-blue);
@@ -54,9 +67,10 @@
     /* --- Paragraphs --- */
     p {
         font-size: var(--fs-medium);
-        line-height: 1.9;
-        margin-bottom: 1.5em;
+        line-height: 1.6;
         text-align: left;
+        padding-left: 0em;
+        max-width: 75ch;
     }
 
     /* --- Buttons --- */
@@ -66,10 +80,16 @@
         align-items: stretch;
         gap: 1em;
         margin: 2em 0;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 1.5em;
+        }
     }
 
     .btn {
-        display: block;
+        display: inline-block;
         background-color: var(--accent-color-teal);
         color: var(--neutral-color-white);
         text-align: center;
@@ -82,6 +102,17 @@
             background-color 0.25s ease,
             transform 0.15s ease;
         border: none;
+
+        &:hover {
+            background-color: var(--accents-color-dark-green);
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 768px) {
+            width: auto;
+            min-width: 12em;
+            padding: 1em 2em;
+        }
     }
 
     .btn:hover {
@@ -89,34 +120,26 @@
         transform: translateY(-2px);
     }
 
-    /* --- Desktop layout --- */
-    @media (min-width: 768px) {
-        main {
-            max-width: 100ch;
-            padding: 3em 4em;
-        }
+    .btn-all-cards {
+        margin-top: 2.5em;
+        font-weight: 700;
+        margin-bottom: 3em;
+    }
 
-        h2 {
-            font-size: var(--fs-display);
-            margin-bottom: 0.7em;
-        }
+    /* Mobile: korte tekst */
+    .btn-text-desktop {
+        display: none;
 
-        h3 {
-            font-size: var(--fs-large);
-            margin-top: 1.5em;
-            margin-bottom: 1.5em;
+        @media (min-width: 768px) {
+            display: inline;
         }
+    }
 
-        .btn-group {
-            flex-direction: row;
-            justify-content: flex-start;
-            gap: 1.5em;
-        }
+    .btn-text-mobile {
+        display: inline;
 
-        .btn {
-            width: auto;
-            min-width: 12em;
-            padding: 1em 2em;
+        @media (min-width: 768px) {
+            display: none;
         }
     }
 </style>
