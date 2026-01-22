@@ -240,16 +240,22 @@ nav {
 	top: 0;
 	left: 0;
 	z-index: 2;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 	height: 100vh;
 	width: 100%;
 	text-align: center;
 	color: var(--primary-color-deep-blue);
 	background-color: #EBDAC5;
+	font-size: var(--fs-medium);
+	}
+}
+
+.intro-text {
+	font-size: var(--fs-title);
+	@media (min-width: 48rem) {
+		font-size: var(--fs-display);
 	}
 }
 
