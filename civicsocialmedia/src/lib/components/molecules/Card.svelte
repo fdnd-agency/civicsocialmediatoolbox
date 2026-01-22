@@ -94,7 +94,7 @@
     }
 
     .card-front.Knowledge {
-        background-color: var(--accent-color-purple);
+        background-color: var(--accent-color-blue);
     }
 
     .card-front.Place {
