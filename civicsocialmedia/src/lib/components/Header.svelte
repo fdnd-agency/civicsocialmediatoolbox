@@ -48,14 +48,6 @@
             <li>
                 <a href="/community-archetypes">Community archetypes</a>
             </li>
-
-            <li>
-                <a href="/over-dit-project">Over dit project</a>
-            </li>
-
-            <li>
-                <a href="/partners">Partners</a>
-            </li>
         </ul>
 	</nav>
 </header>
