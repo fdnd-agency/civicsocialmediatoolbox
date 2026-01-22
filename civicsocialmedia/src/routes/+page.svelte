@@ -3,7 +3,12 @@
   import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
   import community from '$lib/assets/communityarchetypes.png';
   import ButtonLeesMeer from '$lib/components/atoms/ButtonLeesMeer.svelte';
+  import BackgroundAnimation from '$lib/components/BackgroundAnimation.svelte';
+
+  let speed = 0.01;
 </script>
+
+<BackgroundAnimation bind:speed/>
 
 <main class="homepage-content">
   <section class="homepage-titel" id="about">
@@ -117,6 +122,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem 2rem;
+    position: relative;
+    z-index: 2;
 
     @media (min-width: 64em) {
       display: grid;
@@ -128,6 +135,8 @@
 
   .homepage-titel {
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
 
     @media (min-width: 64em) {
       position: sticky;
@@ -141,6 +150,7 @@
     border: none;
     position: relative;
     margin-top: 5em;
+    z-index: 2;
 
     &:not(:last-of-type)::after {
       content: "";
@@ -242,7 +252,8 @@
   .hero-section {
     background: #EBDAC5;
     margin-top: 5em;
-
+    position: relative;
+    z-index: 2;
 
     @media (min-width: 64em) {
       grid-column: 1 / -1;  /* under title + cards */
