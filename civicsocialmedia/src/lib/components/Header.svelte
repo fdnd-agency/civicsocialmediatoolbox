@@ -1,10 +1,8 @@
-<script lang="ts">
+<script>
 	import '$lib/assets/styles/stylesheet.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import logoUrl from '$lib/assets/logo-text.svg?url';
 	import closemenu from '$lib/assets/close.svg';
-
-	let { children } = $props();
 </script>
 
 <svelte:head>
@@ -32,31 +30,31 @@
 
 		<ul>  
             <li>
-                <a href="">Home</a>
+                <a href="/">Home</a>
             </li>
 
             <li>
-                <a href="">Civic Social Media Roadmap</a>
+                <a href="/roadmap">Civic Social Media Roadmap</a>
             </li>
 
             <li>
-                <a href="">Design principles voor civic social media</a>
+                <a href="/design-principles">Design principles voor civic social media</a>
             </li>
 
             <li>
-                <a href="">Ontwerpprincipes</a>
+                <a href="/ontwerpprincipes">Ontwerpprincipes</a>
             </li>
 
             <li>
-                <a href="">Community archetypes</a>
+                <a href="/community-archetypes">Community archetypes</a>
             </li>
 
             <li>
-                <a href="">Over dit project</a>
+                <a href="/over-dit-project">Over dit project</a>
             </li>
 
             <li>
-                <a href="">Partners</a>
+                <a href="/partners">Partners</a>
             </li>
         </ul>
 	</nav>
@@ -125,9 +123,6 @@ header {
 	width: 100%;
 	background-color: var(--primary-color-deep-blue);
 	position: fixed;
-		@media (min-width: 768px) {
-			max-width: 28em
-		}
 }
 
 ul {
@@ -145,30 +140,34 @@ ul li a {
 	color: #fff;
 	text-decoration: none;
 	font-size: var(--fs-medium);
-		
-		@media (min-width: 768px) {
-			font-size: var(--fs-medium);
-		}
+}
 
-		&:hover {
-			text-decoration: underline;
-		}
+ul li a:hover {
+	text-decoration: underline;
 }
 
 nav {
 	position: relative;
 }
 
-.close-menu {
+.close-menu { /* Close button styles */
 	all: unset;
 	cursor: pointer;
 	position: absolute;
 	right: 1em;
 	top: 3em;        
-	
-        @media (min-width: 768px) {
-            top: 4.3em;
-			right: 4em;
-        }
     }
+
+	/* ===== MEDIA QUERIES (CORRECT) ===== */
+
+@media (min-width: 768px) {
+	:popover-open {
+		max-width: 28em;
+	}
+
+	.close-menu {
+		top: 4.3em;
+		right: 4em;
+	}
+}
 </style>

@@ -1,3 +1,7 @@
+<script>
+	import logoUrl from '$lib/assets/logo-text.svg?url';
+</script>
+
 <footer>
 	<ul class="contact-info">
 		<li class="project-title">CIVIC SOCIAL MEDIA</li>
@@ -58,22 +62,25 @@ ul {
 	filter: brightness(0) invert(1);
 }
 
-footer {
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-end;
-	padding: 2rem 2.5rem;
-	gap: 0;
-}
+/* ===== Responsive ===== */
+@media (min-width: 48rem) { /* 768px */
+	footer {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-end;
+		padding: 2rem 2.5rem;
+		gap: 0;
+	}
 
-.contact-info {
-	font-size: var(--fs-small);
-}
+	.contact-info {
+		font-size: var(--fs-small);
+	}
 
-.footer-logo {
-	width: 25rem;
-	margin-top: 0;
-	flex-shrink: 0;
-	margin-right: 6rem;
+	.footer-logo {
+		width: 25rem;
+		margin-top: 0;
+		flex-shrink: 0;
+		margin-right: 6rem;
+	}
 }
 </style>
