@@ -15,23 +15,25 @@
   <p>Hoe creëren we een omgeving waarin civic social media kunnen floreren?</p>
 
   <section class="pyramid">
-    <button class="btn theme-layer-4" onclick={() => selectItem(items[3]?.id)}>
-      {items[3]?.subtitle || 'Technologische Infrastructuur'}
-    </button>
     <h2 class="label label-systemen">{items[2]?.title}</h2>
 
-    <button class="btn theme-layer-3" onclick={() => selectItem(items[2]?.id)}>
-      {items[2]?.subtitle || 'Wetgeving en Beleid'}
-    </button>
 
-    <button class="btn theme-layer-2" onclick={() => selectItem(items[1]?.id)}>
-      {items[1]?.subtitle || 'Storytelling'}
-    </button>
+      <button class="btn theme-layer-4" onclick={() => selectItem(items[3]?.id)}>
+        <span class="sr-only">Systemen layer: </span>{items[3]?.subtitle}<span class="sr-only">, klik voor meer informatie</span>
+      </button>
+
+      <button class="btn theme-layer-3" onclick={() => selectItem(items[2]?.id)}>
+        <span class="sr-only">Systemen layer: </span>{items[2]?.subtitle}<span class="sr-only">, klik voor meer informatie</span>
+      </button>
     <h2 class="label label-cultuur">{items[1]?.title}</h2>
 
-    <button class="btn theme-layer-1" onclick={() => selectItem(items[0]?.id)}>
-      {items[0]?.subtitle || 'Waardenkader Media en Democratie'}
-    </button>
+      <button class="btn theme-layer-2" onclick={() => selectItem(items[1]?.id)}>
+        <span class="sr-only">Cultuur layer: </span>{items[1]?.subtitle}<span class="sr-only">, klik voor meer informatie</span>
+      </button>
+
+      <button class="btn theme-layer-1" onclick={() => selectItem(items[0]?.id)}>
+        <span class="sr-only">Cultuur layer: </span>{items[0]?.subtitle}<span class="sr-only">, klik voor meer informatie</span>
+      </button>
   </section>
 
   {#if activeId}
@@ -43,10 +45,9 @@
               <h2>{item.subtitle}</h2>
             {/if}
             {#if item.body}
-              <article>{@html item.body
-                .replace(/Key drivers:/g, '<h3>Key drivers:</h3>')
-                .replace(/Opgaven, onder meer:/g, '<h3>Opgaven, onder meer:</h3>')
-              }</article>
+              <article>
+                {@html item.body}
+              </article>
             {/if}
             {#if item.aside}
               <aside>
