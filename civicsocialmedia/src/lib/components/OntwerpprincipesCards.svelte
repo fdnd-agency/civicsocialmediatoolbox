@@ -57,12 +57,7 @@
       });
 
       if (visibleCards.length > 0) {
-        gsap.to(visibleCards, {
-          opacity: 1,
-          scale: 1,
-          duration: 0.6,
-          ease: "power2.out",
-          stagger: 0.2,
+        gsap.to(visibleCards, {opacity: 1, scale: 1, duration: 0.6, ease: "power2.out", stagger: 0.2,
           onComplete: () => visibleCards.forEach((c) => c.classList.add("animated")),
         });
       }
