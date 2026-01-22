@@ -54,7 +54,7 @@
 
 <style>
 header {
-	background-color: var(--primary-color-beige);
+	background-color: var(--secondary-darkest-beige);
 	display: flex;
 	align-items: center;
 	padding: 0;
@@ -79,7 +79,7 @@ header {
 	width: 3.125rem;
 	height: 3.125rem;
 	border-radius: 50%;
-	background-color: var(--primary-color-deep-blue);
+	background-color: var(--primary-dark-blue);
 	border: none;
 	cursor: pointer;
 	display: flex;
@@ -109,7 +109,7 @@ header {
 	margin-right: 0;
 	height: 100%;
 	width: 100%;
-	background-color: var(--primary-color-deep-blue);
+	background-color: var(--primary-dark-blue);
 	position: fixed;
 }
 

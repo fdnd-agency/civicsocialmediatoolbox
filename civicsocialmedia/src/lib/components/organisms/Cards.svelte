@@ -1,5 +1,5 @@
 <script>
-    import Card from "./Card.svelte";
+    import Card from "../molecules/Card.svelte";
     export let cards;
 </script>
 
