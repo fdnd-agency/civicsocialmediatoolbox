@@ -3,7 +3,7 @@
   import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
   import community from '$lib/assets/communityarchetypes.png';
   import ButtonLeesMeer from '$lib/components/atoms/ButtonLeesMeer.svelte';
-  import BackgroundAnimation from '$lib/components/BackgroundAnimation.svelte';
+  import BackgroundAnimation from '$lib/components/effects/BackgroundAnimation.svelte';
 
   let speed = 0.01;
 </script>
