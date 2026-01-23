@@ -1,10 +1,10 @@
 <script>
-	import ParticleBackground from '$lib/components/ParticleBackground.svelte';
+	import BackgroundAnimation from '$lib/components/BackgroundAnimation.svelte';
 	// local binding for the animation speed (default matches component default)
 	let speed = 0.03;
 </script>
 
-<ParticleBackground bind:speed />
+<BackgroundAnimation bind:speed />
 
 <main style="position:relative; z-index:1; padding:4rem; color:var(--text,#111);">
 	<h1>Three.js particle background — test page</h1>
