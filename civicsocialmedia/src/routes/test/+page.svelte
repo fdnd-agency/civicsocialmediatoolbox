@@ -1,5 +1,5 @@
 <script>
-	import BackgroundAnimation from '$lib/components/BackgroundAnimation.svelte';
+	import BackgroundAnimation from '$lib/components/effects/BackgroundAnimation.svelte';
 	// local binding for the animation speed (default matches component default)
 	let speed = 0.03;
 </script>
