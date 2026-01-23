@@ -1,5 +1,5 @@
 <script>
-  import ProgressStepperV2 from '$lib/components/molecules/ProgressStepperV2.svelte';
+  import ProgressStepper from '$lib/components/molecules/ProgressStepper.svelte';
   export let data;
 
   const toolkitItems = data.toolkitItems ?? [];
@@ -8,7 +8,7 @@
 </script>
 
 <main>
-  <ProgressStepperV2 {currentStep} />
+<ProgressStepper {currentStep} />
 
   {#if toolkitItem}
     <h1>1. {toolkitItem.title}</h1>

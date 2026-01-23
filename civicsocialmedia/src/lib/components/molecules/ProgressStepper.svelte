@@ -1,139 +1,270 @@
 <script>
-  // SvelteKit navigate helper (used when a step has an href)
-  import { goto } from '$app/navigation';
-
-
-  import StepLogo from '$lib/assets/StepLogo.svelte';            
-  import StepLogoProgress from '$lib/assets/StepLogoProgress.svelte'; 
-
-
-  // steps = array 
-  export let steps = [];
-  // current = which step we are on 
-  export let current = 0;
-
-  // Reactive progress value f in [0..1]
-  // - 0 when at first step
-  // - 1 when at last step
-  // Used by CSS to set the green line width.
-  $: f = steps.length > 1 ? current / (steps.length - 1) : 0;
-
-  // Click handler: if the step has a link, go there.
-  function go(i) {
-    const s = steps[i];
-    if (s && s.href) goto(s.href);
-  }
+  export let currentStep = 1;
+// list with all steps 
+  const steps = [
+    { id: 1, label: 'Step 1', href: '/begrijpen/step1' },
+    { id: 2, label: 'Step 2', href: '/begrijpen/step2' },
+    { id: 3, label: 'Step 3', href: '/begrijpen/step3' }
+  ];
 </script>
 
-<!-- 
-     The  grey line and the green progress fill are drawn in CSS on .list
-     using ::before (grey rail) and ::after (blue fill). We pass progress via --f. -->
+<main>
 <nav class="stepper">
-  <ul class="list" style="--f:{f}">
-    {#each steps as step, i}
-      <li>
-        
-        <button
-          class="btn {i <= current ? 'on' : ''}"
-          type="button"
-          on:click={() => go(i)}
-          title="icon steps with a checkmark if done or current"
-        >
-          <!-- Show the checked logo for done/current steps; otherwise show the base logo. -->
-          {#if i <= current}
-            <StepLogoProgress />
-          {:else}
-            <StepLogo />
-          {/if}
-        </button>
+  <ul class="steps">
+    {#each steps as step}
+      <!-- steps already finished -->
+      <!-- current step -->
+      <li
+        class="step"
+        class:done={step.id < currentStep}
+        class:current={step.id === currentStep}
+      >
+        <a href={step.href}>
+          <div class="icon"></div>
+          <div class="label">{step.label}</div>
+        </a>
       </li>
     {/each}
   </ul>
 </nav>
 
 
+
+</main>
+
+
+
 <style>
   .stepper {
-    display: flex;
-    justify-content: center;
-    padding-top: 5em;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    container-type: inline-size;
+
   }
 
-  .list {
-    --width: 2rem;   
-    --hight: 0.5rem; 
+  .steps {
+        /* base sizes */
 
-    /* --f comes from inline style (0..1) */
-
-    position: relative;
+    --size: 4rem;
+    --gap: 2rem;
+    --line-h: 0.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: var(--gap);
     list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-
-    /* grey rail: from center of first logo to center of last */
-    &::before {
-      content: "";
-      position: absolute;
-      left: calc(var(--width) / 2);
-      right: calc(var(--width) / 2);
-      top: calc(var(--width) / 2 - var(--height) / 2);
-      height: var(--hight);
-      background: var(--neutral-color-grey-400);
-      border-radius: 999px;
-      z-index: 0;
-    }
-
-    /* green progress fill, width uses --f  */
-    &::after {
-      content: "";
-      position: absolute;
-      left: calc(var(--width) / 2);
-      top: calc(var(--width) / 2 - var(--height) / 2);
-      height: var(--height);
-      width: calc((100% - var(--width)) * var(--f));
-      background: var(--accents-color-teal);
-      border-radius: 999px;
-      z-index: 0;
-    }
+    margin: 0 auto;
+    padding: 0 0.75rem;
+    width: max-content;
+    position: relative;
+    justify-items: center;
 
     
-    li { display: contents; }
+    /* grey line behind the steps */
+    &::before {
+      content: "";
+      background: var(--neutral-color-grey-500);
+      position: absolute;
+      top: calc(var(--size) / 2);
+      left: calc(var(--size) / 2);
+      right: calc(var(--size) / 2);
+      height: var(--line-h);
+      transform: translateY(-50%);
+      z-index: 0;
+    }
 
-
-    .btn {
-      width: var(--width);
-      height: var(--width);
-      padding: 0;
-      margin: 0;
-      background: transparent;
-      border: 0;
-      -webkit-tap-highlight-color: transparent;
-
-      display: grid;
-      place-items: center;
-      cursor: pointer;
+    .step {
       position: relative;
-      z-index: 1;   
-      line-height: 0; 
+      width: var(--size);
+/* colored progress line over the grey line */
+      &.done::after {
+        content: "";
+        position: absolute;
+        top: calc(var(--size) / 2);
+        width: calc(var(--size) + var(--gap));
+        height: var(--line-h);
+        background: var(--accent-color-teal);
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+/* last step has no line after it */
+      &:last-child::after {
+        display: none;
+      }
 
-      :global(svg) {
-        width: 100%;
-        height: 100%;
-        display: block;
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .icon {
+        width: var(--size);
+        height: var(--size);
+        display: grid;
+        place-items: center;
+        position: relative;
+        z-index: 2;
+      }
+
+      &.done .icon,
+      &.current .icon {
+        background: var(--accent-color-teal)
+      }
+
+      &:not(.done):not(.current) .icon {
+        background: var(--accent-color-blue);
+
+        &::before {
+          content: "";
+          width: 2rem;
+          height: 2rem;
+          background: var(--neutral-color-white);
+        }
+      }
+
+      .label {
+        margin-top: 0.35rem;
+        font-size: 0.8rem;
+        color: var(--neutral-color-black);
+      }
+
+      &.done .icon::after,
+      &.current .icon::after {
+        content: "✓";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        color: var(--neutral-color-white);
+        z-index: 3;
       }
     }
 
+    @container ( width > 64em) {
+      --size: 4rem;
+      --gap: 4rem;
+      --line-h: 0.5rem;
+      padding: 0 1rem;
 
-    @media (min-width: 48em) {
-      & { --width: 50px; --height: 8px; }
-    }
-    @media (min-width: 64em) {
-      & { --width: 80px; --height: 10px; gap: 10em; }
+      .step {
+        width: auto;
+
+        .label {
+          margin-top: 0.5rem;
+          font-size: 0.9rem;
+        }
+
+        &.done .icon::after,
+        &.current .icon::after {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
-</style>
+  /* -------------------------------
+     prefers-reduced-motion
+     Small left-right animation only
+     when user did not turn on Reduce motion
+  -------------------------------- */
 
+  @media (prefers-reduced-motion: no-preference) {
+    @keyframes stepper-tilt {
+      0%   { transform: rotate(2deg); }
+      50%  { transform: rotate(5deg); }
+      100% { transform: rotate(2deg); }
+    }
+
+    .steps .step.current .icon {
+      animation: stepper-tilt 1.4s ease-in-out infinite;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .steps .step.current .icon {
+      animation: none;
+      transform: none;
+    }
+  }
+ /* -------------------------------
+     prefers-color-scheme (dark mode)
+  -------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+  .steps::before {
+    background: var(--neutral-color-grey-500);
+  }
+
+  .steps .step .label {
+    color: var(--neutral-color-white);
+  }
+
+ 
+  .steps .step:not(.done):not(.current) .icon::before {
+    background: var(--neutral-color-grey-500);
+  }
+}
+
+
+
+/* -------------------------------
+   prefers-contrast
+   more  = strong shadow on steps + inherit text style
+   less  = no shadow, softer text
+-------------------------------- */
+
+@media (prefers-contrast: more) {
+  .steps::before {
+    box-shadow: 6px 8px 14px var(--neutral-color-grey-500);
+  }
+
+  .steps .step.done::after {
+    box-shadow: 3px 2px 4px  var(--neutral-color-grey-500);
+  }
+
+  .steps .step .icon {
+    box-shadow:
+      6px 8px 14px var(--neutral-color-black);           
+  }
+
+  .steps .step .label {
+    font-style: inherit;
+  }
+}
+
+@media (prefers-contrast: less) {
+  .steps {
+    box-shadow: none;
+  }
+  .steps::before,
+  .steps .step.done::after,
+  .steps .step .icon {
+    box-shadow: none;
+  }
+}
+
+  /* -------------------------------
+     inverted-colors
+     Swap colors between done / not done
+     so progress stays clear when inverted
+  -------------------------------- */
+
+  @media (inverted-colors: inverted) {
+    .steps .step.done .icon,
+    .steps .step.current .icon {
+      /* was teal, now blue */
+      background: var(--accent-color-blue);
+    }
+      .steps .step.done::after {
+    background: var(--accent-color-blue);
+  }
+
+    .steps .step:not(.done):not(.current) .icon {
+      /* was blue, now teal */
+      background: var(--accent-color-teal);
+    }
+  }
+
+
+</style>

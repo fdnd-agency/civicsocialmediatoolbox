@@ -1,16 +1,11 @@
 <script>
   import ProgressStepper from '$lib/components/molecules/ProgressStepper.svelte';
-  import Formulier from '$lib/components/Formulier.svelte'; 
+  import Formulier from '$lib/components/organisms/Formulier.svelte'; 
 
-  const steps = [
-    { href: '/begrijpen/step1' },
-    { href: '/begrijpen/step2' },
-    { href: '/begrijpen/step3' },
-  ];
-  const current = 0; 
+  const currentStep = 1; 
 </script>
 
-<ProgressStepper {steps} {current} />
+<ProgressStepper {currentStep} />
 
 <Formulier /> 
 
