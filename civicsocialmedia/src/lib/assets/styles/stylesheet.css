@@ -93,6 +93,10 @@
   --grid-col: 20em;
   --padding: 2em;
 
+  --fw-extra-thick: 700;
+  --fw-thick: 600;
+  --fw-normal: 400;
+
   --radius-1: 1em;
   --radius-2: 2em;
   --radius-4: 4em;
