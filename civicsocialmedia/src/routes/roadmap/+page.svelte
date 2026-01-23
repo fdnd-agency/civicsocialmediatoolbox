@@ -9,12 +9,14 @@
 </script>
 
 <main class="roadmap-main">
-  <h1>Civic Social Media Roadmap</h1>
-  <h2>Voor de ontwikkeling van civic social media moet er in uiteenlopende domeinen actie
-    worden ondernomen.</h2>
-  <p>Hoe creëren we een omgeving waarin civic social media kunnen floreren?</p>
-
-  <section class="pyramid">
+  <div class="left-column">
+    <article>
+      <h1>Civic Social Media Roadmap</h1>
+      <h2>Voor de ontwikkeling van civic social media moet er in uiteenlopende domeinen actie
+        worden ondernomen.</h2>
+      <p>Hoe creëren we een omgeving waarin civic social media kunnen floreren?</p>
+    </article>
+    <section class="pyramid">
     <h2 class="label label-systemen">{items[2]?.title}</h2>
 
 
@@ -34,10 +36,12 @@
       <button class="btn theme-layer-1" onclick={() => selectLayer(items[0]?.id)}>
         <span class="sr-only">Cultuur layer: </span>{items[0]?.subtitle}<span class="sr-only">, klik voor meer information</span>
       </button>
-  </section>
+    </section>
+  </div>
 
-  {#if activeLayer}
-    <section class="content">
+  <div class="right-column">
+    {#if activeLayer}
+      <section class="content">
       {#each items as item}
         {#if item.id === activeLayer}
           <div class="content-details">
@@ -58,8 +62,9 @@
           </div>
         {/if}
       {/each}
-    </section>
-  {/if}
+      </section>
+    {/if}
+  </div>
 </main>
 
 <style>
@@ -87,6 +92,14 @@
     }
   }
 
+  .left-column {
+    margin-bottom: 2rem;
+  }
+
+  .right-column {
+    min-height: 200px;
+  }
+
 
 
   .pyramid {
@@ -102,12 +115,11 @@
   .btn {
     grid-column: 1 / 11;
     padding: 0.9rem 1rem;
-    background: #42224c;
-    color: white;
     border: none;
     cursor: pointer;
     font-size: var(--fs-small);
     text-transform: uppercase;
+    color: var(--neutral-color-white);
     transition: all 0.2s;
     text-align: center;
     border-radius: 0.1em;
@@ -173,10 +185,11 @@
 
   .content {
     max-width: 50rem;
-    margin: 3rem auto 0;
+    margin: 0 auto;
     padding: 2rem;
-    background: #f5f5f5;
+    background: var(--neutral-color-white);
     border-radius: var(--radius-1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .content-details {
@@ -198,7 +211,7 @@
     }
 
     aside {
-      background: white;
+      background: var(--neutral-color-white);
       padding: 1.5rem;
       border-radius: 0.5rem;
       border-left: 4px solid var(--accent-dark-purple);
@@ -210,6 +223,32 @@
         margin-bottom: 1rem;
         font-size: 1.2rem;
       }
+    }
+  }
+
+  /* Desktop Layout - 64em+ */
+  @media (min-width: 64em) {
+    .roadmap-main:has(.content) {
+      max-width: 90rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .roadmap-main:has(.content) .left-column {
+      margin-bottom: 0;
+    }
+
+    .right-column {
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
+
+    .content {
+      margin: 0;
+      max-width: 100%;
     }
   }
 
