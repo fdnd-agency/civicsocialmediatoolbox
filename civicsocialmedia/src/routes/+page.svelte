@@ -32,7 +32,7 @@
         <h2>Civic Social Media Roadmap</h2>
         <p>Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, verantwoord en soeverein is.</p>
         <p>Ontdek de stappen, keuzes en mijlpalen richting civic social media.</p>
-        <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
+        <ButtonLeesMeer href="/roadmap">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
@@ -48,7 +48,7 @@
           De Designing for Civic Social Media Toolkit bevat 55 kaarten, samengesteld uit gemeenschapsarchetypen,
           ontwerpprincipes en dimensies die helpen bij het ontwerpen van digitale platforms gebaseerd op publieke waarden.
         </p>
-        <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
+        <ButtonLeesMeer href="/toolkit">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
