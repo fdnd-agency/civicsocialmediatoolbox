@@ -1,5 +1,5 @@
 <script>
-    import DetailCard from "./molecules/DetailCard.svelte";
+    import DetailCard from "$lib/components/molecules/DetailCard.svelte";
     export let cards;
 </script>
 

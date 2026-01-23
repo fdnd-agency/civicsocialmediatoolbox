@@ -12,7 +12,7 @@
 
 <main class="homepage-content">
   <section class="homepage-titel" id="about">
-    <h1 style="width: 1em;">CIVIC SOCIAL MEDIA</h1>
+    <h1>Civic Social Media</h1>
     <p>
       Het Civic Social Media-project richt zich op het onderzoeken, ontwerpen en bevorderen van digitale platforms
       die het voor gemeenschapsleden mogelijk maken om veilig en betrouwbaar te communiceren, samen te werken en
@@ -134,6 +134,8 @@
   h1 {
     color: var(--primary-darkest-blue);
     font-size: var(--fs-display);
+    width: 1em;
+    text-transform: uppercase;
   }
 
   .homepage-titel {
@@ -171,7 +173,7 @@
 
   .inline {
     display: flex;
-    gap: 1rem;
+    gap: 1.3rem;
     list-style: none;
     padding: 0;
     margin: 0;

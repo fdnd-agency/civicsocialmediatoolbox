@@ -4,7 +4,7 @@
   const steps = [
     { id: 1, label: 'Step 1', href: '/begrijpen/step1' },
     { id: 2, label: 'Step 2', href: '/begrijpen/step2' },
-    { id: 3, label: 'Step 3', href: '/begrijpen/step3' }
+    { id: 3, label: 'Step 3', href: '/begrijpen/overzicht' }
   ];
 </script>
 
