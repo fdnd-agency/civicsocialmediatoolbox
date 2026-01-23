@@ -99,9 +99,7 @@
   <!-- hero section -->
   <section class="hero-section" id="partners">
     <div class="hero-inner">
-      <h2 class="h2-hero-section">
-        Hoe zou het zijn als sociale media niet commercieel georiënteerd waren, maar publieke waarden centraal stelden?
-      </h2>
+      <h2 class="h2-hero-section">Hoe zou het zijn als sociale media niet commercieel georiënteerd waren, maar publieke waarden centraal stelden?</h2>
       <nav class="links-about">
         <a class="link-project" href="#about">About this project</a>
         <a class="link-project" href="#partners">Partners</a>
@@ -131,6 +129,11 @@
       column-gap: 2rem;
       align-items: start;
     }
+  }
+
+  h1 {
+    color: var(--primary-darkest-blue);
+    font-size: var(--fs-display);
   }
 
   .homepage-titel {
@@ -250,8 +253,9 @@
 
   /* hero */
   .hero-section {
-    background: #EBDAC5;
+    background: var(--secondary-dark-beige);
     margin-top: 5em;
+    border-radius: var(--radius-1);
     position: relative;
     z-index: 2;
 
@@ -280,7 +284,7 @@
   .link-project {
     flex-grow: 1;
     text-align: center;
-    min-height: 5em;
+    min-height: 4em;
     line-height: 2em;
     color: #fff;
     text-decoration: none;

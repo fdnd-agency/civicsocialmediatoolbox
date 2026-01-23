@@ -54,7 +54,7 @@
 
 <style>
 header {
-	background-color: var(--secondary-darkest-beige);
+	background-color: var(--secondary-dark-beige);
 	display: flex;
 	align-items: center;
 	padding: 0;
@@ -81,7 +81,7 @@ header {
 	width: 3.125rem;
 	height: 3.125rem;
 	border-radius: 50%;
-	background-color: var(--primary-dark-blue);
+	background-color: var(--primary-darkest-blue);
 	border: none;
 	cursor: pointer;
 	display: flex;
@@ -112,9 +112,26 @@ header {
 	margin-right: 0;
 	height: 100%;
 	width: 100%;
-	background-color: var(--primary-dark-blue);
+	background-color: var(--primary-darkest-blue);
 	position: fixed;
-	z-index: 100;
+
+	ul li {
+		animation: slide-in 1s forwards;
+		transition-delay: calc((sibling-index() - 1) * 100ms);	
+	}
+
+	@media (min-width: 768px) {
+		max-width: 28em
+	}
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(calc(sibling-index() * 3em));
+	}
+	to {
+		transform: translateX(0);
+	}
 }
 
 ul {
@@ -126,6 +143,7 @@ ul {
 	
 ul li {
 	padding: 1em;
+	list-style: none;
 }
 
 ul li a {
