@@ -107,7 +107,7 @@
     text-transform: uppercase;
     transition: all 0.2s;
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 0.1em;
     clip-path: var(--pyramid-clip);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
