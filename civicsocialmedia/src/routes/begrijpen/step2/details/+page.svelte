@@ -1,6 +1,6 @@
 <script>
-  import ProgressStepperV2 from '$lib/components/molecules/ProgressStepperV2.svelte';
-  import DetailCards from '$lib/components/DetailCards.svelte';
+  import ProgressStepperV2 from '$lib/components/molecules/ProgressStepper.svelte';
+  import DetailCards from '$lib/components/organisms/DetailCards.svelte';
 
   export let data;
 

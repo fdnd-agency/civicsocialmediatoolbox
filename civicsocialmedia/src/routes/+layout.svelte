@@ -45,7 +45,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 102;
 
 	display: flex;
 	justify-content: center;
