@@ -59,6 +59,8 @@ header {
 	align-items: center;
 	padding: 0;
 	min-height: 5rem;
+	position: relative;
+	z-index: 100;
 }
 
 .header-left {
@@ -86,6 +88,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 101;
 }
 
 .hamburger span {

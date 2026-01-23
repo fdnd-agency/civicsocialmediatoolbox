@@ -1,10 +1,10 @@
 <main>
-    <h2>Ontwerpprincipes voor Civic Social Media</h2>
+    <h1>Ontwerpprincipes voor Civic Social Media</h1>
     <p>
         Principes en keuzes voor het ontwerpen, lanceren en onderhouden van
         Civic Social Media.
     </p>
-    <h3>Ontwerpen voor Civic Social Media</h3>
+    <h2>Ontwerpen voor Civic Social Media</h2>
 
     <p>
         Deze toolkit bevat 55 kaarten, samengesteld uit community archetypes,
@@ -16,7 +16,7 @@
     </p>
 
     <div class="btn-group">
-        <a href="/begrijpen" class="btn">Begrijpen</a>
+        <a href="/begrijpen/step1" class="btn">Begrijpen</a>
         <a href="/ontwerpen" class="btn">Ontwerpen</a>
         <a href="/evalueren" class="btn">Evalueren</a>
     </div>
@@ -33,7 +33,9 @@
         >
     </p>
 
-    <p class="text">Wilt u direct de 55 kaarten verkennen? Klik dan hier.</p>
+    <p class="text">
+        <strong>Wilt u direct de 55 kaarten verkennen? Klik dan hier.</strong>
+    </p>
 
     <a href="/kaarten" class="btn btn-all-cards">
         <span class="btn-text-desktop">Bekijk alle kaarten</span>
@@ -51,17 +53,17 @@
     }
 
     /* --- Headings --- */
-    h2 {
+    h1 {
         font-size: var(--fs-title);
         margin-bottom: 0.5em;
-        color: var(--primary-dark-blue);
+        color: var(--neutral-color-black);
     }
 
-    h3 {
+    h2 {
         font-size: var(--fs-large);
         margin-top: 1.5em;
         margin-bottom: 0.5em;
-        color: var(--primary-dark-blue);
+        color: var(--neutral-color-black);
     }
 
     /* --- Paragraphs --- */

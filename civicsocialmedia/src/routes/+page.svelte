@@ -3,7 +3,12 @@
   import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
   import community from '$lib/assets/communityarchetypes.png';
   import ButtonLeesMeer from '$lib/components/atoms/ButtonLeesMeer.svelte';
+  import BackgroundAnimation from '$lib/components/effects/BackgroundAnimation.svelte';
+
+  let speed = 0.01;
 </script>
+
+<BackgroundAnimation bind:speed/>
 
 <main class="homepage-content">
   <section class="homepage-titel" id="about">
@@ -27,7 +32,7 @@
         <h2>Civic Social Media Roadmap</h2>
         <p>Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, verantwoord en soeverein is.</p>
         <p>Ontdek de stappen, keuzes en mijlpalen richting civic social media.</p>
-        <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
+        <ButtonLeesMeer href="/roadmap">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
@@ -43,7 +48,7 @@
           De Designing for Civic Social Media Toolkit bevat 55 kaarten, samengesteld uit gemeenschapsarchetypen,
           ontwerpprincipes en dimensies die helpen bij het ontwerpen van digitale platforms gebaseerd op publieke waarden.
         </p>
-        <ButtonLeesMeer href="/">Lees meer</ButtonLeesMeer>
+        <ButtonLeesMeer href="/toolkit">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
@@ -115,6 +120,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem 2rem;
+    position: relative;
+    z-index: 2;
 
     @media (min-width: 64em) {
       display: grid;
@@ -131,6 +138,8 @@
 
   .homepage-titel {
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
 
     @media (min-width: 64em) {
       position: sticky;
@@ -144,6 +153,7 @@
     border: none;
     position: relative;
     margin-top: 5em;
+    z-index: 2;
 
     &:not(:last-of-type)::after {
       content: "";
@@ -246,6 +256,8 @@
     background: var(--secondary-dark-beige);
     margin-top: 5em;
     border-radius: var(--radius-1);
+    position: relative;
+    z-index: 2;
 
     @media (min-width: 64em) {
       grid-column: 1 / -1;  /* under title + cards */
