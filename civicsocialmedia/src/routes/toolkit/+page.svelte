@@ -16,7 +16,7 @@
     </p>
 
     <div class="btn-group">
-        <a href="/begrijpen" class="btn">Begrijpen</a>
+        <a href="/begrijpen/step1" class="btn">Begrijpen</a>
         <a href="/ontwerpen" class="btn">Ontwerpen</a>
         <a href="/evalueren" class="btn">Evalueren</a>
     </div>
