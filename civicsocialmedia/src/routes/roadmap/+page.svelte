@@ -1,52 +1,57 @@
 <script>
   let { data } = $props();
   let items = $state(data.items ?? []);
-  let activeId = $state(null);
+  let activeLayer = $state(null);
 
-  function selectItem(itemId) {
-    activeId = activeId === itemId ? null : itemId;
+  function selectLayer(pyramidLayerId) {
+    activeLayer = activeLayer === pyramidLayerId ? null : pyramidLayerId;
   }
 </script>
 
 <main class="roadmap-main">
-  <h1>Civic Social Media Roadmap</h1>
-  <h3>Voor de ontwikkeling van civic social media moet er in uiteenlopende domeinen actie
-    worden ondernomen.</h3>
-  <p>Hoe creëren we een omgeving waarin civic social media kunnen floreren?</p>
-
-  <section class="pyramid">
-    <button class="btn theme-layer-4" onclick={() => selectItem(items[3]?.id)}>
-      {items[3]?.subtitle || 'Technologische Infrastructuur'}
-    </button>
+  <div class="left-column">
+    <article>
+      <h1>Civic Social Media Roadmap</h1>
+      <h2>Voor de ontwikkeling van civic social media moet er in uiteenlopende domeinen actie
+        worden ondernomen.</h2>
+      <p>Hoe creëren we een omgeving waarin civic social media kunnen floreren?</p>
+    </article>
+    <section class="pyramid">
     <h2 class="label label-systemen">{items[2]?.title}</h2>
 
-    <button class="btn theme-layer-3" onclick={() => selectItem(items[2]?.id)}>
-      {items[2]?.subtitle || 'Wetgeving en Beleid'}
-    </button>
 
-    <button class="btn theme-layer-2" onclick={() => selectItem(items[1]?.id)}>
-      {items[1]?.subtitle || 'Storytelling'}
-    </button>
+      <button class="btn theme-layer-4" onclick={() => selectLayer(items[3]?.id)}>
+        <span class="sr-only">Systemen layer: </span>{items[3]?.subtitle}<span class="sr-only">, klik voor meer information</span>
+      </button>
+
+      <button class="btn theme-layer-3" onclick={() => selectLayer(items[2]?.id)}>
+        <span class="sr-only">Systemen layer: </span>{items[2]?.subtitle}<span class="sr-only">, klik voor meer information</span>
+      </button>
     <h2 class="label label-cultuur">{items[1]?.title}</h2>
 
-    <button class="btn theme-layer-1" onclick={() => selectItem(items[0]?.id)}>
-      {items[0]?.subtitle || 'Waardenkader Media en Democratie'}
-    </button>
-  </section>
+      <button class="btn theme-layer-2" onclick={() => selectLayer(items[1]?.id)}>
+        <span class="sr-only">Cultuur layer: </span>{items[1]?.subtitle}<span class="sr-only">, klik voor meer information</span>
+      </button>
 
-  {#if activeId}
-    <section class="content">
+      <button class="btn theme-layer-1" onclick={() => selectLayer(items[0]?.id)}>
+        <span class="sr-only">Cultuur layer: </span>{items[0]?.subtitle}<span class="sr-only">, klik voor meer information</span>
+      </button>
+    </section>
+  </div>
+
+  <div class="right-column">
+    {#if activeLayer}
+      <section class="content">
       {#each items as item}
-        {#if item.id === activeId}
+        {#if item.id === activeLayer}
           <div class="content-details">
             {#if item.subtitle}
               <h2>{item.subtitle}</h2>
             {/if}
             {#if item.body}
-              <article>{@html item.body
-                .replace(/Key drivers:/g, '<h3>Key drivers:</h3>')
-                .replace(/Opgaven, onder meer:/g, '<h3>Opgaven, onder meer:</h3>')
-              }</article>
+              <article>
+                {@html item.body}
+              </article>
             {/if}
             {#if item.aside}
               <aside>
@@ -57,8 +62,9 @@
           </div>
         {/if}
       {/each}
-    </section>
-  {/if}
+      </section>
+    {/if}
+  </div>
 </main>
 
 <style>
@@ -69,7 +75,47 @@
   .roadmap-main {
     max-width: 60rem;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 2em  1.5em;
+    
+    h1 {
+      color: var(--primary-darkest-blue);
+      font-size: var(--fs-large);
+      font-weight: var(--fw-extra-thick);
+    }
+    
+    h2 {
+      font-size: var(--fs-medium);
+    }
+    
+    p {
+      font-size: var(--fs-small);
+    }
+
+    @media (min-width: 64em) {
+      &:has(.content) {
+        max-width: 90rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+
+        .left-column {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .left-column {
+    margin-bottom: 2rem;
+  }
+
+  .right-column {
+    @media (min-width: 64em) {
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
   }
 
 
@@ -87,41 +133,52 @@
   .btn {
     grid-column: 1 / 11;
     padding: 0.9rem 1rem;
-    background: #42224c;
-    color: white;
     border: none;
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: var(--fs-small);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: var(--neutral-color-white);
     transition: all 0.2s;
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 0.1em;
     clip-path: var(--pyramid-clip);
-    box-shadow: 
-      0 4px 0 0 #2d1836,
-      0 8px 0 0 #1f0f26,
-      0 12px 0 0 #150a1a,
-      0 16px 20px rgba(0, 0, 0, 0.3);
-  }
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 
-  .btn:hover {
-    background: #603d82;
-    transform: translateY(-3px);
-    box-shadow: 
-      0 7px 0 0 #2d1836,
-      0 11px 0 0 #1f0f26,
-      0 15px 0 0 #150a1a,
-      0 19px 25px rgba(0, 0, 0, 0.35);
-  }
+    &:hover {
+      background: var(--accent-neutral-purple);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
 
-  .btn:active {
-    transform: translateY(2px);
-    box-shadow: 
-      0 2px 0 0 #2d1836,
-      0 4px 0 0 #1f0f26,
-      0 6px 0 0 #150a1a,
-      0 10px 15px rgba(0, 0, 0, 0.25);
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    &.theme-layer-1 {
+      background: var(--accent-darkest-purple);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    &.theme-layer-2 {
+      background-color: var(--accent-darkest-purple);
+      width: 89%;
+      max-width: 530px;
+      margin-top: 10px;
+    }
+
+    &.theme-layer-3 {
+      background-color: var(--accent-dark-purple);
+      width: 78%;
+      max-width: 460px;
+    }
+
+    &.theme-layer-4 {
+      background-color: var(--accent-dark-purple);
+      width: 70%;
+      max-width: 410px;
+    }
   }
 
   .label {
@@ -129,54 +186,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-    color: #42224c;
-    font-weight: 600;
     margin: 0;
   }
 
   .label-systemen {
+    font-weight: var(--fw-extra-thick);
+    color: var(--accent-dark-purple);
     grid-row: 1 / 3;
   }
 
   .label-cultuur {
+    font-weight: var(--fw-extra-thick);
+    color: var(--accent-darkest-purple);
     grid-row: 3 / 5;
-  }
-
-  .theme-layer-1 {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .theme-layer-2 {
-    width: 89%;
-    max-width: 530px;
-    margin-top: 10px;
-  }
-
-  .theme-layer-3 {
-    width: 78%;
-    max-width: 460px;
-  }
-
-  .theme-layer-4 {
-    width: 70%;
-    max-width: 410px;
   }
 
   .content {
     max-width: 50rem;
-    margin: 3rem auto 0;
+    margin: 0 auto;
     padding: 2rem;
-    background: #f5f5f5;
-    border-radius: 0.5rem;
+    border-left: 4px solid var(--accent-dark-purple);
+    background: var(--neutral-color-white);
+    border-radius: var(--radius-1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    @media (min-width: 64em) {
+      margin: 0;
+      max-width: 100%;
+    }
   }
 
   .content-details {
     article {
       line-height: 1.6;
-      color: #333;
       margin-bottom: 2rem;
+      h1{
+        color: var(--accent-darkest-purple);
+      }
 
       p {
         margin-bottom: 1rem;
@@ -191,15 +237,15 @@
     }
 
     aside {
-      background: white;
+      background: var(--neutral-color-white);
       padding: 1.5rem;
       border-radius: 0.5rem;
-      border-left: 4px solid #42224c;
+      border-left: 4px solid var(--accent-dark-purple);
       line-height: 1.8;
       color: #333;
 
       h3 {
-        color: #42224c;
+        color: var(--accent-darkest-purple);
         margin-bottom: 1rem;
         font-size: 1.2rem;
       }
