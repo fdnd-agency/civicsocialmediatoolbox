@@ -23,7 +23,7 @@
 
 <style>
    main {
-        padding: 3em;
+        padding: 2em;
     }
 
     h2{

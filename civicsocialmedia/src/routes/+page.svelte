@@ -171,7 +171,7 @@
 
   .inline {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     list-style: none;
     padding: 0;
     margin: 0;
