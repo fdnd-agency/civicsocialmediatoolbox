@@ -1,10 +1,10 @@
 <script>
   let { data } = $props();
   let items = $state(data.items ?? []);
-  let activeId = $state(null);
+  let activeLayer = $state(null);
 
-  function selectItem(itemId) {
-    activeId = activeId === itemId ? null : itemId;
+  function selectLayer(pyramidLayerId) {
+    activeLayer = activeLayer === pyramidLayerId ? null : pyramidLayerId;
   }
 </script>
 
@@ -18,28 +18,28 @@
     <h2 class="label label-systemen">{items[2]?.title}</h2>
 
 
-      <button class="btn theme-layer-4" onclick={() => selectItem(items[3]?.id)}>
+      <button class="btn theme-layer-4" onclick={() => selectLayer(items[3]?.id)}>
         <span class="sr-only">Systemen layer: </span>{items[3]?.subtitle}<span class="sr-only">, klik voor meer information</span>
       </button>
 
-      <button class="btn theme-layer-3" onclick={() => selectItem(items[2]?.id)}>
+      <button class="btn theme-layer-3" onclick={() => selectLayer(items[2]?.id)}>
         <span class="sr-only">Systemen layer: </span>{items[2]?.subtitle}<span class="sr-only">, klik voor meer information</span>
       </button>
     <h2 class="label label-cultuur">{items[1]?.title}</h2>
 
-      <button class="btn theme-layer-2" onclick={() => selectItem(items[1]?.id)}>
+      <button class="btn theme-layer-2" onclick={() => selectLayer(items[1]?.id)}>
         <span class="sr-only">Cultuur layer: </span>{items[1]?.subtitle}<span class="sr-only">, klik voor meer information</span>
       </button>
 
-      <button class="btn theme-layer-1" onclick={() => selectItem(items[0]?.id)}>
+      <button class="btn theme-layer-1" onclick={() => selectLayer(items[0]?.id)}>
         <span class="sr-only">Cultuur layer: </span>{items[0]?.subtitle}<span class="sr-only">, klik voor meer information</span>
       </button>
   </section>
 
-  {#if activeId}
+  {#if activeLayer}
     <section class="content">
       {#each items as item}
-        {#if item.id === activeId}
+        {#if item.id === activeLayer}
           <div class="content-details">
             {#if item.subtitle}
               <h2>{item.subtitle}</h2>
