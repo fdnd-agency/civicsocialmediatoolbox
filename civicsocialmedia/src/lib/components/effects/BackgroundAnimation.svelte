@@ -59,12 +59,6 @@ function init() {
     windowHalfX = window.innerWidth / 2;
     windowHalfY = window.innerHeight / 2;
 
-    // Clean up any old overlays
-    try {
-        const existing = document.querySelectorAll('.particle-bg-overlay');
-        existing.forEach((el) => el.parentNode && el.parentNode.removeChild(el));
-    } catch (e) {}
-
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
     camera.position.z = 1000;
 
@@ -111,14 +105,9 @@ function init() {
     renderer.setClearColor( 0x000000, 0 );
     renderer.setAnimationLoop( animate );
     
-    // Append to body so it dont take space
-    try {
-        const overlayEl = document.createElement('div');
-        overlayEl.className = 'particle-bg-overlay';
-        overlayEl.appendChild( renderer.domElement );
-        document.body.appendChild( overlayEl );
-    } catch (e) {
-        if ( container ) container.appendChild( renderer.domElement );
+    // Append canvas to container
+    if ( container ) {
+        container.appendChild( renderer.domElement );
     }
 
     window.addEventListener( 'resize', onWindowResize );
@@ -203,9 +192,6 @@ function cleanup() {
         }
 
         if ( renderer ) {
-            if ( renderer.domElement && renderer.domElement.parentNode ) {
-                renderer.domElement.parentNode.removeChild( renderer.domElement );
-            }
             renderer.dispose();
             renderer = null;
         }
@@ -231,11 +217,7 @@ onDestroy(() => {
 <div class="particle-bg" bind:this={container} aria-hidden="true"></div>
 
 <style>
-.particle-bg {
-    display: none !important;
-}
-
-:global(body > .particle-bg-overlay) {
+  .particle-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -245,33 +227,26 @@ onDestroy(() => {
     pointer-events: none;
     overflow: hidden;
     background: transparent;
-}
-
-:root {
     --particle-cut-depth: 12%;
-}
-
-/* Wavy bottom edge */
-:global(body > .particle-bg-overlay) {
     --notchY: calc(100% - var(--particle-cut-depth));
     clip-path: polygon(
-        0 0,
-        100% 0,
-        100% var(--notchY),
-        90% var(--notchY),
-        85% 100%,
-        60% var(--notchY),
-        50% 100%,
-        40% var(--notchY),
-        15% var(--notchY),
-        10% 100%,
-        0 var(--notchY)
+      0 0,
+      100% 0,
+      100% var(--notchY),
+      90% var(--notchY),
+      85% 100%,
+      60% var(--notchY),
+      50% 100%,
+      40% var(--notchY),
+      15% var(--notchY),
+      10% 100%,
+      0 var(--notchY)
     );
-}
+  }
 
-:global(body > .particle-bg-overlay > canvas) {
+  .particle-bg > :global(canvas) {
     display: block;
     width: 100%;
     height: 100%;
-}
+  }
 </style>
