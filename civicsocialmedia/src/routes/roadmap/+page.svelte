@@ -96,10 +96,6 @@
     margin-bottom: 2rem;
   }
 
-  .right-column {
-    min-height: 200px;
-  }
-
 
 
   .pyramid {
@@ -187,6 +183,8 @@
     max-width: 50rem;
     margin: 0 auto;
     padding: 2rem;
+    border-left: 4px solid var(--accent-dark-purple);
+
     background: var(--neutral-color-white);
     border-radius: var(--radius-1);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -195,8 +193,10 @@
   .content-details {
     article {
       line-height: 1.6;
-      color: #333;
       margin-bottom: 2rem;
+      h1{
+        color: var(--accent-darkest-purple);
+      }
 
       p {
         margin-bottom: 1rem;
