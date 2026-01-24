@@ -212,5 +212,5 @@
     .scroll-button {
       display: block;
     }
-  }
+  } 
 </style>
