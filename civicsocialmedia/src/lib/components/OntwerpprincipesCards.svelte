@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { gsap } from "gsap";
-  import Card from "$lib/components/molecules/OntwerpprincipesCard.svelte";
+  import Card from "$lib/components/OntwerpprincipesCard.svelte";
 
   export let cards;
 
