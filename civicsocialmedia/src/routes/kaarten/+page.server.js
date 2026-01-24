@@ -8,7 +8,7 @@ export async function load({ fetch }) {
   const ontwerpData = await ontwerpRes.json();
 
   // 2️⃣ Archetypes
-  const archetypeFilter = "&filter[categorie][_eq]=Archetype";
+  const archetypeFilter = "&filter[id][_in]=9,10,11,12,13,14";
   const archetypeRes = await fetch(API + fields + archetypeFilter);
   const archetypeData = await archetypeRes.json();
 

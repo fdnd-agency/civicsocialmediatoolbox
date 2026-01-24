@@ -1,5 +1,5 @@
 <script>
-    import OntwerpprincipesCard from "$lib/components/OntwerpprincipesCard.svelte";
+    import OntwerpprincipesCard from "$lib/components/molecules/OntwerpprincipesCard.svelte";
     import Card from "$lib/components/molecules/Card.svelte";
 
     export let data;
