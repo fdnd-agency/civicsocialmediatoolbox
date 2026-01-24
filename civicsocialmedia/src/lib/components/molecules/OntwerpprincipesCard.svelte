@@ -161,4 +161,10 @@
     border-radius: 14px;
     object-fit: cover;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .flip-inner {
+      transition: none;
+    }
+  }
 </style>
