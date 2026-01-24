@@ -7,7 +7,12 @@
 
 <section class="flip-card">
   <input type="checkbox" id={"flip-" + index} class="flip-checkbox" />
-  <label for={"flip-" + index} class="card" tabindex="0">
+  <label
+    for={"flip-" + index}
+    class="card"
+    tabindex="0"
+    on:keydown={(e) => e.key === "Enter" && e.currentTarget.click()}
+  >
     <div class="flip-inner">
       <div class="flip-front">
         <h2>{card.categorie}</h2>
@@ -135,6 +140,11 @@
 
   .flip-checkbox {
     display: none;
+  }
+
+  .card:focus-visible {
+    outline: 3px solid #8874ca;
+    outline-offset: 4px;
   }
 
   .card p {
