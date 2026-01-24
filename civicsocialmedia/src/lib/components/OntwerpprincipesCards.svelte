@@ -162,8 +162,8 @@
     .card-container ul {
       display: flex;
       overflow-x: auto;
-      gap: 6rem;
-      padding: 0.6rem 6rem;
+      gap: 5rem;
+      padding: 2rem 5rem;
       scrollbar-width: none;
       justify-content: flex-start;
     }
