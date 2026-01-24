@@ -9,7 +9,7 @@
   let leftBtn;
   let rightBtn;
 
-  // Scroll functions
+  // Scroll functions 
   function scrollLeft() {
     listEl.scrollBy({ left: -420, behavior: "smooth" });
   }
