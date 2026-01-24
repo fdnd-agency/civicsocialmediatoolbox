@@ -147,7 +147,7 @@
     gap: 2rem;
     padding: 1rem 1.5rem 2rem;
   }
-  
+
   .card-wrapper {
     border-radius: 1rem;
     border: 2px solid transparent;
