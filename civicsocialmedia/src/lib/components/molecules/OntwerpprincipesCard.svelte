@@ -162,6 +162,17 @@
     object-fit: cover;
   }
 
+  @supports (transform-style: preserve-3d) {
+  .flip-inner {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+  }
+
+  .flip-checkbox:checked + .card .flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+
   @media (prefers-reduced-motion: reduce) {
     .flip-inner {
       transition: none;
