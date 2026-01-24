@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { gsap } from "gsap";
-  import Card from "$lib/components/molecules/OntwerpprincipesCard.svelte";
+  import Card from "$lib/components/OntwerpprincipesCard.svelte";
 
   export let cards;
 
@@ -162,8 +162,8 @@
     .card-container ul {
       display: flex;
       overflow-x: auto;
-      gap: 6rem;
-      padding: 0.6rem 6rem;
+      gap: 5rem;
+      padding: 2rem 5rem;
       scrollbar-width: none;
       justify-content: flex-start;
     }
@@ -212,5 +212,5 @@
     .scroll-button {
       display: block;
     }
-  }
+  } 
 </style>
