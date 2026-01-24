@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { gsap } from "gsap";
-  import Card from "$lib/components/OntwerpprincipesCard.svelte";
+  import Card from "$lib/components/molecules/OntwerpprincipesCard.svelte";
 
   export let cards;
 
@@ -9,7 +9,7 @@
   let leftBtn;
   let rightBtn;
 
-  // Scroll functions
+  // Scroll functions 
   function scrollLeft() {
     listEl.scrollBy({ left: -420, behavior: "smooth" });
   }
@@ -119,8 +119,10 @@
 
   <ul bind:this={listEl}>
     {#each cards as card, index}
-      <li id={"card-" + index}>
-        <Card {card} {index} />
+      <li id={"card-" + index} tabindex="0">
+        <div class="card-wrapper">
+          <Card {card} {index} />
+        </div>
       </li>
     {/each}
   </ul>
@@ -144,6 +146,27 @@
     justify-content: center;
     gap: 2rem;
     padding: 1rem 1.5rem 2rem;
+  }
+
+  .card-wrapper {
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  /* Tap / click (mobile) */
+  li:active .card-wrapper,
+  li:focus .card-wrapper {
+    border-color: white;
+    outline: none;
+  }
+
+  /* Keyboard focus */
+  li:focus-visible .card-wrapper {
+    border-color: white;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25);
   }
 
   @container card-grid (min-width: 600px) {
@@ -212,5 +235,5 @@
     .scroll-button {
       display: block;
     }
-  } 
+  }
 </style>

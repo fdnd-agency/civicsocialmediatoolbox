@@ -7,7 +7,12 @@
 
 <section class="flip-card">
   <input type="checkbox" id={"flip-" + index} class="flip-checkbox" />
-  <label for={"flip-" + index} class="card" tabindex="0">
+  <label
+    for={"flip-" + index}
+    class="card"
+    tabindex="0"
+    on:keydown={(e) => e.key === "Enter" && e.currentTarget.click()}
+  >
     <div class="flip-inner">
       <div class="flip-front">
         <h2>{card.categorie}</h2>
@@ -137,6 +142,11 @@
     display: none;
   }
 
+  .card:focus-visible {
+    outline: 3px solid #8874ca;
+    outline-offset: 4px;
+  }
+
   .card p {
     font-size: 0.8rem;
     line-height: 1.3;
@@ -150,5 +160,22 @@
     margin-top: 1rem;
     border-radius: 14px;
     object-fit: cover;
+  }
+
+  @supports (transform-style: preserve-3d) {
+  .flip-inner {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+  }
+
+  .flip-checkbox:checked + .card .flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+  @media (prefers-reduced-motion: reduce) {
+    .flip-inner {
+      transition: none;
+    }
   }
 </style>
