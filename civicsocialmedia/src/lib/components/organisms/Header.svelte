@@ -40,9 +40,6 @@
                 <a href="/ontwerpprincipes">Ontwerpprincipes</a>
             </li>
 
-            <li>
-                <a href="/community-archetypes">Community archetypes</a>
-            </li>
         </ul>
 	</nav>
 </header>
