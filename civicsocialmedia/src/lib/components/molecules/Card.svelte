@@ -27,7 +27,7 @@
     <article class="card-front {card.title}">
         <h2 class:knowledge-text={card.id === 13}>{card.title}</h2>
         <!-- https://svelte.dev/docs/svelte/class#The-class:-directive -->
-        <img src={imgUrl} alt={card.title} width="240" height="192" loading="lazy" />
+        <img src={imgUrl} alt={card.title} width="240" height="192" loading="lazy"/>
         <p class="category">{card.categorie}</p>
     </article>
 
