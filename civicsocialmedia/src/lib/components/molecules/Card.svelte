@@ -39,6 +39,7 @@
     }
 
     .card-front, .card-back {
+        all: unset;
         width: 100%;
         height: 100%;
         border-radius: .75em;
@@ -46,6 +47,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        
         transition: transform 0.6s ease-in-out;
     }
 
