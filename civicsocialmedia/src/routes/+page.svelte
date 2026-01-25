@@ -1,6 +1,7 @@
 <script>
   import { RoadMap, ToolKit } from '$lib';
-  import ontwerpprincipes from '$lib/assets/ontwerpprincipes.png';
+  import OntwerpPrincipes from '$lib/assets/OntwerpPrincipes.svelte';
+  import CommunityArchetypes from '$lib/assets/CommunityArchetypes.svelte';
   import community from '$lib/assets/communityarchetypes.png';
   import ButtonLeesMeer from '$lib/components/atoms/ButtonLeesMeer.svelte';
   import BackgroundAnimation from '$lib/components/effects/BackgroundAnimation.svelte';
@@ -56,14 +57,7 @@
   <article class="card">
     <ul class="inline">
       <li class="media-wrap">
-        <a href="/ontwerpprincipes" class="link">
-          <!-- this need to change to svg becous now we hacve almost deblle css for svg and img -->
-          <img
-            class="media-img"
-            src={ontwerpprincipes}
-            alt="Vijf ontwerpprincipes: gemeenschapsgericht, veilig en vertrouwd, verantwoord, soeverein en divers systeem"
-          />
-        </a>
+        <a href="/ontwerpprincipes" class="link"><OntwerpPrincipes /></a>
       </li>
       <li class="content-wrap">
         <h2 id="ontwerpprincipes">Ontwerpprincipes</h2>
@@ -79,14 +73,7 @@
   <article class="card">
     <ul class="inline">
       <li class="media-wrap">
-        <a href="/community-archetypes" class="link">
-          <!-- this need to change to svg becous now we hacve almost deblle css for svg and img -->
-          <img
-            class="media-img"
-            src={community}
-            alt="Zes community-archetypen als hulpmiddel voor het ontwerpen van civic social media"
-          />
-        </a>
+        <a href="/community-archetypes" class="link"><CommunityArchetypes /></a>
       </li>
       <li class="content-wrap">
         <h2 id="community-archetypes">Community archetypes</h2>
