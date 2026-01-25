@@ -175,9 +175,8 @@
 
   .media-wrap {
     width: 100%;
-    max-width: 20rem;
     margin-inline: auto;
-
+    
     @media (min-width: 48em) {
       flex: 0 0 20rem;
       max-width: 20rem;
