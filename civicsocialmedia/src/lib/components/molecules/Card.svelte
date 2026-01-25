@@ -9,22 +9,30 @@
     }
 
     function handleKeydown(event) {
-        if (event.key === 'Enter' || event.key === ' ') {
+        if (event.key === "Enter" || event.key === " ") {
             toggleFlip();
         }
     }
-    
 </script>
 
-<section class="card" class:flipped={flipped} on:click={toggleFlip} on:keydown={handleKeydown} role="button" tabindex="0"> <!--Als flipped === true wordt de class flipped toegevoegd-->
+<section
+    class="card"
+    class:flipped
+    on:click={toggleFlip}
+    on:keydown={handleKeydown}
+    role="button"
+    tabindex="0"
+>
+    <!--Als flipped === true wordt de class flipped toegevoegd-->
     <article class="card-front {card.title}">
-        <h2 class:knowledge-text={card.id === 13}>{card.title}</h2> <!-- https://svelte.dev/docs/svelte/class#The-class:-directive -->
-        <img src="{imgUrl}" alt="{card.title}" width="240" height="192" > 
+        <h2 class:knowledge-text={card.id === 13}>{card.title}</h2>
+        <!-- https://svelte.dev/docs/svelte/class#The-class:-directive -->
+        <img src={imgUrl} alt={card.title} width="240" height="192" />
         <p class="category">{card.categorie}</p>
     </article>
 
     <article class="card-back {card.title}">
-        <p class="body-text"> {@html card.body} </p>
+        <p class="body-text">{@html card.body}</p>
         <a href="/begrijpen/step2/details">Lees meer</a>
     </article>
 </section>
@@ -38,10 +46,11 @@
         margin: 1em;
     }
 
-    .card-front, .card-back {
+    .card-front,
+    .card-back {
         width: 100%;
         height: 100%;
-        border-radius: .75em;
+        border-radius: 0.75em;
         backface-visibility: hidden;
         position: absolute;
         top: 0;
@@ -76,7 +85,7 @@
     .card.flipped .card-back {
         transform: rotateY(0deg);
     }
-    
+
     .card-front.Care {
         background-color: var(--accent-color-teal);
     }
@@ -112,7 +121,7 @@
     .card-back.Debate {
         border: 1em solid var(--accent-color-pink);
     }
-    
+
     .card-back.Constituents {
         border: 1em solid var(--accent-color-olive);
     }
@@ -131,10 +140,15 @@
         font-size: var(--fs-medium);
     }
 
+    .card:focus {
+        outline: 3px solid var(--accent-color-blue);
+        outline-offset: 4px;
+    }
+
     .body-text {
         line-height: 120%;
         text-align: center;
-        padding: 2em .5em 0 .5em;
+        padding: 2em 0.5em 0 0.5em;
         line-height: 120%;
     }
 
