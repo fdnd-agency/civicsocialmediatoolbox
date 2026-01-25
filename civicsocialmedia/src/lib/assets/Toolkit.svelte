@@ -1,11 +1,5 @@
-<style>
-  :global(.link > svg) {
-    border-radius: var(--radius-2);
-    width: 40vw;
-    height: 40vh; 
-  }
-</style>
 <svg width="473" height="527" viewBox="0 0 473 527" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Designing for Civic Social Media Toolkit is samengesteld uit gemeenschapsarchetypen, ontwerpprincipes en dimensies die helpen bij het ontwerpen van digitale platforms gebaseerd op publieke waarden.</title>
 <rect width="473" height="527" fill="url(#pattern0_691_36)"/>
 <defs>
 <pattern id="pattern0_691_36" patternContentUnits="objectBoundingBox" width="1" height="1">

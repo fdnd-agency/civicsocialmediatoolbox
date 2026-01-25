@@ -1,14 +1,9 @@
 <script>
-	import '$lib/assets/styles/stylesheet.css';
-	import favicon from '$lib/assets/favicon.svg';
-	import logoUrl from '$lib/assets/logo-text.svg?url';
-	import closemenu from '$lib/assets/close.svg';
+	import '$lib/styles/stylesheet.css';
+	import favicon from '$lib/svg/favicon.svg';
+	import logoUrl from '$lib/svg/logo-text.svg?url';
+	import closemenu from '$lib/svg/close.svg';
 </script>
-
-<svelte:head>
-	<link rel="icon" href={favicon} />
-	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
-</svelte:head>
 
 <header class="header">
 	<a class="header-left" href="/">
@@ -38,16 +33,13 @@
             </li>
 
             <li>
-                <a href="/design-principles">Design principles voor civic social media</a>
+                <a href="/toolkit">Designing voor Civic Social Media Toolkit </a>
             </li>
 
             <li>
                 <a href="/ontwerpprincipes">Ontwerpprincipes</a>
             </li>
 
-            <li>
-                <a href="/community-archetypes">Community archetypes</a>
-            </li>
         </ul>
 	</nav>
 </header>

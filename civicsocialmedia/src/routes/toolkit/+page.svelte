@@ -54,25 +54,34 @@
 
     /* --- Headings --- */
     h1 {
-        font-size: var(--fs-title);
+        font-size: var(--fs-large);
         margin-bottom: 0.5em;
         color: var(--neutral-color-black);
+        @media (min-width: 768px) {
+            font-size: var(--fs-display);
+        }
     }
 
     h2 {
-        font-size: var(--fs-large);
+        font-size: var(--fs-medium);
         margin-top: 1.5em;
         margin-bottom: 0.5em;
         color: var(--neutral-color-black);
+        @media (min-width: 768px) {
+            font-size: var(--fs-large);
+        }
     }
 
     /* --- Paragraphs --- */
     p {
-        font-size: var(--fs-medium);
+        font-size: var(--fs-small);
         line-height: 1.6;
         text-align: left;
         padding-left: 0em;
         max-width: 75ch;
+        @media (min-width: 768px) {
+            font-size: var(--fs-medium);
+        }
     }
 
     /* --- Buttons --- */

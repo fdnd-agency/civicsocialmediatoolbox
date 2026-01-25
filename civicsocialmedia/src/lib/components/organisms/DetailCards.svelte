@@ -15,7 +15,7 @@
 
 <nav> 
     <a class="previous-step page" href="/begrijpen/step2">Vorige stap</a>
-    <a class="next-step page" href="/begrijpen/step3">Volgende stap</a>
+    <a class="next-step page" href="/begrijpen/overzicht">Volgende stap</a>
 </nav>
 
 <style>

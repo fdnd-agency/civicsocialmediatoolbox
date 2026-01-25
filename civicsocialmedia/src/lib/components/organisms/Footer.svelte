@@ -1,5 +1,5 @@
 <script>
-	import logoUrl from '$lib/assets/logo-text.svg?url';
+	import logoUrl from '$lib/svg/logo-text.svg?url';
 </script>
 
 <footer>
@@ -34,9 +34,13 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 0.25rem;
+	padding-left: 1em;
 	font-size: var(--fs-small);
 	line-height: 1.5em;
 	list-style: none;
+	@media (min-width: 1024px) {
+		padding-left: 10em;
+	}
 }
 
 .project-title {
