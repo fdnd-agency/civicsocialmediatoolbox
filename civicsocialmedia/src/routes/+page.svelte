@@ -12,7 +12,7 @@
 
 <main class="homepage-content">
   <section class="homepage-titel" id="about">
-    <h1>Civic Social Media</h1>
+    <h1 id="civic-social-media">Civic Social Media</h1>
     <p>
       Het Civic Social Media-project richt zich op het onderzoeken, ontwerpen en bevorderen van digitale platforms
       die het voor gemeenschapsleden mogelijk maken om veilig en betrouwbaar te communiceren, samen te werken en
@@ -20,7 +20,7 @@
       manier ontwikkeld en beheerd door organisaties en initiatieven met een maatschappelijke doelstelling.
     </p>
     <p>Wil je zelf aan de slag met het ontwerpen van verantwoorde, veilige en soevereine sociale media?</p>
-    <ButtonLeesMeer />
+    <ButtonLeesMeer aria-labelledby="civic-social-media" />
   </section>
 
   <article class="card">
@@ -29,10 +29,10 @@
         <a href="/roadmap" class="link"><RoadMap /></a>
       </li>
       <li class="content-wrap">
-        <h2>Civic Social Media Roadmap</h2>
+        <h2 id="civic-social-media-roadmap">Civic Social Media Roadmap</h2>
         <p>Een routekaart voor de ontwikkeling van sociale media die veilig en betrouwbaar, verantwoord en soeverein is.</p>
         <p>Ontdek de stappen, keuzes en mijlpalen richting civic social media.</p>
-        <ButtonLeesMeer href="/roadmap">Lees meer</ButtonLeesMeer>
+        <ButtonLeesMeer aria-labelledby="civic-social-media-roadmap" href="/roadmap">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
@@ -43,12 +43,12 @@
         <a href="/toolkit" class="link"><ToolKit /></a>
       </li>
       <li class="content-wrap">
-        <h2>Design principles for civic social media</h2>
+        <h2 id="design-principles-for-civic-social-media">Design principles for civic social media</h2>
         <p>
           De Designing for Civic Social Media Toolkit bevat 55 kaarten, samengesteld uit gemeenschapsarchetypen,
           ontwerpprincipes en dimensies die helpen bij het ontwerpen van digitale platforms gebaseerd op publieke waarden.
         </p>
-        <ButtonLeesMeer href="/toolkit">Lees meer</ButtonLeesMeer>
+        <ButtonLeesMeer aria-labelledby="design-principles-for-civic-social-media" href="/toolkit">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
@@ -66,12 +66,12 @@
         </a>
       </li>
       <li class="content-wrap">
-        <h2>Ontwerpprincipes</h2>
+        <h2 id="ontwerpprincipes">Ontwerpprincipes</h2>
         <p>
           Ontwerpprincipes ondersteunen keuzes over technologie, algoritmes, governance, functionaliteiten,
           UX/UI, moderatie en redactie.
         </p>
-        <ButtonLeesMeer href="/ontwerpprincipes">Lees meer</ButtonLeesMeer>
+        <ButtonLeesMeer aria-labelledby="ontwerpprincipes" href="/ontwerpprincipes">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
@@ -89,9 +89,9 @@
         </a>
       </li>
       <li class="content-wrap">
-        <h2>Community archetypes</h2>
+        <h2 id="community-archetypes">Community archetypes</h2>
         <p>Zes archetypen geven houvast bij het bepalen van behoeften en passende functionaliteiten per gemeenschap.</p>
-        <ButtonLeesMeer href="/community-archetypes">Lees meer</ButtonLeesMeer>
+        <ButtonLeesMeer aria-labelledby="community-archetypes" href="/community-archetypes">Lees meer</ButtonLeesMeer>
       </li>
     </ul>
   </article>
