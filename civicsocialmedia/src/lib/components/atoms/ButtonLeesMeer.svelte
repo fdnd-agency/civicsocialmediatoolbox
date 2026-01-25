@@ -2,7 +2,7 @@
   export let href = "/";
 </script>
 
-<a href={href} class="btn">
+<a href={href} class="btn" {...$$restProps}>
   <p>Lees meer</p>
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M5 12h14m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
