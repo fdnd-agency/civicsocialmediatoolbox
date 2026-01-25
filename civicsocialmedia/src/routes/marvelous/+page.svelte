@@ -12,6 +12,7 @@
     import risoprint6 from '$lib/assets/risoprint6.png';
     import risoprint7 from '$lib/assets/risoprint7.jpg';
     import risoprint8 from '$lib/assets/risoprint8.jpg';
+    
 
     gsap.registerPlugin(SplitText);
 
@@ -144,7 +145,8 @@ ul {
 
 }
 
-li {
+@supports (view-timeline: --set-li) {
+    li {
     view-timeline-name: --set-li;
     view-timeline-axis: inline;
     animation: linear adjust-z-index both;
@@ -153,6 +155,7 @@ li {
     animation-range: contain 0% contain 100%; 
     perspective: 40em;
     position: relative;
+    }
 }
 
 @keyframes adjust-z-index {
@@ -167,15 +170,16 @@ li {
     }
 }
 
-img {
-	animation: linear rotate-cover  both;
-    -webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
-    animation-duration: auto;
-    animation-timeline: --set-li;
-    animation-range: contain 0% contain 100%;
-    transform: translateX(-100%) rotateY(-45deg);
+@supports (view-timeline: --set-li) {
+    img {
+        animation: linear rotate-cover  both;
+        -webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
+        animation-duration: auto;
+        animation-timeline: --set-li;
+        animation-range: contain 0% contain 100%;
+        transform: translateX(-100%) rotateY(-45deg);
+    }
 }
-
 @keyframes rotate-cover {
 	0% {
 		transform: translateX(-100%) rotateY(-45deg);
