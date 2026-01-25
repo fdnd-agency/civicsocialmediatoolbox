@@ -33,7 +33,7 @@
             </li>
 
             <li>
-                <a href="/design-principles">Design principles voor civic social media</a>
+                <a href="/toolkit">Designing voor Civic Social Media Toolkit </a>
             </li>
 
             <li>
