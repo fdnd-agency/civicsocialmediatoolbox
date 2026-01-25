@@ -16,7 +16,7 @@
     
 </script>
 
-<form class="card" class:flipped={flipped} on:click={toggleFlip} on:keydown={handleKeydown}> <!--Als flipped === true wordt de class flipped toegevoegd-->
+<form class="card" class:flipped={flipped} on:click={toggleFlip} on:keydown={handleKeydown}> <!-- class:flipped={flipped}: If flipped === true, the class flipped is added. on:click={toggleFlip}: If someone clicks on the form, execute toggleFlip. on:keydown={handleKeydown}: If someone presses a key, execute handleKeydown.-->
     <button type="submit" class="card-front {card.title}">
         <h2 class:knowledge-text={card.id === 13}>{card.title}</h2> <!-- https://svelte.dev/docs/svelte/class#The-class:-directive -->
         <img src="{imgUrl}" alt="{card.title}" width="240" height="192" > 
