@@ -1,6 +1,6 @@
 <svg width="180" height="200" viewBox="0 0 229 343" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Vijf ontwerpprincipes: gemeenschapsgericht, veilig en vertrouwd, verantwoord, soeverein en divers systeem</title>
-  <rect width="229" height="343" fill="url(#pattern0_1512_56)"/>
+<rect width="229" height="343" fill="url(#pattern0_1512_56)"/>
 <defs>
 <pattern id="pattern0_1512_56" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_1512_56" transform="matrix(0.000976562 0 0 0.000651991 0 -0.000728863)"/>

@@ -1,4 +1,5 @@
 <svg width="180" height="200" viewBox="0 0 240 360" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Zes community-archetypen als hulpmiddel voor het ontwerpen van civic social media</title>
 <rect width="240" height="360" fill="url(#pattern0_1513_57)"/>
 <defs>
 <pattern id="pattern0_1513_57" patternContentUnits="objectBoundingBox" width="1" height="1">
