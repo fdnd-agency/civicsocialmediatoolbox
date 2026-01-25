@@ -14,19 +14,19 @@
 </section>
 
 <style>
-.card-container {
-    container: cards / inline-size;
-}
+    .card-container {
+        container: cards / inline-size;
+    }
 
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 1em; 
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; 
-    overscroll-behavior-x: contain; 
-    padding: 0;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+        padding: 0;
         @container (width < 46em) {
             flex-direction: column;
         }
@@ -35,5 +35,13 @@ ul {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
-}   
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+        .card-front,
+        .card-back {
+            transition: none;
+        }
+    }
 </style>

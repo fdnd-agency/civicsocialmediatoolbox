@@ -3,7 +3,7 @@
     const imgUrl = `https://fdnd-agency.directus.app/assets/${card.posterimage}`;
 </script>
 
-<section class="card">
+<section class="card" aria-label="Detail card for {card.title}">
     <p class="body">{@html card.body}</p>
 </section>
 

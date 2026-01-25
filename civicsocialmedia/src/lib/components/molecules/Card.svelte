@@ -9,11 +9,10 @@
     }
 
     function handleKeydown(event) {
-        if (event.key === 'Enter' || event.key === ' ') {
+        if (event.key === "Enter" || event.key === " ") {
             toggleFlip();
         }
     }
-    
 </script>
 
 <form class="card" class:flipped={flipped} on:click={toggleFlip} on:keydown={handleKeydown}> <!-- class:flipped={flipped}: If flipped === true, the class flipped is added. on:click={toggleFlip}: If someone clicks on the form, execute toggleFlip. on:keydown={handleKeydown}: If someone presses a key, execute handleKeydown.-->
@@ -42,7 +41,7 @@
         all: unset;
         width: 100%;
         height: 100%;
-        border-radius: .75em;
+        border-radius: 0.75em;
         backface-visibility: hidden;
         position: absolute;
         top: 0;
@@ -77,7 +76,7 @@
     .card.flipped .card-back {
         transform: rotateY(0deg);
     }
-    
+
     .card-front.Care {
         background-color: var(--accent-color-teal);
     }
@@ -113,7 +112,7 @@
     .card-back.Debate {
         border: 1em solid var(--accent-color-pink);
     }
-    
+
     .card-back.Constituents {
         border: 1em solid var(--accent-color-olive);
     }
@@ -130,6 +129,11 @@
         text-align: center;
         font-family: var(--font-serif);
         font-size: var(--fs-medium);
+    }
+
+    .card:focus {
+        outline: 3px solid var(--neutral-color-black);
+        outline-offset: 4px;
     }
 
     .body-text {
