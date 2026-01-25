@@ -1,5 +1,5 @@
 <script>
-	import '$lib/assets/styles/stylesheet.css';
+	import '$lib/styles/stylesheet.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import logoUrl from '$lib/assets/logo-text.svg?url';
 	import closemenu from '$lib/assets/close.svg';

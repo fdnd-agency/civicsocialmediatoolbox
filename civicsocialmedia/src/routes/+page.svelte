@@ -2,7 +2,6 @@
   import { RoadMap, ToolKit } from '$lib';
   import OntwerpPrincipes from '$lib/assets/OntwerpPrincipes.svelte';
   import CommunityArchetypes from '$lib/assets/CommunityArchetypes.svelte';
-  import community from '$lib/assets/communityarchetypes.png';
   import ButtonLeesMeer from '$lib/components/atoms/ButtonLeesMeer.svelte';
   import BackgroundAnimation from '$lib/components/effects/BackgroundAnimation.svelte';
 
