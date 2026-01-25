@@ -241,7 +241,7 @@ Display all stories completed in the last iterations on a board. Create 3 award 
 
 | Name  | Best story | Most annoying story  | Never Ending Story |
 |-------|-----|----------|-----------|
-| Abeer  |  User story # | User story #     | User story #  |
+| Abeer  |  User story # 104| User story #  #93   | User story # 123  |
 | Karima  | User story #123  | User story # 93  | User story #104  |
 | Yamen  | User story #  | User story #   | User story #  |
 
@@ -251,6 +251,7 @@ Most winning story: User story #
 
 ### Reflection
 Why do you think the user story won in this category? Reflect on the process of completing the tasks - what went good or wrong.
-- Abeer: 
+- Abeer: In this user story you see text that explains it, then the user story is divided into smaller sub-tasks to make the work more structured.
+I tested performance and accessibilty in every sub-task. I added clear documentation with foto's and explaination.
 - Karima: In this user story all of the steps are included. First there is a user story with a fixed format. Then the user story is divided into smaller sub-tasks to make the work more structured. The user story is tested on accessibility, performance, device and a user test. What went wrong with other user stories was that we did not have a clear idea of how to properly define and structure them. From this experience, we learned the importance of clearly defining user stories and breaking them down into manageable tasks from the beginning.
 - Yamen:
