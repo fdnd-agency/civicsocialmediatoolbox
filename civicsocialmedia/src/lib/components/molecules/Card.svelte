@@ -47,7 +47,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        
         transition: transform 0.6s ease-in-out;
     }
 
@@ -144,6 +143,8 @@
         padding: 0.5em 1.3em;
         position: relative;
         top: 4em;
+        left: 5em;
+        max-width: 4em;
         border-radius: 6em;
         position: relative;
         &:hover {
