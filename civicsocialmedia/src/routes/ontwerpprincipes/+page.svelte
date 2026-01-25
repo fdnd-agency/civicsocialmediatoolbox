@@ -65,6 +65,7 @@
   @media (prefers-color-scheme: dark) {
     main {
       background-color: var(--neutral-color-black);
+      color: var(--neutral-color-white)
     }
   }
 </style>
