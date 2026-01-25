@@ -11,7 +11,9 @@
 <main>
     <h1>Kaarten overzicht</h1>
 
-    <p>Ontdek het overzicht van alle kaarten die in de toolkit worden gebruikt.</p>
+    <p>
+        Ontdek het overzicht van alle kaarten die in de toolkit worden gebruikt.
+    </p>
 
     <h2>Ontwerpprincipes cards</h2>
 
@@ -35,30 +37,30 @@
 <style>
     main {
         padding: 2em;
-    }
 
-    main h1 {
-        font-size: var(--fs-title);
-        margin-bottom: 0.5em;
-        color: var(--primary-color-deep-blue);
-    }
+        h1 {
+            font-size: var(--fs-title);
+            margin-bottom: 0.5em;
+            color: var(--primary-color-deep-blue);
+        }
 
-    main h2 {
-        font-size: var(--fs-large);
-        color: var(--primary-color-deep-blue);
-        margin-top: 3rem;
-    }
+        h2 {
+            font-size: var(--fs-large);
+            color: var(--primary-color-deep-blue);
+            margin-top: 3rem;
+        }
 
-    main p {
-        font-size: var(--fs-small);
-        line-height: 1.6;
-        color: var(--neutral-color-grey-700);
-        max-width: 75ch;
+        p {
+            font-size: var(--fs-small);
+            line-height: 1.6;
+            color: var(--neutral-color-grey-700);
+            max-width: 75ch;
+        }
     }
 
     .custom-page-cards {
         display: grid;
-        grid-template-columns: 1fr; /* default: mobile: 1 per row */
+        grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 1rem;
         max-width: 1200px;
@@ -67,10 +69,10 @@
 
     .custom-card-wrapper {
         transition: transform 0.3s ease;
-    }
 
-    .custom-card-wrapper:hover {
-        transform: scale(1.05);
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     /* Tablet: 2 cards per row */

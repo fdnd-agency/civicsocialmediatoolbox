@@ -9,7 +9,7 @@
   let leftBtn;
   let rightBtn;
 
-  // Scroll functions 
+  // Scroll functions
   function scrollLeft() {
     listEl.scrollBy({ left: -420, behavior: "smooth" });
   }
@@ -136,16 +136,16 @@
     width: 100%;
     padding: 0 1rem;
     padding-inline: 2rem;
-  }
 
-  .card-container ul {
-    list-style: none;
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem 1.5rem 2rem;
+    ul {
+      list-style: none;
+      margin: 0;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 1.5rem 2rem;
+    }
   }
 
   .card-wrapper {
@@ -170,35 +170,41 @@
   }
 
   @container card-grid (min-width: 600px) {
-    .card-container ul {
-      grid-template-columns: repeat(2, 1fr);
+    .card-container {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 
   @container card-grid (min-width: 900px) {
-    .card-container ul {
-      grid-template-columns: repeat(3, 1fr);
+    .card-container {
+      ul {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   }
 
   @container card-grid (min-width: 1200px) {
-    .card-container ul {
-      display: flex;
-      overflow-x: auto;
-      gap: 5rem;
-      padding: 2rem 5rem;
-      scrollbar-width: none;
-      justify-content: flex-start;
-    }
+    .card-container {
+      ul {
+        display: flex;
+        overflow-x: auto;
+        gap: 5rem;
+        padding: 2rem 5rem;
+        scrollbar-width: none;
+        justify-content: flex-start;
 
-    .card-container ul::-webkit-scrollbar {
-      display: none;
-    }
+        &::-webkit-scrollbar {
+          display: none;
+        }
 
-    .card-container ul li {
-      flex: 0 0 20rem;
-      position: relative;
-      z-index: 0;
+        li {
+          flex: 0 0 20rem;
+          position: relative;
+          z-index: 0;
+        }
+      }
     }
   }
 
@@ -216,19 +222,20 @@
     cursor: pointer;
     font-size: 1.2rem;
     display: none;
-  }
 
-  .scroll-button:hover {
-    background: #8874ca;
-  }
+    &:hover {
+      background: #8874ca;
+    }
 
-  .scroll-button.left {
-    left: 0;
-    z-index: 101;
-  }
-  .scroll-button.right {
-    right: 0;
-    z-index: 101;
+    &.left {
+      left: 0;
+      z-index: 101;
+    }
+
+    &.right {
+      right: 0;
+      z-index: 101;
+    }
   }
 
   @container card-grid (min-width: 1200px) {
