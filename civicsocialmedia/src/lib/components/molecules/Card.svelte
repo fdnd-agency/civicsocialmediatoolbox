@@ -141,7 +141,7 @@
     }
 
     .card:focus {
-        outline: 3px solid var(--accent-color-blue);
+        outline: 3px solid var(--neutral-color-black);
         outline-offset: 4px;
     }
 
