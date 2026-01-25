@@ -1,5 +1,5 @@
 <script>
-	import '$lib/assets/styles/stylesheet.css';
+	import '$lib/styles/stylesheet.css';
 	import Header from '$lib/components/organisms/Header.svelte';
 	import Footer from '$lib/components/organisms/Footer.svelte';
 	import { onMount } from "svelte";

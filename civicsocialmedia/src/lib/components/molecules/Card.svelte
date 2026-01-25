@@ -16,18 +16,18 @@
     
 </script>
 
-<section class="card" class:flipped={flipped} on:click={toggleFlip} on:keydown={handleKeydown} role="button" tabindex="0"> <!--Als flipped === true wordt de class flipped toegevoegd-->
-    <article class="card-front {card.title}">
+<form class="card" class:flipped={flipped} on:click={toggleFlip} on:keydown={handleKeydown}> <!-- class:flipped={flipped}: If flipped === true, the class flipped is added. on:click={toggleFlip}: If someone clicks on the form, execute toggleFlip. on:keydown={handleKeydown}: If someone presses a key, execute handleKeydown.-->
+    <button type="submit" class="card-front {card.title}">
         <h2 class:knowledge-text={card.id === 13}>{card.title}</h2> <!-- https://svelte.dev/docs/svelte/class#The-class:-directive -->
         <img src="{imgUrl}" alt="{card.title}" width="240" height="192" > 
         <p class="category">{card.categorie}</p>
-    </article>
+    </button>
 
-    <article class="card-back {card.title}">
+    <button type="submit" class="card-back {card.title}">
         <p class="body-text"> {@html card.body} </p>
         <a href="/begrijpen/step2/details">Lees meer</a>
-    </article>
-</section>
+    </button>
+</form>
 
 <style>
     .card {
@@ -39,6 +39,7 @@
     }
 
     .card-front, .card-back {
+        all: unset;
         width: 100%;
         height: 100%;
         border-radius: .75em;
@@ -134,8 +135,6 @@
     .body-text {
         line-height: 120%;
         text-align: center;
-        padding: 2em .5em 0 .5em;
-        line-height: 120%;
     }
 
     a {
@@ -144,9 +143,10 @@
         padding: 0.5em 1.3em;
         position: relative;
         top: 4em;
+        left: 5em;
+        max-width: 4em;
         border-radius: 6em;
         position: relative;
-        left: 4em;
         &:hover {
             cursor: pointer;
         }
