@@ -1,5 +1,5 @@
 <script>
-	import logoUrl from '$lib/assets/logo-text.svg?url';
+	import logoUrl from '$lib/svg/logo-text.svg?url';
 </script>
 
 <footer>

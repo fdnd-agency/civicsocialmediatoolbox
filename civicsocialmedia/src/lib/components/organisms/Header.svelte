@@ -1,8 +1,8 @@
 <script>
 	import '$lib/styles/stylesheet.css';
-	import favicon from '$lib/assets/favicon.svg';
-	import logoUrl from '$lib/assets/logo-text.svg?url';
-	import closemenu from '$lib/assets/close.svg';
+	import favicon from '$lib/svg/favicon.svg';
+	import logoUrl from '$lib/svg/logo-text.svg?url';
+	import closemenu from '$lib/svg/close.svg';
 </script>
 
 <header class="header">
