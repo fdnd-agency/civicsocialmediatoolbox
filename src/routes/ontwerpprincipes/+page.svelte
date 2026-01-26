@@ -45,7 +45,7 @@
   }
 
   main h1 {
-    font-size: var(--fs-title);
+    font-size: var(--fs-large);
     margin-bottom: 0.5em;
     color: var(--primary-color-deep-blue);
   }
