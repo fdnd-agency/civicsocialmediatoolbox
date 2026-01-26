@@ -237,13 +237,18 @@ Display all stories completed in the last iterations on a board. Create 3 award 
 - User story 6: https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/93
 - User story 7: https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/38
 - User story 8: https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/46
+- User Story 9: https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/96
+- User Story 10: https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/102
+- User Story 11: https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/106
+- User Story 12: https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/225
+- User Stroy 13: https://github.com/fdnd-agency/civicsocialmediatoolbox/issues/163
 
 
 | Name  | Best story | Most annoying story  | Never Ending Story |
 |-------|-----|----------|-----------|
 | Abeer  |  User story # 104| User story #  #93   | User story # 123  |
 | Karima  | User story #123  | User story # 93  | User story #104  |
-| Yamen  | User story #  | User story #   | User story #  |
+| Yamen  | User story ##131  | User story #225  | User story #106  |
 
 
 ### Winning story
@@ -254,4 +259,5 @@ Why do you think the user story won in this category? Reflect on the process of 
 - Abeer: In this user story you see text that explains it, then the user story is divided into smaller sub-tasks to make the work more structured.
 I tested performance and accessibilty in every sub-task. I added clear documentation with foto's and explaination.
 - Karima: In this user story all of the steps are included. First there is a user story with a fixed format. Then the user story is divided into smaller sub-tasks to make the work more structured. The user story is tested on accessibility, performance, device and a user test. What went wrong with other user stories was that we did not have a clear idea of how to properly define and structure them. From this experience, we learned the importance of clearly defining user stories and breaking them down into manageable tasks from the beginning.
-- Yamen:
+- Yamen: I think user story #131 (Progress Stepper) won because it had a clear design process from the start. I did research and inspiration gathering, created a morphological chart, and then implemented it step by step. I also did comprehensive testing including HTML validator, Lighthouse, screen reader.etc.. What went well was having a structured approach and testing at each stage. What went wrong with other stories like #225 (Background Animation) was that I didn't plan it out as well - I just started coding without much research or testing, which made it more annoying to fix issues later and i hand not enugh knowlage about three.js. For #106, it felt like it never ended because the requirements kept changing after each sprint review. I learned that taking time to plan, research, and structure the work properly saves a lot of time later.
+
