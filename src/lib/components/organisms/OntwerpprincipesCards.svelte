@@ -118,10 +118,10 @@
   </button>
 
   <ul bind:this={listEl}>
-    {#each cards as card, index}
-      <li id={"card-" + index} tabindex="0">
+    {#each cards as card}
+      <li class="card">
         <div class="card-wrapper">
-          <Card {card} {index} />
+          <Card {card} />
         </div>
       </li>
     {/each}
@@ -130,21 +130,29 @@
 
 <style>
   .card-container {
+    container: cards / inline-size;
     position: relative;
-    container-type: inline-size;
-    container-name: card-grid;
-    width: 100%;
-    padding: 0 1rem;
     padding-inline: 2rem;
+  }
 
-    ul {
-      list-style: none;
-      margin: 0;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    padding: 0;
+    margin: 0;
+
+    @container (width < 46em) {
+      flex-direction: column;
+    }
+
+    @container (width > 46em) and (width < 60em) {
       display: grid;
-      grid-template-columns: auto;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 1.5rem 2rem;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -156,55 +164,22 @@
       box-shadow 0.2s ease;
   }
 
-  /* Tap / click (mobile) */
   li:active .card-wrapper,
   li:focus .card-wrapper {
     border-color: white;
     outline: none;
   }
 
-  /* Keyboard focus */
   li:focus-visible .card-wrapper {
     border-color: white;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25);
   }
 
-  @container card-grid (min-width: 600px) {
-    .card-container {
-      ul {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  }
-
-  @container card-grid (min-width: 900px) {
-    .card-container {
-      ul {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  }
-
-  @container card-grid (min-width: 1200px) {
-    .card-container {
-      ul {
-        display: flex;
-        overflow-x: auto;
-        gap: 5rem;
-        padding: 2rem 5rem;
-        scrollbar-width: none;
-        justify-content: flex-start;
-
-        &::-webkit-scrollbar {
-          display: none;
-        }
-
-        li {
-          flex: 0 0 20rem;
-          position: relative;
-          z-index: 0;
-        }
-      }
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .card-front,
+    .card-back {
+      transition: none;
     }
   }
 
@@ -238,7 +213,7 @@
     }
   }
 
-  @container card-grid (min-width: 1200px) {
+  @container (width > 60em) {
     .scroll-button {
       display: block;
     }
