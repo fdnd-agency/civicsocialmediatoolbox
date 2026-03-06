@@ -1,0 +1,37 @@
+{
+	"/": [],
+	"/archetypes": [],
+	"/begijpen/[slug]/step2": [
+		"src/routes/begijpen/[slug]/step2/+page.server.js"
+	],
+	"/begrijpen": [
+		"src/routes/begrijpen/+page.server.js",
+		"src/routes/begrijpen/+layout.server.js",
+		"src/routes/begrijpen/+layout.server.js"
+	],
+	"/begrijpen/step1": [
+		"src/routes/begrijpen/+layout.server.js"
+	],
+	"/begrijpen/step2": [
+		"src/routes/begrijpen/+layout.server.js"
+	],
+	"/begrijpen/step3": [
+		"src/routes/begrijpen/+layout.server.js"
+	],
+	"/begrijpen/[slug]": [
+		"src/routes/begrijpen/[slug]/+page.server.js",
+		"src/routes/begrijpen/+layout.server.js"
+	],
+	"/cyberpunk": [],
+	"/evalueren/[slug]": [
+		"src/routes/evalueren/[slug]/+page.server.js"
+	],
+	"/ontwerpprincipes": [
+		"src/routes/ontwerpprincipes/+page.server.js"
+	],
+	"/roadmap": [],
+	"/toolkit": [],
+	"/toolkit/[slug]": [
+		"src/routes/toolkit/[slug]/+page.server.js"
+	]
+}

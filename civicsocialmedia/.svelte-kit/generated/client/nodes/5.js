@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/begijpen/[slug]/step2/+page.svelte";
