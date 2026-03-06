@@ -1,1 +1,0 @@
-export { default as component } from "../../../../src/routes/begrijpen/step1/+page.svelte";
