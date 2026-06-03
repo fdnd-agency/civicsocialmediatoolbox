@@ -1,183 +1,76 @@
-<script>
+<!-- <script>
+  import Card from "./Card.svelte";
   export let card;
-  export let index;
-
-  const imgUrl = `https://fdnd-agency.directus.app/assets/${card.posterimage}`;
 </script>
 
-<section class="flip-card">
-  <input type="checkbox" id={"flip-" + index} class="flip-checkbox" />
-  <label
-    for={"flip-" + index}
-    class="card"
-    tabindex="0"
-    on:keydown={(e) => e.key === "Enter" && e.currentTarget.click()}
-  >
-    <div class="flip-inner">
-      <div class="flip-front">
-        <h2>{card.categorie}</h2>
-        <img
-          src={imgUrl}
-          alt={card.subtitle}
-          loading="lazy"
-          decoding="async"
-          width="90"
-          height="90"
-        />
-        <h3>{card.subtitle}</h3>
-      </div>
+<Card {card} type="ontwerp">
+  
+  <div slot="front" let:imgUrl class="ontwerp-front">
+    <h2 style="font-size: 2.3rem;">{card.title}</h2>
+    <img src={imgUrl} alt={card.title} width="240" height="192" />
+    <p class="card-category ontwerp-category">
+      {card.categorie}
+    </p>
+  </div>
 
-      <div class="flip-back">
-        <h2>{card.categorie}</h2>
-        <img src={imgUrl} alt={card.subtitle} />
-        <h3>{card.subtitle}</h3>
-        <p>
-          {card.body
-            .replace(/<br\s*\/?>/gi, " ")
-            .replace(/<\/?strong>/gi, "")
-            .replace(/<\/?p>/gi, " ")}
-        </p>
-      </div>
-    </div>
-  </label>
-</section>
+
+  <div slot="back" let:imgUrl class="ontwerp-back">
+    <h2>{card.categorie}</h2>
+    <img src={imgUrl} alt={card.subtitle} width="90" height="90" />
+    <h3>{card.subtitle}</h3>
+    <p>
+      {card.body
+        .replace(/<br\s*\/?>/gi, " ")
+        .replace(/<\/?strong>/gi, "")
+        .replace(/<\/?p>/gi, " ")}
+    </p>
+  </div>
+</Card>
 
 <style>
-  .flip-card {
-    perspective: 1000px;
-    position: relative;
-
-    /* Flip card */
-    .card {
-      display: block;
-      width: 21rem;
-      height: 29rem;
-      cursor: pointer;
-      position: relative;
-      outline: none;
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-      z-index: 1;
-
-      &:hover,
-      &:focus {
-        transform: scale(1.02);
-        z-index: 10;
-      }
-
-      &:focus-visible {
-        outline: 3px solid #8874ca;
-        outline-offset: 4px;
-      }
-
-      p {
-        font-size: 0.8rem;
-        line-height: 1.3;
-        text-align: center;
-        color: black;
-      }
-
-      img {
-        width: 90px;
-        height: 90px;
-        margin-top: 1rem;
-        border-radius: 14px;
-        object-fit: cover;
-      }
-
-      .flip-inner {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        transform-style: preserve-3d;
-
-        .flip-front,
-        .flip-back {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          inset: 0;
-          backface-visibility: hidden;
-          border-radius: 0.75rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 2rem;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .flip-front {
-          background-color: #472562;
-          color: white;
-          z-index: 2;
-          transform: rotateY(0deg);
-
-          h2 {
-            font-size: 1rem;
-            text-align: center;
-            color: white;
-          }
-
-          h3 {
-            font-size: 0.9rem;
-            font-weight: 600;
-            text-align: center;
-            color: white;
-          }
-        }
-
-        .flip-back {
-          background: white;
-          color: #472562;
-          border: 10px solid #472562;
-          box-sizing: border-box;
-          transform: rotateY(180deg);
-          z-index: 1;
-
-          h2 {
-            font-size: 1rem;
-            text-align: center;
-            color: black;
-          }
-
-          h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-align: center;
-            color: black;
-          }
-        }
-      }
+  .ontwerp-front {
+    h2 {
+      text-align: center;
     }
 
-    .flip-checkbox {
-      display: none;
-    }
-
-    .flip-checkbox:checked + .card {
-      .flip-inner {
-        transform: rotateY(180deg);
-      }
+    .card-category {
+      font-family: var(--font-serif);
+      font-size: var(--fs-medium);
+      text-align: center;
+      margin: 0;
+      padding-bottom: 1rem;
+      color: white;
     }
   }
 
-  @supports (transform-style: preserve-3d) {
-    .flip-inner {
-      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-      transform-style: preserve-3d;
+  .ontwerp-back {
+    h2 {
+      text-align: center;
+      font-size: 1rem;
+      color: var(--neutral-color-black);
     }
 
-    .flip-checkbox:checked + .card .flip-inner {
-      transform: rotateY(180deg);
+    h3 {
+      text-align: center;
+      font-family: var(--font-serif);
+      font-size: var(--fs-medium);
+      color: var(--neutral-color-black);
+    }
+
+    p {
+      font-size: 0.85rem;
+      text-align: center;
+      line-height: 1.3;
+      color: var(--neutral-color-black);
+      padding: 0 1em;
     }
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .flip-inner {
-      transition: none;
-    }
+  img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 14px;
+    object-fit: cover;
   }
-</style>
+</style> -->
+

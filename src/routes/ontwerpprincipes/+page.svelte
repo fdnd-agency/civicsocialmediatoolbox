@@ -1,5 +1,5 @@
 <script>
-  import Cards from "$lib/components/organisms/OntwerpprincipesCards.svelte";
+  import CardList from "$lib/components/organisms/CardList.svelte";
 
   export let data;
 
@@ -36,7 +36,7 @@
   </header>
 
   <!-- Cards component -->
-  <Cards {cards} />
+  <CardList {cards} type="ontwerp" />
 </main>
 
 <style>

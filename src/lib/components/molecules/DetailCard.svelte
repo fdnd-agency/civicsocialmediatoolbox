@@ -14,6 +14,7 @@
         margin: 1em;
         border: 1em solid var(--accent-color-teal);
         border-radius: .75em;
+        overflow: hidden;
     }
 
     p {

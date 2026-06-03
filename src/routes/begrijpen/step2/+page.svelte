@@ -1,6 +1,6 @@
 <script>
   import ProgressStepperV2 from '$lib/components/molecules/ProgressStepper.svelte';
-  import Cards from '$lib/components/organisms/Cards.svelte';
+  import CardList from '$lib/components/organisms/CardList.svelte';
   export let data;
 
   const toolkitItems = data.toolkitItems ?? [];
@@ -13,7 +13,7 @@
   <ProgressStepperV2 {currentStep} />
     <h2>1. Begrijpen</h2>
     <p>Verken de 6 community archetypes en de bijbehorende behoeften van communities en organisaties, daarna  kies 1 of 2 archetypes die het beste passen bij jou community en/of organisatie.</p>
-  <Cards cards={data.cards} />
+  <CardList {cards} />
 </main>
 
 <style>

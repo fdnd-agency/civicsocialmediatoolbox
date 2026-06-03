@@ -40,7 +40,7 @@
 </main>
 
 <style>
-	@media (prefers-reduced-motion: no-preference) {
+	/* @media (prefers-reduced-motion: no-preference) {
 	.intro {
 	position: fixed;
 	top: 0;
@@ -57,7 +57,7 @@
 	color: var(--primary-darkest-blue);
 	background-color: #EBDAC5;
 	}
-}
+} */
 </style>
 
 <Footer />
